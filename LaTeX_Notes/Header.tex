@@ -1,0 +1,106 @@
+\documentclass[12pt,oneside]{amsart}
+
+%\makeatletter
+%\let\counterwithout\relax
+%\makeatletter
+%\let\counterwithin\relax
+
+\usepackage{geometry}                % See geometry.pdf to 
+\geometry{a4paper}                   % ... or a4paper or \usepackage{color}
+\usepackage[latin1]{inputenc} %Sonderzeichen/Zeichenkodierung
+\usepackage[english]{babel} %Sprache
+\usepackage{graphicx}
+\usepackage{amsmath, mathtools}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage[shortalphabetic]{amsrefs}
+\usepackage{wrapfig}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage[many]{tcolorbox}
+\usepackage{tensor} %Bimoduln
+\usepackage{here} %Erzwingen von Grafikpositionen
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\definecolor{light-gray}{gray}{0.85}
+
+%%Mathematik
+%\usepackage{chemmacros}
+%\usepackage{amssymb}
+%\usepackage{latexsym}
+%%Tabellen
+%\usepackage{arydshln}
+%\usepackage{multirow}
+%\usepackage[automark]{scrpage2} %Kopf und Fuﬂzeilen
+%\usepackage{rotating} %Rotieren von Grafiken
+%\usepackage{braket} %Bra-Ket Notation
+%\usepackage{blkarray} %Beschriftung von Matrizen
+%\usepackage{mathrsfs} %curly Buchstaben
+
+%tikz
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,shapes.misc}
+\usetikzlibrary{arrows,shapes,positioning}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{through,calc}
+\usetikzlibrary{patterns}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{automata}
+\tikzstyle arrowstyle=[scale=1]
+\usepackage{extarrows}
+
+%%% here we define our palette
+
+\definecolor{spacecadet}{HTML}{0D284C}
+\definecolor{munsell}{HTML}{008FA8}
+\definecolor{banana}{HTML}{FFD932}
+\definecolor{cgblue}{HTML}{007CA5}
+\definecolor{isabelline}{HTML}{EAEDEA}
+
+%%%
+
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\conf}{conf}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\real}{Re}
+\DeclareMathOperator{\imag}{Im}
+\DeclareMathOperator{\diff}{diff}
+\DeclareMathOperator{\homeo}{Homeo}
+\DeclareMathOperator{\Mor}{Mor}
+\DeclareMathOperator{\Ob}{Ob}
+\DeclareMathOperator{\target}{Target}
+\DeclareMathOperator{\source}{Source}
+\DeclareMathOperator{\aut}{Aut}
+\DeclareMathOperator{\Sch}{Sch}
+\DeclareMathOperator{\Conf}{Conf}
+\DeclareMathOperator{\Diff}{Diff}
+\DeclareMathOperator{\Endstar}{End^*}
+
+\newcommand{\cat}{\mathcal{C}}
+\newcommand{\tub}{\mathrm{Tub}(\cat)}
+\renewcommand{\Vec}{\textbf{Vec}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{prototypedefinition}{Prototype Definition}[section]
+\newtheorem{physicalintuition}{Physical intuition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{\color{cgblue}Example}[section]
+\newtheorem{fact}{Fact}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+
+
+\def\eqbox#1{\tcboxmath[colback=banana,arc=0cm,frame hidden,enhanced]{#1}}
+\def\figbox{\begin{center}\tcboxmath[colback=isabelline,frame hidden,enhanced,sharp corners]{\parbox[c][3cm][c]{10cm}{\ }}\end{center}}
