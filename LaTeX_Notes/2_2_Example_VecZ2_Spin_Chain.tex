@@ -175,7 +175,7 @@ Analogously, if we only allow $0$s to fuse to the chain, and the outer labels ar
 		\end{tikzpicture}
 	\end{figure}
 	\noindent
-If we had fixed the outer labels to $0$, all bullets would have to be $0$. hence, the only vertices occurring in these cases are
+If we had fixed the outer labels to $0$, all bullets would have to be $0$. Hence, the only vertices occurring in these cases are
 	\begin{figure}[H]	
 		\begin{tikzpicture}
 		\draw (0,0) -- (1.5,0);
@@ -235,4 +235,62 @@ This means that in the case of open boundary conditions, the chain has a \emph{u
 \noindent
 In case of fusing $0$ to the chain, we can either allow only $0$s or only $1$ as labels of the chain. Therefore, the chain with periodic boundary conditions has two ground states, hence it represents a qubit.
 
-We will now introduce defects to this model.
+We will now introduce defects to this model, indicated by red lines that fuse to the chain, e.g.\ a chain with one defect would be
+	\begin{figure}[H]
+		\begin{tikzpicture}
+		\draw (-0.25,0) -- (8.25,0);
+		\draw (0.5,0) -- (0.5,1);
+		\draw (1.5,0) -- (1.5,1);
+		\draw (2.5,0) -- (2.5,1);
+		\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+		\draw (4.5,0) -- (4.5,1);
+		\draw (5.5,0) -- (5.5,1);
+		\draw (6.5,0) -- (6.5,1);
+		\draw (7.5,0) -- (7.5,1);
+		\node at (0,-0.3) {$\bullet$};
+		\node at (1,-0.3) {$\bullet$};
+		\node at (2,-0.3) {$\bullet$};
+		\node at (3,-0.3) {$\bullet$};
+		\node at (4,-0.3) {$\bullet$};
+		\node at (5,-0.3) {$\bullet$};
+		\node at (6,-0.3) {$\bullet$};
+		\node at (7,-0.3) {$\bullet$};
+		\node at (8,-0.3) {$\bullet$};
+		\end{tikzpicture}
+	\end{figure}
+	\noindent
+Since the chain is represented by a category, $\Vec(\Z/2)$ in our example, the defect is a $\Vec(\Z/2)-\Vec(\Z/2)$ bimodule, i.e.\ we are fusing an object from the bimodule to the chain. Here, we will use the bimodule $F_1$ to introduce defects to the $\Vec(\Z/2)$-chain. $F_1$ has only one object, so we omit writing labels for the bimodule object, but indicate by a red line when the object is from the bimodule.
+
+The occurrence of one defect in a chain does not change the ground state of the system; The labels on the chain are still determined by the choice of labels on the boundary. This is different if we have more than one defect in the chain. For instance, for two defects the chain is
+	\begin{figure}[H]
+		\begin{tikzpicture}
+		\draw (-0.25,0) -- (8.25,0);
+		\draw (0.5,0) -- (0.5,1);
+		\draw (1.5,0) -- (1.5,1);
+		\draw (2.5,0) -- (2.5,1);
+		\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+		\draw (4.5,0) -- (4.5,1);
+		\draw (5.5,0) -- (5.5,1);
+		\draw[red,line width=0.4mm] (6.5,0) -- (6.5,1);
+		\draw (7.5,0) -- (7.5,1);
+		\node at (0,-0.3) {$\bullet$};
+		\node at (1,-0.3) {$\bullet$};
+		\node at (2,-0.3) {$\bullet$};
+		\node at (3,-0.3) {$\bullet$};
+		\node at (4,-0.3) {{\color{orange}$\bullet$}};
+		\node at (5,-0.3) {{\color{orange}$\bullet$}};
+		\node at (6,-0.3) {{\color{orange}$\bullet$}};
+		\node at (7,-0.3) {$\bullet$};
+		\node at (8,-0.3) {$\bullet$};
+		\end{tikzpicture}
+	\end{figure}
+\noindent
+where the colour of the orange bullets is not determined by the labels on the boundary of the chain. Hence, we get an additional qubit. In general, the number of additional qubits in the chain is $\#\mathrm{defects}-1$. This can be done analogously for the chain with periodic boundary conditions, the only difference is that in this case, we already have one qubit when there is no defect. By introducing defects to the chain, we have also introduced a new vertex to our model
+	\begin{figure}[H]	
+		\begin{tikzpicture}
+		\draw (0,0) -- (1.5,0);
+		\draw[red,line width=0.4mm] (0.75,0) -- (0.75,1);
+		\end{tikzpicture}
+	\end{figure}
+\noindent
+where any object from $\Vec(\Z/2)$ can be on the black lines. Since this vertex is neither defined in the category $\Vec(\Z/2)$ nor in the bimodule $F_1$, we need to construct it. We do this construction step-by-step in the following by using ideas from tube algebras.
