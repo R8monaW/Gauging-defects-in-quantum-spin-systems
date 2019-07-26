@@ -293,9 +293,9 @@ where the colour of the orange bullets is not determined by the labels on the bo
 		\end{tikzpicture}
 	\end{figure}
 \noindent
-where any object from $\Vec(\Z/2)$ can be on the black lines. Since this vertex is neither defined in the category $\Vec(\Z/2)$ nor in the bimodule $F_1$, we need to construct it. We could also allow the bimodule object to live on the horizontal lines of the chain, which would require the construction of additional vertices. For now, we will restrict to the case that only objects of the category are allowed to be on horizontal lines, but we will come back to other possibilities later. We do the construction of the required vertex step-by-step in the following by using ideas from tube algebras. 
+where any object from $\Vec(\Z/2)$ can be on the black lines. Since this vertex is neither defined in the category $\Vec(\Z/2)$ nor in the bimodule $F_1$, we need to construct it. More precisely, for each choice of labels we need a basis for the corresponding morphism space. We could also allow the bimodule object to live on the horizontal lines of the chain, which would require the construction of additional vertices. For now, we will restrict to the case that only objects of the category are allowed to be on horizontal lines, but we will come back to other possibilities later. We do the construction of the required vertex step-by-step in the following by using ideas from tube algebras. 
 
-\subsection*{Step 1: Compute isomorphism classes of objects and pick a representative} In general, we need representations of the tube algebra of the form
+\subsection*{Step 1: Compute isomorphism classes of objects and pick a representative} In general, what we aim for are representations of the tube algebra of the form
 	\begin{figure}[H]
 		\begin{tikzpicture}[scale=1.2]
 			\draw (0,0) circle (0.5cm);
@@ -626,4 +626,278 @@ which is a vector in the morphism space
 		\end{tikzpicture}
 	\end{figure}
 \noindent
-We now have to find a basis for every one of those morphism spaces, i.e.\ for every choise of $x+y$ and $y+z$.
+We now have to find a basis for every one of those morphism spaces, i.e.\ for every choice of $x+y$ and $y+z$. 
+	\begin{enumerate}
+		\item $x+y=0$, $y+z=0$: There are two possible choices for $x,y,z$ that fulfil this condition. The first one, $x=y=z=0$, yields the vector
+			\begin{equation*}
+				V_1=\frac{1}{2}\left(
+				\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) circle (0.5cm);
+					\draw
+					\foreach \a in {-60, -120} {
+						(\a:0.5) -- (\a:1.6)
+					};
+					\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+					\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+					\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+					\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+					\node at (0.2,-0.2) {$0$};
+					\node at (-0.2,-0.2) {$0$};
+					\node at (-0.9,-1.7) {$0$};
+					\node at (0.9,-1.7) {$0$};
+					\node at (-1,0.3) {$0$};
+					\node at (1.15,0.3) {$0$};
+					\node at (0,-1.35) {$0$};
+				\end{tikzpicture}
+				\pm i \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) circle (0.5cm);
+					\draw
+					\foreach \a in {-60, -120} {
+						(\a:0.5) -- (\a:1.6)
+					};
+					\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+					\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+					\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+					\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+					\node at (0.2,-0.2) {$0$};
+					\node at (-0.2,-0.2) {$0$};
+					\node at (-0.9,-1.7) {$0$};
+					\node at (0.9,-1.7) {$0$};
+					\node at (-1,0.3) {$1$};
+					\node at (1.15,0.2) {$1$};
+					\node at (0,-1.35) {$1$};
+				\end{tikzpicture}\right),
+			\end{equation*}
+		while the second one, $x=y=z=1$ corresponds to
+			\begin{equation*}
+				V_2=\frac{1}{2}\left(
+				\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) circle (0.5cm);
+					\draw
+					\foreach \a in {-60, -120} {
+						(\a:0.5) -- (\a:1.6)
+					};
+					\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+					\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+					\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+					\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+					\node at (0.2,-0.2) {$0$};
+					\node at (-0.2,-0.2) {$0$};
+					\node at (-0.9,-1.7) {$0$};
+					\node at (0.9,-1.7) {$0$};
+					\node at (-1,0.3) {$1$};
+					\node at (1.15,0.3) {$1$};
+					\node at (0,-1.35) {$1$};
+				\end{tikzpicture}
+				\mp i \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) circle (0.5cm);
+					\draw
+					\foreach \a in {-60, -120} {
+						(\a:0.5) -- (\a:1.6)
+					};
+					\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+					\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+					\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+					\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+					\node at (0.2,-0.2) {$0$};
+					\node at (-0.2,-0.2) {$0$};
+					\node at (-0.9,-1.7) {$0$};
+					\node at (0.9,-1.7) {$0$};
+					\node at (-1,0.3) {$0$};
+					\node at (1.15,0.2) {$0$};
+					\node at (0,-1.35) {$0$};
+				\end{tikzpicture}\right),
+			\end{equation*}
+		so we have a potentially $2$-dimensional morphism space. However, since
+			\begin{equation*}
+				V_2=\mp i\ V_1,
+			\end{equation*}
+		the two candidates are linear dependent, hence we have a $1$-dimensional morphism space and we pick $V_1$ as the basis vector for this space, i.e.\ for future computations, we define
+			\begin{equation*}
+				\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+						\draw (0,0) -- (1.5,0);
+						\draw[red,line width=0.4mm] (0.75,0) -- (0.75,1);
+						\node at (-0.2,-0.3) {$0$};
+						\node at (1.7,-0.3) {$0$};
+					\end{tikzpicture}\equiv V_1.
+			\end{equation*}
+		The remaining cases work similar, and we will always find that the morphism spaces are $1$-dimensional. Therefore, in the following we only list the choices we make for the basis vectors.
+		\item $x+y=1$, $y+z=0$:
+			\begin{equation*}
+				\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) -- (1.5,0);
+					\draw[red,line width=0.4mm] (0.75,0) -- (0.75,1);
+					\node at (-0.2,-0.3) {$1$};
+					\node at (1.7,-0.3) {$0$};
+				\end{tikzpicture}\equiv
+				\frac{1}{2}\left(
+				\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) circle (0.5cm);
+					\draw
+					\foreach \a in {-60, -120} {
+						(\a:0.5) -- (\a:1.6)
+					};
+					\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+					\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+					\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+					\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+					\node at (0.2,-0.2) {$0$};
+					\node at (-0.2,-0.2) {$0$};
+					\node at (-0.9,-1.7) {$0$};
+					\node at (0.9,-1.7) {$0$};
+					\node at (-1,0.3) {$1$};
+					\node at (1.15,0.3) {$0$};
+					\node at (0,-1.35) {$0$};
+				\end{tikzpicture}
+				\mp i \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) circle (0.5cm);
+					\draw
+					\foreach \a in {-60, -120} {
+						(\a:0.5) -- (\a:1.6)
+					};
+					\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+					\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+					\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+					\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+					\node at (0.2,-0.2) {$0$};
+					\node at (-0.2,-0.2) {$0$};
+					\node at (-0.9,-1.7) {$0$};
+					\node at (0.9,-1.7) {$0$};
+					\node at (-1,0.3) {$0$};
+					\node at (1.15,0.2) {$1$};
+					\node at (0,-1.35) {$1$};
+				\end{tikzpicture}\right)
+			\end{equation*}
+		\item $x+y=0$, $y+z=1$:
+			\begin{equation*}
+				\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) -- (1.5,0);
+					\draw[red,line width=0.4mm] (0.75,0) -- (0.75,1);
+					\node at (-0.2,-0.3) {$0$};
+					\node at (1.7,-0.3) {$1$};
+				\end{tikzpicture}\equiv
+				\frac{1}{2}\left(
+				\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) circle (0.5cm);
+					\draw
+					\foreach \a in {-60, -120} {
+						(\a:0.5) -- (\a:1.6)
+					};
+					\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+					\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+					\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+					\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+					\node at (0.2,-0.2) {$0$};
+					\node at (-0.2,-0.2) {$0$};
+					\node at (-0.9,-1.7) {$0$};
+					\node at (0.9,-1.7) {$0$};
+					\node at (-1,0.3) {$0$};
+					\node at (1.15,0.3) {$1$};
+					\node at (0,-1.35) {$0$};
+				\end{tikzpicture}
+				\pm i \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) circle (0.5cm);
+					\draw
+					\foreach \a in {-60, -120} {
+						(\a:0.5) -- (\a:1.6)
+					};
+					\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+					\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+					\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+					\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+					\node at (0.2,-0.2) {$0$};
+					\node at (-0.2,-0.2) {$0$};
+					\node at (-0.9,-1.7) {$0$};
+					\node at (0.9,-1.7) {$0$};
+					\node at (-1,0.3) {$1$};
+					\node at (1.15,0.2) {$0$};
+					\node at (0,-1.35) {$1$};
+				\end{tikzpicture}\right)
+			\end{equation*}
+		\item $x+y=1$, $y+z=1$:
+			\begin{equation*}
+				\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) -- (1.5,0);
+					\draw[red,line width=0.4mm] (0.75,0) -- (0.75,1);
+					\node at (-0.2,-0.3) {$1$};
+					\node at (1.7,-0.3) {$0$};
+				\end{tikzpicture}\equiv
+					\frac{1}{2}\left(
+					\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) circle (0.5cm);
+					\draw
+					\foreach \a in {-60, -120} {
+						(\a:0.5) -- (\a:1.6)
+					};
+					\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+					\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+					\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+					\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+					\node at (0.2,-0.2) {$0$};
+					\node at (-0.2,-0.2) {$0$};
+					\node at (-0.9,-1.7) {$0$};
+					\node at (0.9,-1.7) {$0$};
+					\node at (-1,0.3) {$0$};
+					\node at (1.15,0.3) {$0$};
+					\node at (0,-1.35) {$1$};
+				\end{tikzpicture}
+				\pm i \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+					\draw (0,0) circle (0.5cm);
+					\draw
+					\foreach \a in {-60, -120} {
+						(\a:0.5) -- (\a:1.6)
+					};
+					\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+					\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+					\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+					\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+					\node at (0.2,-0.2) {$0$};
+					\node at (-0.2,-0.2) {$0$};
+					\node at (-0.9,-1.7) {$0$};
+					\node at (0.9,-1.7) {$0$};
+					\node at (-1,0.3) {$1$};
+					\node at (1.15,0.2) {$1$};
+					\node at (0,-1.35) {$0$};
+				\end{tikzpicture}\right)
+			\end{equation*}
+	\end{enumerate}
+
+\subsection*{Step 5: Find action of the category on the vertex} After the vertex itself is defined, the left and right action of the category on it has to be computed, which corresponds to finding the maps
+	\begin{align*}
+		\begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
+			\draw[red] (0,0) -- (0,1);
+			\draw[red] (0,0) -- (-0.707107,-0.707107);
+			\draw (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+			\draw (-0.707107,-0.707107) -- (0,-1.41421);
+			\draw (0,0) -- (0.707107,-0.707107);
+			\draw (0.707107,-0.707107) -- (1.41421,-1.41421);
+		\end{tikzpicture}\hspace{10pt}
+		&\underrightarrow{\left(F_{xyz}^*\right)_{*,y+z}}\hspace{10pt}
+		\begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
+			\draw[red] (0,0) -- (0,1);
+			\draw (0,0) -- (-0.707107,-0.707107);
+			\draw (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+			\draw (0.707107,-0.707107) -- (0,-1.41421);
+			\draw (0,0) -- (0.707107,-0.707107);
+			\draw (0.707107,-0.707107) -- (1.41421,-1.41421);
+		\end{tikzpicture}\\[10pt]
+		\begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
+			\draw[red] (0,0) -- (0,1);
+			\draw (0,0) -- (-0.707107,-0.707107);
+			\draw (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+			\draw (-0.707107,-0.707107) -- (0,-1.41421);
+			\draw (0,0) -- (0.707107,-0.707107);
+			\draw (0.707107,-0.707107) -- (1.41421,-1.41421);
+		\end{tikzpicture}\hspace{10pt}
+		&\underrightarrow{\left(F_{xyz}^*\right)_{y+z,*}}\hspace{10pt}
+		\begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
+			\draw[red] (0,0) -- (0,1);
+			\draw (0,0) -- (-0.707107,-0.707107);
+			\draw (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+			\draw (0.707107,-0.707107) -- (0,-1.41421);
+			\draw[red] (0,0) -- (0.707107,-0.707107);
+			\draw (0.707107,-0.707107) -- (1.41421,-1.41421);
+		\end{tikzpicture}
+	\end{align*}
+
+
