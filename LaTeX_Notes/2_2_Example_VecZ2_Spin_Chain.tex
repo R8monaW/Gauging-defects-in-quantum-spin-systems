@@ -293,7 +293,9 @@ where the colour of the orange bullets is not determined by the labels on the bo
 		\end{tikzpicture}
 	\end{figure}
 \noindent
-where any object from $\Vec(\Z/2)$ can be on the black lines. Since this vertex is neither defined in the category $\Vec(\Z/2)$ nor in the bimodule $F_1$, we need to construct it. We could also allow the bimodule object to live on the horizontal lines of the chain, which would require the construction of additional vertices. For now, we will restrict to the case that only objects of the category are allowed to be on horizontal lines, but we will come back to other possibilities later. We do the construction of the required vertex step-by-step in the following by using ideas from tube algebras. In general, we need representations of the tube algebra of the form
+where any object from $\Vec(\Z/2)$ can be on the black lines. Since this vertex is neither defined in the category $\Vec(\Z/2)$ nor in the bimodule $F_1$, we need to construct it. We could also allow the bimodule object to live on the horizontal lines of the chain, which would require the construction of additional vertices. For now, we will restrict to the case that only objects of the category are allowed to be on horizontal lines, but we will come back to other possibilities later. We do the construction of the required vertex step-by-step in the following by using ideas from tube algebras. 
+
+\subsection*{Step 1: Compute isomorphism classes of objects and pick a representative} In general, we need representations of the tube algebra of the form
 	\begin{figure}[H]
 		\begin{tikzpicture}[scale=1.2]
 			\draw (0,0) circle (0.5cm);
@@ -314,13 +316,13 @@ where any object from $\Vec(\Z/2)$ can be on the black lines. Since this vertex 
 			\node at (0,-1.3) {$y$};
 		\end{tikzpicture}
 	\end{figure}
-
-\subsection*{Step 1: Compute isomorphism classes of objects and pick a representative} According to the figure above, $(*,a,b)\cong(+,a+x+y,b+y+z)$ for all possible labels $x,y,z$, so we pick $(*,0,0)$ as a representative.
+\noindent
+According to the figure above, $(*,a,b)\cong(+,a+x+y,b+y+z)$ for all possible labels $x,y,z$, so we pick $(*,0,0)$ as a representative.
 
 \subsection{Step 2: Find primitive idempotents} To find a representation of the tube algebra, we need to compute the primitive idempotents, i.e. we need to find morphisms that map $(*,0,0)$ to $(*,0,0)$ which square to themselves and are orthogonal to each other. Additionally, since we want \emph{primitive} idempotents, we need to make sure that they cannot be written as the sum of idempotents.
 The two candidates for idempotents is the morphism where $x+y=0$ and $y+z=0$:
 	\begin{figure}[H]
-		\begin{tikzpicture}[scale=1.2]
+		\begin{tikzpicture}[scale=1]
 		\draw (0,0) circle (0.5cm);
 		\draw
 		\foreach \a in {-60, -120} {
@@ -336,10 +338,10 @@ The two candidates for idempotents is the morphism where $x+y=0$ and $y+z=0$:
 		\node at (0.9,-1.6) {$0$};
 		\node at (-1,0.3) {$0$};
 		\node at (1.15,0.3) {$0$};
-		\node at (0,-1.3) {$0$};
+		\node at (0,-1.35) {$0$};
 		\end{tikzpicture}
 		\hspace{40pt}
-		\begin{tikzpicture}[scale=1.2]
+		\begin{tikzpicture}[scale=1]
 		\draw (0,0) circle (0.5cm);
 		\draw
 		\foreach \a in {-60, -120} {
@@ -355,7 +357,7 @@ The two candidates for idempotents is the morphism where $x+y=0$ and $y+z=0$:
 		\node at (0.9,-1.6) {$0$};
 		\node at (-1,0.3) {$1$};
 		\node at (1.15,0.3) {$1$};
-		\node at (0,-1.3) {$1$};
+		\node at (0,-1.35) {$1$};
 		\end{tikzpicture}
 	\end{figure}
 \noindent
@@ -380,7 +382,7 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 			\node at (1.1,-2) {$0$};
 			\node at (-1,0.3) {$1$};
 			\node at (1.15,0.3) {$1$};
-			\node at (0,-1.3) {$1$};
+			\node at (0,-1.35) {$1$};
 			\node at (-1.4,0.6) {$1$};
 			\node at (1.5,0.6) {$1$};
 			\node at (0,-1.8) {$1$};
@@ -393,11 +395,11 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 			};
 			\draw[red,line width=0.4mm] (90:0.5) -- (90:2);
 			\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
-			%\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+			%\draw ([shift=(-60:1.45cm)]0,0) arc (-60:90:1.45cm);
 			\draw ([shift=(-60:1cm)]0,0) to [bend right=70] ([shift=(90:1.4cm)]0,0);
 			\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
 			\draw ([shift=(240:1.3cm)]0,0) arc (240:90:1.3cm);
-			%\draw ([shift=(-60:1.45cm)]0,0) arc (-60:90:1.45cm);
+			%\draw ([shift=(-60:1.8cm)]0,0) arc (-60:90:1.8cm);
 			\draw ([shift=(-60:1.4cm)]0,0) to [bend right=70] ([shift=(90:1.75cm)]0,0);
 			\draw ([shift=(-120:1.6cm)]0,0) arc (-120:-60:1.6cm);
 			\node at (0.2,-0.2) {$0$};
@@ -406,9 +408,9 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 			\node at (1.1,-2) {$0$};
 			\node at (-1,0.3) {$1$};
 			\node at (1.05,0.3) {$1$};
-			\node at (0,-1.3) {$1$};
+			\node at (0,-1.35) {$1$};
 			\node at (-1.4,0.6) {$1$};
-			\node at (1.35,0.6) {$1$};
+			\node at (1.4,0.6) {$1$};
 			\node at (0,-1.8) {$1$};
 		\end{tikzpicture}
 		=-\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
@@ -418,22 +420,22 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 				(\a:0.5) -- (\a:2)
 			};
 			\draw[red,line width=0.4mm] (90:0.5) -- (90:2);
-			\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
-			%\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+			\draw ([shift=(240:0.75cm)]0,0) arc (240:90:0.75cm);
+			%\draw ([shift=(-60:1.2cm)]0,0) arc (-60:90:1.2cm);
 			\draw ([shift=(-60:1cm)]0,0) to [bend right=70] ([shift=(90:1.4cm)]0,0);
 			\draw ([shift=(-120:1.5cm)]0,0) arc (-120:-60:1.5cm);
-			\draw ([shift=(240:1.3cm)]0,0) arc (240:90:1.3cm);
-			%\draw ([shift=(-60:1.45cm)]0,0) arc (-60:90:1.45cm);
+			\draw ([shift=(240:1.1cm)]0,0) arc (240:90:1.1cm);
+			%\draw ([shift=(-60:1.6cm)]0,0.2) arc (-60:90:1.6cm);
 			\draw ([shift=(-60:1.4cm)]0,0) to [bend right=70] ([shift=(90:1.75cm)]0,0);
 			\draw ([shift=(-120:1.8cm)]0,0) arc (-120:-60:1.8cm);
 			\node at (0.2,-0.2) {$0$};
 			\node at (-0.2,-0.2) {$0$};
 			\node at (-1.1,-2) {$0$};
 			\node at (1.1,-2) {$0$};
-			\node at (-1,0.3) {$1$};
+			\node at (-0.9,0.3) {$1$};
 			\node at (1.05,0.3) {$1$};
 			\node at (0,-1.65) {$1$};
-			\node at (-1.4,0.6) {$1$};
+			\node at (-1.2,0.6) {$1$};
 			\node at (1.35,0.6) {$1$};
 			\node at (0,-2) {$1$};
 		\end{tikzpicture}
@@ -453,7 +455,7 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 			\node at (0.9,-1.6) {$0$};
 			\node at (-1,0.3) {$0$};
 			\node at (1.15,0.3) {$0$};
-			\node at (0,-1.3) {$0$};
+			\node at (0,-1.35) {$0$};
 		\end{tikzpicture}\vspace{5pt}
 	\end{equation*}
 Hence, the second candidate does not square to itself but to the negative of the first candidate. However, since the primitive idempotents form an algebra, we can also consider linear combinations of the candidates. Also, because we have two candidates, we know that the algebra is $2$-dimensional. To find out the primitive idempotents from the candidates, it is convenient to find a representation of them in terms of matrices, i.e.\ we need matrices that multiply in the same way as the candidates. As mentioned above, the first candidate is the identity, hence the corresponding matrix is
@@ -510,7 +512,7 @@ which is diagrammatically
 			\node at (0.9,-1.6) {$0$};
 			\node at (-1,0.3) {$0$};
 			\node at (1.15,0.3) {$0$};
-			\node at (0,-1.3) {$0$};
+			\node at (0,-1.35) {$0$};
 			\end{tikzpicture}
 		\pm i \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
@@ -528,7 +530,7 @@ which is diagrammatically
 			\node at (0.9,-1.6) {$0$};
 			\node at (-1,0.3) {$1$};
 			\node at (1.15,0.3) {$1$};
-			\node at (0,-1.3) {$1$};
+			\node at (0,-1.35) {$1$};
 			\end{tikzpicture}\right).
 	\end{equation}
 	
@@ -552,4 +554,76 @@ so we get two primitive idempotents (as we showed above). In case of a $5$-dimen
 	\end{equation}
 so we only get two primitive idempotents here although the space is $5$-dimensional.
 	
-\subsection*{Step 4: Build the full representation}
+\subsection*{Step 4: Build the full representation} After we have found the primitive idempotents of the algebra, we can build the full representation. This is done by putting all possible tubes on the outside of the idempotents, hence finding all the basis vectors for this space, i.e.\ all possible vectors
+	\begin{figure}[H]
+		\begin{tikzpicture}[scale=1]
+		\draw (0,0) circle (0.5cm);
+		\draw
+		\foreach \a in {-60, -120} {
+			(\a:0.5) -- (\a:1.6)
+		};
+		\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+		\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+		\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+		\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+		\node at (0.2,-0.2) {$0$};
+		\node at (-0.2,-0.2) {$0$};
+		\node at (-0.9,-1.6) {$x+y$};
+		\node at (0.9,-1.6) {$y+z$};
+		\node at (-1,0.3) {$x$};
+		\node at (1.15,0.3) {$z$};
+		\node at (0,-1.35) {$y$};
+		\end{tikzpicture}
+	\end{figure}
+\noindent
+In general, the basis vectors are determined by the choice of $x,y$ and $z$, therefore there are up to $2^3=8$ possible basis vectors. However, it is possible that some of these vectors are the same, which is the case in our example, as we will see. Putting the general tubes around the primitive idempotents $P_\pm$ yields
+	\begin{equation*}
+		\frac{1}{2}\left(
+		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+			\draw (0,0) circle (0.5cm);
+			\draw
+			\foreach \a in {-60, -120} {
+				(\a:0.5) -- (\a:1.6)
+			};
+			\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+			\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+			\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+			\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+			\node at (0.2,-0.2) {$0$};
+			\node at (-0.2,-0.2) {$0$};
+			\node at (-0.9,-1.7) {$x+y$};
+			\node at (0.9,-1.7) {$y+z$};
+			\node at (-1,0.3) {$x$};
+			\node at (1.15,0.3) {$z$};
+			\node at (0,-1.35) {$y$};
+		\end{tikzpicture}
+		\pm (-1)^{x}i \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+			\draw (0,0) circle (0.5cm);
+			\draw
+			\foreach \a in {-60, -120} {
+				(\a:0.5) -- (\a:1.6)
+			};
+			\draw[red,line width=0.4mm] (90:0.5) -- (90:1.6);
+			\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+			\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+			\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+			\node at (0.2,-0.2) {$0$};
+			\node at (-0.2,-0.2) {$0$};
+			\node at (-0.9,-1.7) {$x+y$};
+			\node at (0.9,-1.7) {$y+z$};
+			\node at (-1.2,0.5) {$x+1$};
+			\node at (1.35,0.5) {$z+1$};
+			\node at (0,-1.35) {$y+1$};
+		\end{tikzpicture}\right),
+	\end{equation*}
+which is a vector in the morphism space
+	\begin{figure}[H]	
+		\begin{tikzpicture}
+			\draw (0,0) -- (1.5,0);
+			\draw[red,line width=0.4mm] (0.75,0) -- (0.75,1);
+			\node at (-0.2,-0.3) {$x+y$};
+			\node at (1.7,-0.3) {$y+z$};
+		\end{tikzpicture}
+	\end{figure}
+\noindent
+We now have to find a basis for every one of those morphism spaces, i.e.\ for every choise of $x+y$ and $y+z$.
