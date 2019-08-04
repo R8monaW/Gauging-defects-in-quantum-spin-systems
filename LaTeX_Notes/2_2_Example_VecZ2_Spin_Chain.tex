@@ -1518,7 +1518,7 @@ where the sum goes over all sites of the chain. To be able to act on the chain w
 	\end{equation}
 which yields
 	\begin{align}
-		H&=-\frac{1}{\sqrt{2}}\left(\left(F_*^{***}\right)_{00}
+		H&=-\sum \frac{1}{\sqrt{2}}\left(\left(F_*^{***}\right)_{00}
 		\begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
 			\draw[red,line width=0.4mm] (0,0) -- (0,2);
 			\draw[red,line width=0.4mm] (1.5,0) -- (1.5,2);
@@ -1528,7 +1528,7 @@ which yields
 			\draw (0,1) to node[above] {$1$} (1.5,1);
 			\draw[red,line width=0.4mm] (1.5,0) -- (1.5,2);
 		\end{tikzpicture}\ \right)\\
-		&=-\frac{1}{\sqrt{2}}\left(\ 
+		&=-\sum\frac{1}{\sqrt{2}}\left(\ 
 		\begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
 			\draw[red,line width=0.4mm] (0,0) -- (0,2);
 			\draw[red,line width=0.4mm] (1.5,0) -- (1.5,2);
@@ -1560,6 +1560,7 @@ where we have used the $F$-symbols we have computed above. Now we study how this
 			\node at (1.7,0) {$b$};
 		\end{tikzpicture}
 	\end{figure}
+\noindent
 The first term of the Hamiltonian leaves the configurations invariant, while the second term acts in the following way:
 	\begin{align}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
@@ -1608,3 +1609,20 @@ The first term of the Hamiltonian leaves the configurations invariant, while the
 			\draw [red, line width=0.25mm] (1,0) -- (1,1);
 		\end{tikzpicture}\equiv X_a
 	\end{align}
+Hence, in general the local Hamiltonian $h_i$ acts like
+	\begin{align*}
+		h_i \left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw [blue, line width=0.25mm] (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
+		\draw [blue, line width=0.25mm] (0,0) to node[below] {$x_i$} (1,0);
+		\draw [blue, line width=0.25mm] (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\right)=&\left(\left(Z_{x_{i-1}}\oplus 0\right)\otimes\left(0\oplus\lvert*\rangle_{x_i}\langle*\rvert\right)\otimes\left(Z_{x_{i+1}}\oplus 0\right)\right.\\&+\left.\left(0\oplus\lvert*\rangle_{x_{i-1}}\langle*\rvert\right)\otimes\left(Z_{x_i}\oplus 0\right)\otimes\left(0\oplus \lvert *\rangle_{x_{i-1}}\langle *\rvert\right)\right)\left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw [blue, line width=0.25mm] (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
+		\draw [blue, line width=0.25mm] (0,0) to node[below] {$x_i$} (1,0);
+		\draw [blue, line width=0.25mm] (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\right).
+	\end{align*}
+Fixing boundary conditions to $*$ freezes out half of the valid configurations, which results in the Ising model.
