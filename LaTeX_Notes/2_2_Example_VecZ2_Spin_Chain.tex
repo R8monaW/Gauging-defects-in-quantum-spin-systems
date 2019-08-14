@@ -1,4 +1,4 @@
-\subsection{Example: $\Vec(\Z/2)$ spin chain}
+\subsection{Example: $\Vec(\Z/2\Z)$ spin chain}
 
 We consider a one-dimensional spin chain of $N$ particles, where each particle can be in the spin-up state or in the spin-down state, i.e., a chain
 	\begin{figure}[H]
@@ -67,7 +67,7 @@ where $\mathcal{H}_n$ is the direct sum of all possible Hilbert spaces with $n$ 
 		\mathcal{H}\cong\bigotimes_{j=1}^N\left(\mathbb{C}\oplus\mathbb{C}^2\right).
 	\end{equation}
 
-We will now look at the example of a particle chain with $\Vec(\Z/2)$ fusion rules, i.e.\ the objects are either $0$ or $1$ and the fusion is given by addition $\mathrm{mod}\ 2$. We consider the following chain:
+We will now look at the example of a particle chain with $\Vec(\Z/2\Z)$ fusion rules, i.e.\ the objects are either $0$ or $1$ and the fusion is given by addition $\mathrm{mod}\ 2$. We consider the following chain:
 	\begin{figure}[H]
 		\begin{tikzpicture}
 			\draw (-0.25,0) -- (8.25,0);
@@ -259,7 +259,7 @@ We will now introduce defects to this model, indicated by red lines that fuse to
 		\end{tikzpicture}
 	\end{figure}
 	\noindent
-Since the chain is represented by a category, $\Vec(\Z/2)$ in our example, the defect is a $\Vec(\Z/2)-\Vec(\Z/2)$ bimodule, i.e.\ we are fusing an object from the bimodule to the chain. Here, we will use the bimodule $F_1$ to introduce defects to the $\Vec(\Z/2)$-chain. $F_1$ has only one object, so in general we omit writing labels for the bimodule object, but indicate by a red line when the object is from the bimodule. When it is inevitable to indicate the label, we denote it $*$.
+Since the chain is represented by a category, $\Vec(\Z/2\Z)$ in our example, the defect is a $\Vec(\Z/2\Z)-\Vec(\Z/2\Z)$ bimodule, i.e.\ we are fusing an object from the bimodule to the chain. Here, we will use the bimodule $F_1$ to introduce defects to the $\Vec(\Z/2\Z)$-chain. $F_1$ has only one object, so in general we omit writing labels for the bimodule object, but indicate by a red line when the object is from the bimodule. When it is inevitable to indicate the label, we denote it $*$.
 
 The occurrence of one defect in a chain does not change the ground state of the system; The labels on the chain are still determined by the choice of labels on the boundary. This is different if we have more than one defect in the chain. For instance, for two defects the chain is
 	\begin{figure}[H]
@@ -293,7 +293,7 @@ where the colour of the orange bullets is not determined by the labels on the bo
 		\end{tikzpicture}
 	\end{figure}
 \noindent
-where any object from $\Vec(\Z/2)$ can be on the black lines. Since this vertex is neither defined in the category $\Vec(\Z/2)$ nor in the bimodule $F_1$, we need to construct it. More precisely, for each choice of labels we need a basis for the corresponding morphism space. We could also allow the bimodule object to live on the horizontal lines of the chain, which would require the construction of additional vertices. For now, we will restrict to the case that only objects of the category are allowed to be on horizontal lines, but we will come back to other possibilities later. Although we will not need this specific vertex in the final chain we are going to construct, we go through its computation in detail to explain how these vertices can be constructed in general. We do the construction of the required vertex step-by-step in the following by using ideas from tube algebras. 
+where any object from $\Vec(\Z/2\Z)$ can be on the black lines. Since this vertex is neither defined in the category $\Vec(\Z/2\Z)$ nor in the bimodule $F_1$, we need to construct it. More precisely, for each choice of labels we need a basis for the corresponding morphism space. We could also allow the bimodule object to live on the horizontal lines of the chain, which would require the construction of additional vertices. For now, we will restrict to the case that only objects of the category are allowed to be on horizontal lines, but we will come back to other possibilities later. Although we will not need this specific vertex in the final chain we are going to construct, we go through its computation in detail to explain how these vertices can be constructed in general. We do the construction of the required vertex step-by-step in the following by using ideas from tube algebras. 
 
 \subsection*{Step 1: Compute isomorphism classes of objects and pick a representative} In general, what we aim for are representations of the tube algebra of the form
 	\begin{figure}[H]
@@ -1426,7 +1426,7 @@ Using all the vertices we have defined enables us to calculate the whole set of 
 	\end{align*}
 which happen to be the $F$-symbols for the Ising category. 
 
-We now want to build a chain out of $\Vec(\Z/2)$ and the bimodule $F_1$ in the following way: consider the chain
+We now want to build a chain out of $\Vec(\Z/2\Z)$ and the bimodule $F_1$ in the following way: consider the chain
 	\begin{figure}[H]
 		\begin{tikzpicture}
 			\draw[blue,line width=0.4mm] (-0.25,0) -- (8.25,0);
@@ -1476,7 +1476,7 @@ which means that it is either an object from the category ($0$ or $1$) or an obj
 		\end{tikzpicture}
 	\end{figure}
 \noindent
-so we have a non-trivial Hilbert space. We will now construct a Hamiltonian for this chain that is similar to the golden chain Hamiltonian in \cite{Feiguin2007}, where a chain model for the Fibonacci category was constructed which energetically favoured fusing to the vacuum. For our chain model, this means that it is energetically favoured to fuse to the $0$ object of $\Vec(\Z/2)$. Hence, the Hamiltonian is of the form
+so we have a non-trivial Hilbert space. We will now construct a Hamiltonian for this chain that is similar to the golden chain Hamiltonian in \cite{Feiguin2007}, where a chain model for the Fibonacci category was constructed which energetically favoured fusing to the vacuum. For our chain model, this means that it is energetically favoured to fuse to the $0$ object of $\Vec(\Z/2\Z)$. Hence, the Hamiltonian is of the form
 	\begin{equation}
 		H=-\sum \frac{1}{\sqrt{2}}
 		\begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
