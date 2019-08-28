@@ -7,7 +7,7 @@
 We will now list all the $\Vec(\Z/p\Z)$-$\Vec(\Z/p\Z)$ bimodules since we are going to need them in Subsection \ref{subsec:VecZ2}. This data is mostly taken from \cite{BBJ19}. Each bimodule $\mathcal{M}$ is labelled by a conjugacy class of subgroups $H\subseteq\Z/p\Z\times\Z/p\Z$ and a $2-$cocycle $\omega\in H^2(H,U(1))$ (see \cite{Etingof2015}). The objects of $\mathcal{M}$ are labelled by cosets of $H$. In general, there are four non-invertible bimodules: 
 	\begin{enumerate}
 		\item The trivial bimodule $T$, which is coming from the subgroup $\{(0,0)\}$. It has $p^2$ simple objects, which are labelled by the cosets $\{(g,h)\}$ of the group, i.e.\ a simple object in $T$ is $(g,h)$. The left and right action is given as follows
-			\begin{figure}[H]
+			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
 				\node[red](m) at (0,0) {$(g,h)$};
 				\node(b) at (-1,0) {$a$};
@@ -22,10 +22,10 @@ We will now list all the $\Vec(\Z/p\Z)$-$\Vec(\Z/p\Z)$ bimodules since we are go
 				\draw[red] (m)-- (abm);
 				\draw (b) to [bend right] (0,1);
 				\end{tikzpicture}
-			\end{figure}
+			\end{equation}
 		\noindent
 		and the associator for this bimodule is trivial:
-			\begin{equation*}
+			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
 				\node[red](m) at (0,0) {$(g,h)$};
 				\node(a) at (-1,0) {$a$};
@@ -44,9 +44,9 @@ We will now list all the $\Vec(\Z/p\Z)$-$\Vec(\Z/p\Z)$ bimodules since we are go
 				\draw (b) to [bend right] (0,1);
 				\draw (a) to [bend left] (0,2);
 				\end{tikzpicture}.
-			\end{equation*}
+			\end{equation}
 		\item The bimodule $L$ from the subgroup $H=\langle(1,0)\rangle\cong \Z/p\Z$, which has $p$ simple objects. The labels are given by the cosets $\{(h,g)|h\in\Z/p\Z\}$, hence the label for a simple object in $L$ is $g$. Left and right action are given by 
-			\begin{figure}[H]
+			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
 				\node[red](m) at (0,0) {$g$};
 				\node(b) at (-1,0) {$a$};
@@ -61,11 +61,11 @@ We will now list all the $\Vec(\Z/p\Z)$-$\Vec(\Z/p\Z)$ bimodules since we are go
 				\draw[red] (m)-- (abm);
 				\draw (b) to [bend right] (0,1);
 				\end{tikzpicture}
-			\end{figure}
+			\end{equation}
 		and the associator is trivial.
 		\item The bimodule $R$ from the subgroup $H=\langle(0,1)\rangle\cong \Z/p\Z$. This bimodule is basically the same as $L$, but in all operations left and right are flipped.
 		\item $F_0$, the bimodule from the subgroup $\langle(0,1),(1,0)\rangle\cong\Z/p\Z\times\Z/p\Z$, which has only one object that is denoted $*$. Left and right actions are
-			\begin{figure}[H]
+			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
 				\node[red](m) at (0,0) {$*$};
 				\node(b) at (-1,0) {$a$};
@@ -80,14 +80,14 @@ We will now list all the $\Vec(\Z/p\Z)$-$\Vec(\Z/p\Z)$ bimodules since we are go
 				\draw[red] (m)-- (abm);
 				\draw (b) to [bend right] (0,1);
 				\end{tikzpicture}
-			\end{figure}
+			\end{equation}
 		\noindent
 		and the associator is trivial.
 	\end{enumerate}
 Furthermore, there are several invertible bimodules:
 	\begin{enumerate}
 		\item The bimodule $X_k$, coming from the subgroup $\{(-k,1)\}\cong\Z/p\Z$ with $p$ simple objects. The cosets of this group are $\{n(-k,1)+(h,0)|n\in\Z/p\Z\}$, hence the object labels are $h$. Left and right action is given by 
-			\begin{figure}[H]
+			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
 				\node[red](m) at (0,0) {$h$};
 				\node(b) at (-1,0) {$a$};
@@ -102,11 +102,11 @@ Furthermore, there are several invertible bimodules:
 				\draw[red] (m)-- (abm);
 				\draw (b) to [bend right] (0,1);
 				\end{tikzpicture}
-			\end{figure}
+			\end{equation}
 		\noindent
 		and the associator is again trivial.
 		\item The bimodule $F_q$, with $q\in H^2(\Z/p\Z,U(1))\cong\Z/q\Z$. As $F_0$, it comes from the subgroup $\langle(0,1),(1,0)\rangle$ and has only one object denoted $*$. Also, left and right action are defined in the same way as they are in $F_0$, but now the associator is non-trivial:
-			\begin{equation*}
+			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
 				\node[red](m) at (0,0) {$*$};
 				\node(a) at (-1,0) {$a$};
@@ -125,9 +125,9 @@ Furthermore, there are several invertible bimodules:
 				\draw (b) to [bend right] (0,1);
 				\draw (a) to [bend left] (0,2);
 				\end{tikzpicture}.
-			\end{equation*}
+			\end{equation}
 		Later, in Subsection \ref{subsec:VecZ2}, we will be especially interested in the $\Vec(\Z/2\Z)$-$\Vec(\Z/2\Z)$ bimodule $F_1$, where the associator is given by
-			\begin{equation*}
+			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
 				\node[red](m) at (0,0) {$*$};
 				\node(a) at (-1,0) {$a$};
@@ -146,6 +146,6 @@ Furthermore, there are several invertible bimodules:
 				\draw (b) to [bend right] (0,1);
 				\draw (a) to [bend left] (0,2);
 				\end{tikzpicture}.
-			\end{equation*}
+			\end{equation}
 	\end{enumerate}
 
