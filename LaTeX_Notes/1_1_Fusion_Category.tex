@@ -31,7 +31,7 @@ We briefly recall the definition of a fusion category, omitting many details. A 
 		\draw (-.707,-.707)--(-1.41,-1.41)node[pos=1.25] {$a$};
 		\draw (-.707,-.707)--(0,-1.41)node[pos=1.25] {$b$};
 		\end{tikzpicture}
-		=\sum_{f\in L}\left(F^{abc}_{d}\right)_{ef}
+		=\sum_{f\in L}\left(F_{abc}^{d}\right)_{ef}
 		\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
 		\draw (0,0)--(0,1) node[pos=1.25] {$d$};
 		\draw (.707,-.707)--(1.41,-1.41) node[pos=1.25] {$c$};
@@ -44,6 +44,6 @@ We briefly recall the definition of a fusion category, omitting many details. A 
 	\end{itemize}
 \end{definition}
 
-\begin{example}[$\Vec(G)$]
+\begin{example}[$\Vec(G)$]\label{example:vecG}
 	Let $G$ be a finite group. The category $\Vec{G}$ is the category of $G$-graded vector spaces. The skeletal description is very simple. The set of simples is $G$ as a set, with the group identity becoming the unit. The vector spaces are 0 dimensional except $C(g\otimes h, gh)$ which is 1 dimensional for all $g,h$. The $F$ symbols are $+1$ when the diagrams in Eqn.~\ref{eqn:Fsymbdef} are nonzero.
 \end{example}

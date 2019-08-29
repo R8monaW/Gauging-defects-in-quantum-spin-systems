@@ -19,7 +19,7 @@
 			\draw[red] (m) to node[right] {$p$} (abm);
 			\draw (b) to [bend left] (0,1);
 			\draw (a) to [bend left] (0,2);
-			\end{tikzpicture}\ =\sum_q \left(L_n^{abm}\right)_{pq}
+			\end{tikzpicture}\ =\sum_q \left(L^n_{abm}\right)_{pq}
 			\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
 			\node[red](m) at (0,0) {$m$};
 			\node(b) at (-1,0) {$b$};
@@ -29,7 +29,7 @@
 			\draw[red] (m) to (abm);
 			\draw (b) to [bend right] (-1.5,1.1);
 			\draw (a) to [bend left] (0,2);
-			\end{tikzpicture},
+			\end{tikzpicture},\label{eqn:L}
 		\end{equation}
 	where we have marked the objects of the module category in red. One can define a \textbf{right module category} over $\mathcal{C}$ in a similar way: Here, we have a semi-simple category $\mathcal{M}$ with a functor $\triangleleft:\mathcal{M}\times\mathcal{C}\to\mathcal{M}$ and a natural isomorphism
 		\begin{equation}
@@ -45,7 +45,7 @@
 			\draw[red] (m) to node [left] {$p$} (abm);
 			\draw (b) to [bend right] (0,1);
 			\draw (a) to [bend right] (0,2);
-			\end{tikzpicture}\ =\sum_q\left(R_n^{mab}\right)_{pq}
+			\end{tikzpicture}\ =\sum_q\left(R^n_{mab}\right)_{pq}
 			\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
 			\node[red](m) at (0,0) {$m$};
 			\node(b) at (1,0) {$a$};
@@ -55,7 +55,7 @@
 			\draw[red] (m) to (abm);
 			\draw (b) to [bend left] (1.5,1.1);
 			\draw (a) to [bend right] (0,2);
-			\end{tikzpicture}.
+			\end{tikzpicture}.\label{eqn:R}
 		\end{equation}
 	
 \begin{definition}
@@ -78,7 +78,7 @@
 			\draw[red] (m) to node [left] {$p$} (abm);
 			\draw (a) to [bend left] (0,1);
 			\draw (b) to [bend right] (0,2);
-			\end{tikzpicture}\ =\sum_q\left(C_n^{amb}\right)_{pq}
+			\end{tikzpicture}\ =\sum_q\left(C^n_{amb}\right)_{pq}
 			\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
 			\node[red](m) at (0,0) {$m$};
 			\node(a) at (-1,0) {$a$};
