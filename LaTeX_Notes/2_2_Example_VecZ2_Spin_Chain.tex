@@ -983,39 +983,181 @@ so it follows that
 	\end{equation}
 The computation of $\left(F_{a**}^{a+b}\right)_{*,b}=1$ is identical. A similar computation yields $\left(F_{*a*}^{b}\right)_{*,*}=(-1)^{ab}$.
 
+Attempting to use Eqn.~\ref{eq:completeness} to compute $F_{***}^*$ is circular, so we need a different technique. There is an action of a 4-string annular category on the fusion trees on both sides of the equation
+\begin{equation}
+\begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
+\draw[red] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,left] {$a$};
+\draw[red] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[red] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[red] (0,0) -- (0.707107,-0.707107);
+\draw[red] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\node at (-1.41421,-1.7) {$*$};
+\node at (0,-1.7) {$*$};
+\node at (1.41421,-1.7) {$*$};
+\end{tikzpicture}
+=
+\left(F_{***}^*\right)_{a,0}
+\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
+\draw[red] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,left] {$0$};
+\draw[red] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[red] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[red] (0,0) -- (0.707107,-0.707107);
+\draw[red] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\node at (-1.41421,-1.7) {$*$};
+\node at (0,-1.7) {$*$};
+\node at (1.41421,-1.7) {$*$};
+\end{tikzpicture}
++
+\left(F_{***}^*\right)_{a,1}
+\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
+\draw[red] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,left] {$1$};
+\draw[red] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[red] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[red] (0,0) -- (0.707107,-0.707107);
+\draw[red] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\node at (-1.41421,-1.7) {$*$};
+\node at (0,-1.7) {$*$};
+\node at (1.41421,-1.7) {$*$};
+\end{tikzpicture}.
+\end{equation}
+Both sides of the equation transform in the same representation of this 4-string action. We use this to find the $F$ symbols. Consider applying the annulus
+\begin{equation}
+\begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
+\draw[red](-.9,0)--(-.9,-1);
+\draw[red](0,0)--(0,-1);\draw[red](0,.2)--(0,1);
+\draw[red](.9,0)--(.9,-1);
+\draw[rounded corners] (0,.6)--(-1.5,0)--(-.9,-.5)node[pos=.5,left]{$x_0$};
+\draw[rounded corners] (0,.8)--(1.5,0)--(.9,-.5)node[pos=.5,right]{$x_1$};
+\draw[rounded corners] (-.9,-.9)--(0,-.6)node[pos=.5,above]{$x_2$};
+\draw[rounded corners] (0,-.9)--(.9,-.6)node[pos=.5,above]{$x_3$};
+\draw[rounded corners] (-2,-1) rectangle (2,1);
+\filldraw[fill=white,rounded corners] (-1,-.2) rectangle (1,.2);
+\end{tikzpicture}\label{eqn:Ftransform}
+\end{equation}
+to both sides, resolving the vertices where necessary. The equation becomes
 
-\subsection*{Step 6: Check if $F$-symbols obey the pentagon equation} To check whether the maps that we have just defined obey the pentagon equation, we need the full set of $F$-symbols. This means that, in addition to the vertex we have just computed, we also need to compute the vertex
-	\begin{figure}[H]
-		\begin{tikzpicture}
-			\draw[red,line width=0.4mm] (0,0) -- (1.5,0);
-			\draw (0.75,0) -- (0.75,1);
-		\end{tikzpicture}
-	\end{figure}
-\noindent
-Doing the same steps as above yields
-	\begin{equation*}
-		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-			\draw[red,line width=0.4mm] (0,0) -- (1.5,0);
-			\draw (0.75,0) to node[near end, right] {$\mu$} (0.75,1);
-		\end{tikzpicture}=\frac{1}{4}\sum_{x,y}(-1)^{\mu y}
-		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
-			\foreach \a in {-60, -120} {
-				(\a:0.5) -- (\a:1.6)
-			};
-			\draw (90:0.5) to node[near end, right] {$\mu$} (90:1.6);
-			\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
-			\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
-			\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
-			\node at (0.2,-0.2) {$0$};
-			\node at (-0.2,-0.2) {$0$};
-			\node at (-1,0.3) {$x$};
-			\node at (1.15,0.3) {$x$};
-			\node at (0,-1.35) {$y$};
-		\end{tikzpicture}.
-	\end{equation*}
-Using all the vertices we have defined enables us to calculate the whole set of $F$-symbols:
+\begin{align}
+\scalebox{.7}{$
+(-1)^{(a+x_0)(x_1+x_2)}
+\begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
+\draw[red] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,left] {$a+x_0+x_3$};
+\draw[red] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[red] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[red] (0,0) -- (0.707107,-0.707107);
+\draw[red] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\node at (-1.41421,-1.7) {$*$};
+\node at (0,-1.7) {$*$};
+\node at (1.41421,-1.7) {$*$};
+\end{tikzpicture}
+$}
+&
+\scalebox{.7}{$=
+\left(F_{***}^*\right)_{a,0}(-1)^{(x_1+x_2)x_3}
+\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
+\draw[red] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$x_1+x_2$};
+\draw[red] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[red] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[red] (0,0) -- (0.707107,-0.707107);
+\draw[red] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\node at (-1.41421,-1.7) {$*$};
+\node at (0,-1.7) {$*$};
+\node at (1.41421,-1.7) {$*$};
+\end{tikzpicture}
++
+\left(F_{***}^*\right)_{a,1}(-1)^{x_0+(1+x_1+x_2)x_3}
+\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
+\draw[red] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$1+x_1+x_2$};
+\draw[red] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[red] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[red] (0,0) -- (0.707107,-0.707107);
+\draw[red] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\node at (-1.41421,-1.7) {$*$};
+\node at (0,-1.7) {$*$};
+\node at (1.41421,-1.7) {$*$};
+\end{tikzpicture}$}
+\\
+&
+\scalebox{.7}{$=
+	(-1)^{(a+x_0)(x_1+x_2)}
+	\left(
+	\left(F_{***}^*\right)_{a+x_0+x_3,x_1+x_2}
+	\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
+	\draw[red] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+	\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$x_1+x_2$};
+	\draw[red] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+	\draw[red] (-0.707107,-0.707107) -- (0,-1.41421);
+	\draw[red] (0,0) -- (0.707107,-0.707107);
+	\draw[red] (0.707107,-0.707107) -- (1.41421,-1.41421);
+	\node at (-1.41421,-1.7) {$*$};
+	\node at (0,-1.7) {$*$};
+	\node at (1.41421,-1.7) {$*$};
+	\end{tikzpicture}
+	+
+	\left(F_{***}^*\right)_{a+x_0+x_3,1+x_1+x_2}
+	\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
+	\draw[red] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+	\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$1+x_1+x_2$};
+	\draw[red] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+	\draw[red] (-0.707107,-0.707107) -- (0,-1.41421);
+	\draw[red] (0,0) -- (0.707107,-0.707107);
+	\draw[red] (0.707107,-0.707107) -- (1.41421,-1.41421);
+	\node at (-1.41421,-1.7) {$*$};
+	\node at (0,-1.7) {$*$};
+	\node at (1.41421,-1.7) {$*$};
+	\end{tikzpicture}\right)
+	$},
+\end{align}
+where in the second step, Eqn.~\ref{eqn:Ftransform} has been applied to the left hand side. This equation reduces to
+\begin{align}
+\left(F_{***}^*\right)_{a,b}&=(-1)^{ab}\left(F_{***}^*\right)_{0,0}.
+\end{align}
+We cannot fix $\left(F_{***}^*\right)_{0,0}$ by simply asking which representation the vectors transform under, since there is a global rescaling freedom. Our normalization (Eqn.~\ref{eq:completeness}) fixes 
+\begin{align}
+\left(F_{***}^*\right)_{a,b}&=(-1)^{ab}\frac{\varkappa_*}{\sqrt{2}},
+\end{align}
+where $\varkappa_*=\pm1$ is the \emph{Frobenius-Schur} indicator of $*$.
+
+
+
+\subsection*{Step 6: Check if $F$-symbols obey the pentagon equation} 
+%To check whether the maps that we have just defined obey the pentagon equation, we need the full set of $F$-symbols. This means that, in addition to the vertex we have just computed, we also need to compute the vertex
+%	\begin{figure}[H]
+%		\begin{tikzpicture}
+%			\draw[red,line width=0.4mm] (0,0) -- (1.5,0);
+%			\draw (0.75,0) -- (0.75,1);
+%		\end{tikzpicture}
+%	\end{figure}
+%\noindent
+%Doing the same steps as above yields
+%	\begin{equation*}
+%		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+%			\draw[red,line width=0.4mm] (0,0) -- (1.5,0);
+%			\draw (0.75,0) to node[near end, right] {$\mu$} (0.75,1);
+%		\end{tikzpicture}=\frac{1}{4}\sum_{x,y}(-1)^{\mu y}
+%		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+%			\draw (0,0) circle (0.5cm);
+%			\draw[red,line width=0.4mm]
+%			\foreach \a in {-60, -120} {
+%				(\a:0.5) -- (\a:1.6)
+%			};
+%			\draw (90:0.5) to node[near end, right] {$\mu$} (90:1.6);
+%			\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
+%			\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+%			\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
+%			\node at (0.2,-0.2) {$0$};
+%			\node at (-0.2,-0.2) {$0$};
+%			\node at (-1,0.3) {$x$};
+%			\node at (1.15,0.3) {$x$};
+%			\node at (0,-1.35) {$y$};
+%		\end{tikzpicture}.
+%	\end{equation*}
+We now have the full set of $F$ symbols
 	\begin{align*}
 		\left(F_{abc}^{a+b+c}\right)_{a+b,b+c}&=1\\
 		\left(F_{ab*}^*\right)_{a+b,*}&=1\\
@@ -1024,7 +1166,7 @@ Using all the vertices we have defined enables us to calculate the whole set of 
 		\left(F_{a**}^{a+b}\right)_{*,b}&=1\\
 		\left(F_{*a*}^b\right)_{*,*}&=(-1)^{ab}\\
 		\left(F_{**a}^{a+b}\right)_{b,*}&=1\\
-		\left(F_{***}^*\right)_{a,b}&=\frac{1}{\sqrt{2}}(-1)^{ab},
+		\left(F_{***}^*\right)_{a,b}&=\frac{(-1)^{ab}\varkappa_*}{\sqrt{2}},
 	\end{align*}
 which happen to be the $F$-symbols for the Ising category. 
 
