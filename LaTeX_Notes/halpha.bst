@@ -247,7 +247,7 @@ FUNCTION {format.title}
 FUNCTION {format.eprint}
 { eprint empty$
     { "" }
-    { "\burlalt{arXiv:" eprint * "}{http://arxiv.org/abs/" * eprint * "}" * }
+    { "\burlalt{arXiv:" eprint * "}{https://arxiv.org/abs/" * eprint * "}" * }
   if$
 }
 
@@ -1340,7 +1340,7 @@ FUNCTION {begin.bib}
   write$ newline$
   "\expandafter\ifx\csname doi\endcsname\relax"
   write$ newline$
-  "  \def\doi#1{\burlalt{#1}{http://dx.doi.org/#1}}\fi"
+  "  \def\doi#1{\burlalt{#1}{https://dx.doi.org/#1}}\fi"
   write$ newline$
   "\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{}\fi"
   write$ newline$

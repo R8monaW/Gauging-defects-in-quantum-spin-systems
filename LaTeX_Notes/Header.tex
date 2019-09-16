@@ -22,9 +22,24 @@
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \definecolor{light-gray}{gray}{0.85}
 \definecolor{nicegreen}{RGB}{60,183,82}
-\RequirePackage{doi}
-\usepackage{hyperref}
+%\RequirePackage{doi}
+%\usepackage{hyperref}
 \usepackage{amssymb}
+
+\usepackage[pdfpagelabels,pdftex,bookmarks,breaklinks]{hyperref}
+\definecolor{darkblue}{RGB}{0,0,127} % choose colors
+\definecolor{darkgreen}{RGB}{0,180,0}
+\definecolor{darkred}{RGB}{180,0,0}
+\hypersetup{
+	colorlinks, 
+	linkcolor=darkblue, 
+	citecolor=darkgreen, 
+	filecolor=red, 
+	urlcolor=blue,
+	pdftitle={Gauging defects in quantum spin systems}, 
+	pdfauthor={Jacob C. Bridgeman, Alexander Hahn, Tobias J. Osborne, and Ramona Wolf}
+}
+
 
 \allowdisplaybreaks
 
@@ -35,7 +50,7 @@
 %%Tabellen
 %\usepackage{arydshln}
 %\usepackage{multirow}
-%\usepackage[automark]{scrpage2} %Kopf und Fußzeilen
+%\usepackage[automark]{scrpage2} %Kopf und Fuï¿½zeilen
 %\usepackage{rotating} %Rotieren von Grafiken
 %\usepackage{braket} %Bra-Ket Notation
 %\usepackage{blkarray} %Beschriftung von Matrizen
