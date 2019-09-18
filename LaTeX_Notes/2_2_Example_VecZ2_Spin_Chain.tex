@@ -302,7 +302,7 @@ where any object from $\Vec(\Z/2\Z)$ can be on the black line. Since this vertex
 %For now, we will restrict to the case that only objects of the category are allowed to be on horizontal lines, but we will come back to other possibilities later. Although we will not need this specific vertex in the final chain we are going to construct, we go through its computation in detail to explain how these vertices can be constructed in general. 
 We do the construction of the required vertex step-by-step in the following by using ideas from tube algebras. 
 
-\subsection*{Step 1: Compute isomorphism classes of objects and pick a representative} In general, what we aim for are representations of the tube algebra of the form
+\subsection*{Step 1: Compute isomorphism classes of objects and pick a representative} In general, what we aim for are representations of the annular category of the form
 	\begin{figure}[H]
 		\begin{tikzpicture}[scale=1.2]
 			\draw (0,0) circle (0.5cm);
@@ -323,7 +323,7 @@ We do the construction of the required vertex step-by-step in the following by u
 \noindent
 According to the figure above, $(*,*,a)\cong(*,*,a+x+y)$ for all possible labels $x,y,z$, so we pick $(*,*,0)$ as a representative.
 
-\subsection{Step 2: Find primitive idempotents} To find a representation of the tube algebra, we need to compute the primitive idempotents, i.e. we need to find morphisms that map $(*,*,0)$ to $(*,*,0)$ which square to themselves and are orthogonal to each other. Additionally, since we want \emph{primitive} idempotents, we need to make sure that they cannot be written as the sum of idempotents.
+\subsection{Step 2: Find primitive idempotents} To find a representation of the annular category, we need to compute the primitive idempotents, i.e. we need to find morphisms that map $(*,*,0)$ to $(*,*,0)$ which square to themselves and are orthogonal to each other. Additionally, since we want \emph{primitive} idempotents, we need to make sure that they cannot be written as the sum of idempotents.
 Candidates for idempotents are the morphism where $x+y=0$:
 	\begin{equation}
 		T_{0,0}=
@@ -634,7 +634,7 @@ This step can be much more complicated for algebras with bigger dimensions. Howe
 	\end{equation}
 so we get two or five primitive idempotents respectively.
 	
-\subsection*{Step 4: Build the full representation} After we have found the primitive idempotents of the algebra, we can build the full representation. This is done by putting all possible tubes on the outside of the idempotents, hence finding all the basis vectors for this space, i.e.\ all possible vectors
+\subsection*{Step 4: Build the full representation} After we have found the primitive idempotents of the algebra, we can build the full representation. This is done by putting all possible annuli on the outside of the idempotents, hence finding all the basis vectors for this space, i.e.\ all possible vectors
 	\begin{equation}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
@@ -653,7 +653,7 @@ so we get two or five primitive idempotents respectively.
 		\end{tikzpicture}
 	\end{equation}
 %\noindent
-In general, the basis vectors are determined by the choice of $\alpha,\beta$ and $\gamma$, therefore there are up to $2^3=8$ possible basis vectors for each representation. However, it is possible that some of these vectors are linearly dependent, which is the case in our example, as we will see. Putting the general tubes around the primitive idempotents $P_{x,y}$ yields
+In general, the basis vectors are determined by the choice of $\alpha,\beta$ and $\gamma$, therefore there are up to $2^3=8$ possible basis vectors for each representation. However, it is possible that some of these vectors are linearly dependent, which is the case in our example, as we will see. Putting the general annuli around the primitive idempotents $P_{x,y}$ yields
 	\begin{align}
 	\frac{1}{4}
 	\sum_{a,b}(-1)^{ax+by}
