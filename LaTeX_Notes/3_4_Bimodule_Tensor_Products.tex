@@ -7,7 +7,7 @@
 To extend a category $\cat$ to include bimodule objects, we need to introduce `bimodule trivalent vertices'. To construct these, we need a product on bimodules. 
 
 \begin{definition}[Relative tensor product]
-	Given bimodules $\mathcal{A}\curvearrowright\mathcal{M}\curvearrowleft\mathcal{B}\curvearrowright{N}\curvearrowleft\mathcal{C}$, the \emph{relative tensor product} $\mathcal{M}\otimes_\mathcal{B}\mathcal{N}$ has objects $(m,n)\in \mathcal{M}\otimes\mathcal{N}$, along with isomorphisms $\beta:(m\triangleleft b,n)\cong(m,b\triangleright n)$. The isomorphisms should be compatible with the module structure, for example
+	Given bimodules $\mathcal{A}\curvearrowright\mathcal{M}\curvearrowleft\mathcal{B}\curvearrowright{\mathcal{N}}\curvearrowleft\mathcal{C}$, the \emph{relative tensor product} $\mathcal{M}\otimes_\mathcal{B}\mathcal{N}$ has objects $(m,n)\in \mathcal{M}\otimes\mathcal{N}$, along with isomorphisms $\beta:(m\triangleleft b,n)\cong(m,b\triangleright n)$. The isomorphisms should be compatible with the module structure, for example
 	\begin{align}
 	\begin{tikzpicture}[scale=.98,baseline=(current bounding box.center)]
 	\node (A) at (-1,0) {$((m\triangleleft b_1)\triangleleft b_2,n)$};
@@ -35,9 +35,9 @@ If a given bimodule $\mathcal{P}$ occurs in the decomposition of $\mathcal{M}\ot
 \node (A) at (-.707,-.707) {$m\in\mathcal{M}$};
 \node (B) at (.707,-.707) {$n\in\mathcal{N}$};
 \node (C) at (0,1) {$p\in\mathcal{P}$};
-\draw[red](A)--(0,0);
-\draw[blue](B)--(0,0);
-\draw[nicegreen](0,0)--(C);
+\draw[violet,line width=0.4mm](A)--(0,0);
+\draw[brown,line width=0.4mm](B)--(0,0);
+\draw[nicegreen,line width=0.4mm](0,0)--(C);
 \end{tikzpicture}.
 \end{align}
 This is the essence of the `inflation trick' developed in Refs.~\cite{BBJ18,BB19a,BB19b}. We refer the interested reader to these references for more details. 
