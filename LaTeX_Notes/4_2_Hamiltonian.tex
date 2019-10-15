@@ -1,6 +1,6 @@
 \subsection{Action of the Hamiltonian}
 
-As we have now defined what we mean by the Hamiltonian \eqref{VecZ2Hamiltonian}
+As we have now defined how the Hamiltonian \eqref{VecZ2Hamiltonian} 
 \begin{equation*}
 H=-\sum \frac{1}{\sqrt{2}}
 \begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
@@ -16,7 +16,7 @@ H=-\sum \frac{1}{\sqrt{2}}
 \end{tikzpicture}
 \end{equation*}
 \noindent
-we can study its action on the chain. For this purpose, we first need to change the basis using the identity
+can be realized in the framework of the $\Vec(\Z/2\Z)$ chain, we can study its action on the chain. For this purpose, we first need to change the basis using the identity
 	\begin{equation}
 		\begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
 			\draw (0,0) -- (-0.7,0.9);
@@ -142,7 +142,7 @@ Hence, in general the local Hamiltonian $h_i$ acts like
 		\draw [blue, line width=0.25mm] (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
 		\draw [red, line width=0.25mm] (0,0) -- (0,1);
 		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\right)=&\left(\left(Z_{x_{i-1}}\oplus 0\right)\otimes\left(0\oplus\lvert*\rangle_{x_i}\langle*\rvert\right)\otimes\left(Z_{x_{i+1}}\oplus 0\right)\right.\\&+\left.\left(0\oplus\lvert*\rangle_{x_{i-1}}\langle*\rvert\right)\otimes\left(Z_{x_i}\oplus 0\right)\otimes\left(0\oplus \lvert *\rangle_{x_{i-1}}\langle *\rvert\right)\right)\left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\end{tikzpicture}\right)=&\left(\left(Z_{x_{i-1}}\oplus 0\right)\otimes\left(0\oplus\lvert*\rangle_{x_i}\langle*\rvert\right)\otimes\left(Z_{x_{i+1}}\oplus 0\right)\right.\\&+\left.\left(0\oplus\lvert*\rangle_{x_{i-1}}\langle*\rvert\right)\otimes\left(X_{x_i}\oplus 0\right)\otimes\left(0\oplus \lvert *\rangle_{x_{i-1}}\langle *\rvert\right)\right)\left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw [blue, line width=0.25mm] (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
 		\draw [blue, line width=0.25mm] (0,0) to node[below] {$x_i$} (1,0);
 		\draw [blue, line width=0.25mm] (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
