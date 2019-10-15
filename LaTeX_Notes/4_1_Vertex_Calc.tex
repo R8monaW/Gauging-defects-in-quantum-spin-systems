@@ -24,9 +24,9 @@ This Hamiltonian involves the vertex
 \noindent
 for whose construction we give a step-by-step manual using the ideas from tube algebras.
 
-\subsection{Computation of the bimodule vertex}
+\subsection{Computation of the bimodule vertex} \,\\
 
-\subsection*{Step 1: Compute isomorphism classes of objects and pick a representative} In general, what we aim for are representations of the annular category of the form
+\textbf{Step 1: Compute isomorphism classes of objects and pick a representative.} In general, what we aim for are representations of the annular category of the form
 	\begin{figure}[H]
 		\begin{tikzpicture}[scale=1.2]
 			\draw (0,0) circle (0.5cm);
@@ -47,7 +47,7 @@ for whose construction we give a step-by-step manual using the ideas from tube a
 \noindent
 According to the figure above, $(*,*,a)\cong(*,*,a+x+y)$ for all possible labels $x,y,z$, so we pick $(*,*,0)$ as a representative.
 
-\subsection*{Step 2: Find primitive idempotents} To find a representation of the annular category, we need to compute the primitive idempotents, i.e. we need to find morphisms that map $(*,*,0)$ to $(*,*,0)$ which square to themselves and are orthogonal to each other. Additionally, since we want \emph{primitive} idempotents, we need to make sure that they cannot be written as the sum of idempotents.
+\textbf{Step 2: Find primitive idempotents.} To find a representation of the annular category, we need to compute the primitive idempotents, i.e. we need to find morphisms that map $(*,*,0)$ to $(*,*,0)$ which square to themselves and are orthogonal to each other. Additionally, since we want \emph{primitive} idempotents, we need to make sure that they cannot be written as the sum of idempotents.
 Candidates for idempotents are the morphism where $x+y=0$:
 	\begin{equation}
 		T_{0,0}=
@@ -336,7 +336,7 @@ which is diagrammatically
 			\right).
 	\end{equation}
 	
-\subsection*{Step 3: Check for isomorphism classes of primitive idempotents} In general, it is possible that the primitive idempotents we just found are isomorphic to each other, which means that there are matrices within the algebra that we can multiply to $P_{0,0}$, for example, and get $P_{1,0}$. The following equation is an example for how this works:
+\textbf{Step 3: Check for isomorphism classes of primitive idempotents.} In general, it is possible that the primitive idempotents we just found are isomorphic to each other, which means that there are matrices within the algebra that we can multiply to $P_{0,0}$, for example, and get $P_{1,0}$. The following equation is an example for how this works:
 	\begin{equation}
 		\begin{pmatrix} 0 & 0 & 0 & 0\\ 1 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ \end{pmatrix}P_{0,0} \begin{pmatrix} 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ \end{pmatrix}=P_{1,0}.\label{eqn:isoids}
 	\end{equation}
@@ -358,7 +358,7 @@ This step can be much more complicated for algebras with bigger dimensions. Howe
 	\end{equation}
 so we get two or five primitive idempotents respectively.
 	
-\subsection*{Step 4: Build the full representation} After we have found the primitive idempotents of the algebra, we can build the full representation. This is done by putting all possible annuli on the outside of the idempotents, hence finding all the basis vectors for this space, i.e.\ all possible vectors
+\textbf{Step 4: Build the full representation.} After we have found the primitive idempotents of the algebra, we can build the full representation. This is done by putting all possible annuli on the outside of the idempotents, hence finding all the basis vectors for this space, i.e.\ all possible vectors
 	\begin{equation}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
@@ -496,7 +496,7 @@ The `inflation trick' developed in Refs.~\cite{BBJ18,BB19a,BB19b} picks out the 
 	\end{tikzpicture}
 	\end{equation}
 
-\subsection*{Step 5: Find associator of extended category} After the vertex itself is defined, we want to compute the $F$ symbols related to the new object. 
+\textbf{Step 5: Find associator of the extended category.} After the vertex itself is defined, we want to compute the $F$ symbols related to the new object. 
 Our goal is to define a Hamiltonian for the chain which will be of the form
 	\begin{equation*}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
@@ -522,14 +522,18 @@ From the category $\Vec(\Z/2\Z)$, and the bimodule associators we have
 \left(F_{abc}^{a+b+c}\right)_{a+b,b+c}&=1&&\text{From Example~\ref{example:vecG}: $F$=+1}\\
 \left(F_{ab*}^*\right)_{a+b,*}&=1&&\text{From Eqn.~\ref{eqn:L}: $L$=+1} \\
 \left(F_{a*b}^*\right)_{*,*}&=(-1)^{ab}&&\text{From Eqn.~\ref{eqn:F1}} \\
-\left(F_{*ab}^*\right)_{*,a+b}&=1&&\text{From Eqn.~\ref{eqn:R}: $R$=+1} \\
-\left(F_{a**}^{a+b}\right)_{*,b}&=??\\
-\left(F_{*a*}^b\right)_{*,*}&=??\\
-\left(F_{**a}^{a+b}\right)_{b,*}&=??\\
-\left(F_{***}^*\right)_{a,b}&=??,
+\left(F_{*ab}^*\right)_{*,a+b}&=1&&\text{From Eqn.~\ref{eqn:R}: $R$=+1}.
 \end{align}
-	
-We use the following normalization\cite{Bonderson,BSS08}:
+\noindent
+However, there are still some yet unknown $F$ symbols, namely
+\begin{align}
+	\left(F_{a**}^{a+b}\right)_{*,b}&=??\\
+	\left(F_{*a*}^b\right)_{*,*}&=??\\
+	\left(F_{**a}^{a+b}\right)_{b,*}&=??\\
+	\left(F_{***}^*\right)_{a,b}&=??.
+\end{align}
+\noindent	
+To compute those, we use the following normalization\cite{Bonderson,BSS08}:
 	\begin{equation}
 		\begin{tikzpicture}[scale=1.2,baseline=(current bounding box.center)]
 			\draw (0,0) to node [left] {$a$} (0,1);
@@ -849,7 +853,7 @@ where $\varkappa_*=\pm1$ is the \emph{Frobenius-Schur} indicator of $*$.
 
 
 
-\subsection*{Step 6: Check if $F$-symbols obey the pentagon equation} 
+\textbf{Step 6: Check if $F$-symbols obey the pentagon equation.} 
 %To check whether the maps that we have just defined obey the pentagon equation, we need the full set of $F$-symbols. This means that, in addition to the vertex we have just computed, we also need to compute the vertex
 %	\begin{figure}[H]
 %		\begin{tikzpicture}
@@ -892,4 +896,4 @@ We now have the full set of $F$ symbols
 		\left(F_{**a}^{a+b}\right)_{b,*}&=1\\
 		\left(F_{***}^*\right)_{a,b}&=\frac{(-1)^{ab}\varkappa_*}{\sqrt{2}},
 	\end{align*}
-which happen to be the $F$-symbols for the Ising category. 
+which happen to be the $F$ symbols for the Ising category. 
