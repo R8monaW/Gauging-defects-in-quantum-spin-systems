@@ -157,12 +157,76 @@ acts on the chain in the following way:
 		\draw [blue, line width=0.25mm] (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
 		\draw [red, line width=0.25mm] (0,0) -- (0,1);
 		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\right)=&\left(\left(Z_{x_{i-1}}\oplus 0\right)\otimes\left(0\oplus\lvert*\rangle_{x_i}\langle*\rvert\right)\otimes\left(Z_{x_{i+1}}\oplus 0\right)\right.\\&+\left.\left(0\oplus\lvert*\rangle_{x_{i-1}}\langle*\rvert\right)\otimes\left(X_{x_i}\oplus 0\right)\otimes\left(0\oplus \lvert *\rangle_{x_{i-1}}\langle *\rvert\right)\right)\left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw [blue, line width=0.25mm] (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
-		\draw [blue, line width=0.25mm] (0,0) to node[below] {$x_i$} (1,0);
-		\draw [blue, line width=0.25mm] (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
+		\end{tikzpicture}\right)&=
+		h_i \left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
+		\draw [red, line width=0.25mm] (0,0) to node[below] {} (1,0);
+		\draw (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
 		\draw [red, line width=0.25mm] (0,0) -- (0,1);
 		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\right).
+		\end{tikzpicture}\oplus \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw [red, line width=0.25mm] (-0.5,0) to node[below, near start] {} (0,0);
+		\draw (0,0) to node[below] {$x_i$} (1,0);
+		\draw [red, line width=0.25mm] (1,0) to node[below, near end] {} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\right)\\
+		&=-\frac{1}{\sqrt{2}}\left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
+		\draw [red, line width=0.25mm] (0,0) to node[below] {} (1,0);
+		\draw (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\oplus \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw [red, line width=0.25mm] (-0.5,0) to node[below, near start] {} (0,0);
+		\draw (0,0) to node[below] {$x_i$} (1,0);
+		\draw [red, line width=0.25mm] (1,0) to node[below, near end] {} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\right)\\
+		&\hspace{20pt}-\frac{1}{\sqrt{2}}\left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
+		\draw [red, line width=0.25mm] (0,0) to node[below] {} (1,0);
+		\draw (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\draw (0,0.5) to node[above] {$1$} (1,0.5);
+		\end{tikzpicture}\oplus \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw [red, line width=0.25mm] (-0.5,0) to node[below, near start] {} (0,0);
+		\draw (0,0) to node[below] {$x_i$} (1,0);
+		\draw [red, line width=0.25mm] (1,0) to node[below, near end] {} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\draw (0,0.5) to node[above] {$1$} (1,0.5);
+		\end{tikzpicture}\right)\\
+		&=-\frac{1}{\sqrt{2}}\left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
+		\draw [red, line width=0.25mm] (0,0) to node[below] {} (1,0);
+		\draw (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\oplus \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw [red, line width=0.25mm] (-0.5,0) to node[below, near start] {} (0,0);
+		\draw (0,0) to node[below] {$x_i$} (1,0);
+		\draw [red, line width=0.25mm] (1,0) to node[below, near end] {} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\right)\\
+		&\hspace{20pt}-\frac{1}{\sqrt{2}}\left((-1)^{x_{i-1}+x_{i+1}}\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
+		\draw [red, line width=0.25mm] (0,0) to node[below] {} (1,0);
+		\draw (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\oplus \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+		\draw [red, line width=0.25mm] (-0.5,0) to node[below, near start] {} (0,0);
+		\draw (0,0) to node[below] {$x_i+1$} (1,0);
+		\draw [red, line width=0.25mm] (1,0) to node[below, near end] {} (1.5,0);
+		\draw [red, line width=0.25mm] (0,0) -- (0,1);
+		\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\right)\\
+		&=\left(\left(Z_{x_{i-1}}\oplus 0\right)\otimes\left(0\oplus\lvert*\rangle_{x_i}\langle*\rvert\right)\otimes\left(Z_{x_{i+1}}\oplus 0\right)\right.\\
+		&\hspace{20pt}+\left.\left(0\oplus\lvert*\rangle_{x_{i-1}}\langle*\rvert\right)\otimes\left(X_{x_i}\oplus 0\right)\otimes\left(0\oplus \lvert *\rangle_{x_{i-1}}\langle *\rvert\right)\right).
 	\end{align*}
-Fixing boundary conditions to $*$ freezes out half of the valid configurations, which results in the Ising model.
+{\color{red} What happens in the last step?}\\
+Fixing boundary conditions to $*$ freezes out half of the valid configurations, which results in the Ising model.{\color{red} ???}
