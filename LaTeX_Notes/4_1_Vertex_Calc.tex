@@ -12,7 +12,7 @@ H=-\sum \frac{1}{\sqrt{2}}
 %			\node at (-0.8,1.1) {$*$};
 %			\node at (0.8,-2.1) {$*$};
 %			\node at (-0.8,-2.1) {$*$};
-\end{tikzpicture},
+\end{tikzpicture}.
 \end{equation*}
 This Hamiltonian involves the vertex
 \begin{figure}[H]	
@@ -520,9 +520,9 @@ To compute $\alpha$ and $\beta$ above, in addition to the action on the spin cha
 From the category $\Vec(\Z/2\Z)$, and the bimodule associators we have
 \begin{align}
 \left(F_{abc}^{a+b+c}\right)_{a+b,b+c}&=1&&\text{From Example~\ref{example:vecG}: $F$=+1}\\
-\left(F_{ab*}^*\right)_{a+b,*}&=1&&\text{From Eqn.~\ref{eqn:L}: $L$=+1} \\
-\left(F_{a*b}^*\right)_{*,*}&=(-1)^{ab}&&\text{From Eqn.~\ref{eqn:F1}} \\
-\left(F_{*ab}^*\right)_{*,a+b}&=1&&\text{From Eqn.~\ref{eqn:R}: $R$=+1}.
+\left(F_{ab*}^*\right)_{a+b,*}&=1&&\text{From \eqref{eqn:L}: $L$=+1} \\
+\left(F_{a*b}^*\right)_{*,*}&=(-1)^{ab}&&\text{From \eqref{eqn:F1}} \\
+\left(F_{*ab}^*\right)_{*,a+b}&=1&&\text{From \eqref{eqn:R}: $R$=+1}.
 \end{align}
 \noindent
 However, there are still some yet unknown $F$ symbols, namely
@@ -533,7 +533,7 @@ However, there are still some yet unknown $F$ symbols, namely
 	\left(F_{***}^*\right)_{a,b}&=??.
 \end{align}
 \noindent	
-To compute those, we use the following normalization\cite{Bonderson,BSS08}:
+To compute those, we use the following normalization \cite{Bonderson,BSS08}:
 	\begin{equation}
 		\begin{tikzpicture}[scale=1.2,baseline=(current bounding box.center)]
 			\draw (0,0) to node [left] {$a$} (0,1);
@@ -711,7 +711,7 @@ so it follows that
 	\end{equation}
 The computation of $\left(F_{a**}^{a+b}\right)_{*,b}=1$ is identical. A similar computation yields $\left(F_{*a*}^{b}\right)_{*,*}=(-1)^{ab}$.
 
-Attempting to use Eqn.~\ref{eq:completeness} to compute $F_{***}^*$ is circular, so we need a different technique. There is an action of a 4-string annular category on the fusion trees on both sides of the equation
+Attempting to use \eqref{eq:completeness} to compute $F_{***}^*$ is circular, so we need a different technique. There is an action of a 4-string annular category on the fusion trees on both sides of the equation
 \begin{equation}
 \begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
 \draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
@@ -841,11 +841,11 @@ $}
 	\end{tikzpicture}\right)
 	$},
 \end{align}
-where in the second step, Eqn.~\ref{eqn:Ftransform} has been applied to the left hand side. This equation reduces to
+where in the second step, \eqref{eqn:Ftransform} has been applied to the left hand side. This equation reduces to
 \begin{align}
 \left(F_{***}^*\right)_{a,b}&=(-1)^{ab}\left(F_{***}^*\right)_{0,0}.
 \end{align}
-We cannot fix $\left(F_{***}^*\right)_{0,0}$ by simply asking which representation the vectors transform under, since there is a global rescaling freedom. Our normalization (Eqn.~\ref{eq:completeness}) fixes 
+We cannot fix $\left(F_{***}^*\right)_{0,0}$ by simply asking which representation the vectors transform under, since there is a global rescaling freedom. Our normalization \eqref{eq:completeness} fixes 
 \begin{align}
 \left(F_{***}^*\right)_{a,b}&=(-1)^{ab}\frac{\varkappa_*}{\sqrt{2}},
 \end{align}

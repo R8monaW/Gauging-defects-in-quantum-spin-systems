@@ -3,7 +3,7 @@
 % !TEX spellcheck = en_US
 \label{Gauging}
 
-Our goal in this section is to make physical and microscopic sense of a dynamical theory of defects for quantum (spin) systems. We restrict our attention to defects modelled by absent/missing quantum spins. (Extending this idea to more general defects modelled by different Hilbert spaces then becomes a straightforward task.)
+Our goal in this section is to present a framework to make physical and microscopic sense of a dynamical theory of defects for quantum (spin) systems. We restrict our attention to defects modelled by absent/missing quantum spins. (Extending this idea to more general defects modelled by different Hilbert spaces then becomes a straightforward task.)
 
 We build up to a theory of dynamical defects in stages. In the first stage we focus on the problem of modelling an \emph{indefinite} number of distinguishable spins. Building on this we can propose a kinematical space to model arbitrary numbers of quantum spins at various locations. This allows us to then consider the case of missing-spin defects for topologically ordered systems.
 
@@ -25,7 +25,7 @@ This Hilbert space describes all states of the $N$ \emph{individually identifiab
 
 What if we don't know beforehand how many particles we'll end up with? Let's assume that, even though we don't know how many particles we'll have, we will still be able to individually identify and address the particles\footnote{If you want a physical example for such a system: imagine a $1D$ optical lattice in which either zero or one two-level atoms can be present at each lattice site. Further, assume that the atoms line up in a contiguous line, with no gaps, i.e., we impose some additional potential gradient. Although we don't know how many particles we'll get, we can still identify and address the particles via lattice location.}. How should we incorporate the additional quantum number $N$, describing the size of the collection? The answer is via the \emph{direct sum}: we take the direct sum over $N$ of the Hilbert space $\mathcal{H}_N$ for $N$ distinguishable particles. This results in \emph{distinguishable Fock space}
 \begin{equation}
-	\mathfrak{F}(\mathbb{C}^d) \cong \bigoplus_{N=0}^\infty \mathcal{H}_N\equiv \bigoplus_{N=0}^\infty (\underbrace{\mathbb{C}^d\otimes \mathbb{C}^d\otimes \cdots \otimes \mathbb{C}^d}_{\text{$N$ factors}}).
+	\mathfrak{F}(\mathbb{C}^d) \cong \bigoplus_{N=0}^\infty \mathcal{H}_N\cong \bigoplus_{N=0}^\infty (\underbrace{\mathbb{C}^d\otimes \mathbb{C}^d\otimes \cdots \otimes \mathbb{C}^d}_{\text{$N$ factors}}).
 \end{equation}
 By convention and assumption the space describing zero particles, the \emph{vacuum}, is assigned the Hilbert space $(\mathbb{C}^d)^{\otimes 0} \cong \mathbb{C}$.
 
@@ -89,6 +89,6 @@ This equivalence relation collapses many of the direct sums appearing in $\mathc
 	\left(\mathcal{V}_{\le n}(\mathbb{C}^d)/\sim\right) = (\mathbb{C}^2\otimes \mathbb{C}^2)\oplus (\mathbb{C}^2\otimes \mathbb{C}^2\otimes \mathbb{C}^2)\oplus \cdots.
 \end{equation}
 
-Of course, the above description is not only restricted to the toric code case. For instance, we are able to efficiently describe topological quantum systems similar to the golden chain \cite{Feiguin2007} when allowing the presence of defects. We now review a very simple but still interesting example.
+Writing out the whole ground eigenspace and applying the equivalence relation to it results in a highly intricately combinatorial problem, which is why we exploit concepts from category theory to model defects in the system. Of course, the above description is not only restricted to the toric code case. In the next section, we show how ideas and techniques from category theory can be used to model dynamical defects in a system similar to the golden chain \cite{Feiguin2007}, namely a chain with $\Vec(\Z/2\Z)$ fusion rules.
 
   
