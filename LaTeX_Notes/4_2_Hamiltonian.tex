@@ -77,12 +77,10 @@ where we have used the $F$ symbols we have computed above. Now we study how this
 		\end{tikzpicture} \hspace{20pt}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw [red, line width=0.25mm] (-0.5,0) -- (0,0);
-			\draw (0,0) -- (1,0);
+			\draw (0,0) to node [below] {$a$} (1,0);
 			\draw [red, line width=0.25mm] (1,0) -- (1.5,0);
 			\draw [red, line width=0.25mm] (0,0) -- (0,1);
 			\draw [red, line width=0.25mm] (1,0) -- (1,1);
-			\node at (-0.7,0) {$a$};
-			\node at (1.7,0) {$b$};
 		\end{tikzpicture}
 	\end{figure}
 \noindent
@@ -134,7 +132,24 @@ The first term of the Hamiltonian leaves the configurations invariant, while the
 			\draw [red, line width=0.25mm] (1,0) -- (1,1);
 		\end{tikzpicture}\equiv X_a
 	\end{align}
-Hence, in general the local Hamiltonian $h_i$ acts like
+Hence, in general the local Hamiltonian 
+	\begin{equation}
+		h_i = -\frac{1}{\sqrt{2}}\left(\ 
+		\begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
+		\draw[red,line width=0.4mm] (0,0) -- (0,2);
+		\draw[red,line width=0.4mm] (1.5,0) -- (1.5,2);
+		\node at (0,-0.5) {$i$};
+		\node at (1.5,-0.5) {$i+1$};
+		\end{tikzpicture}+
+		\begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
+		\draw[red,line width=0.4mm] (0,0) -- (0,2);
+		\draw (0,1) to node[above] {$1$} (1.5,1);
+		\draw[red,line width=0.4mm] (1.5,0) -- (1.5,2);
+		\node at (0,-0.5) {$i$};
+		\node at (1.5,-0.5) {$i+1$};
+		\end{tikzpicture}\ \right)
+	\end{equation}
+acts on the chain in the following way:
 	\begin{align*}
 		h_i \left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw [blue, line width=0.25mm] (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
