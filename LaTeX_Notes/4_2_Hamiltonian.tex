@@ -64,17 +64,22 @@ which yields
 			\draw[red,line width=0.4mm] (1.5,0) -- (1.5,2);
 		\end{tikzpicture}\ \right),
 	\end{align}
-where we have used the $F$ symbols we have computed above. Now we study how this Hamiltonian acts on the valid local configurations
-	\begin{figure}[H]
+where we have used the $F$ symbols we have computed above. 
+
+The general Hilbert space of one site of the chain is $\mathbb{C}^2\oplus \mathbb{C}$ (see \eqref{eq:configs}), hence the space for three sites is
+	\begin{align}\label{eq:hspaces}
+		(\mathbb{C}^2\oplus \mathbb{C})\otimes(\mathbb{C}^2\oplus \mathbb{C})\otimes(\mathbb{C}^2\oplus \mathbb{C})=(\mathbb{C}^2\otimes\mathbb{C}\otimes\mathbb{C}^2)\oplus(\mathbb{C}\otimes\mathbb{C}^2\otimes\mathbb{C})\oplus\textrm{forbidden states},
+	\end{align}
+where forbidden states include, for example, those where all three objects are from the bimodule.
+According to the right hand side of \eqref{eq:hspaces}, valid local configurations of the chain are of the form
+	\begin{equation*}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-			\draw (-0.5,0) -- (0,0);
+			\draw (-0.5,0) to node [below] {$a$} (0,0);
 			\draw [red, line width=0.25mm] (0,0) -- (1,0);
-			\draw (1,0) -- (1.5,0);
+			\draw (1,0) to node [below] {$b$} (1.5,0);
 			\draw [red, line width=0.25mm] (0,0) -- (0,1);
 			\draw [red, line width=0.25mm] (1,0) -- (1,1);
-			\node at (-0.7,0) {$a$};
-			\node at (1.7,0) {$b$};
-		\end{tikzpicture} \hspace{20pt}
+		\end{tikzpicture} \hspace{20pt}\text{and}\hspace{20pt}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw [red, line width=0.25mm] (-0.5,0) -- (0,0);
 			\draw (0,0) to node [below] {$a$} (1,0);
@@ -82,57 +87,9 @@ where we have used the $F$ symbols we have computed above. Now we study how this
 			\draw [red, line width=0.25mm] (0,0) -- (0,1);
 			\draw [red, line width=0.25mm] (1,0) -- (1,1);
 		\end{tikzpicture}
-	\end{figure}
+	\end{equation*}
 \noindent
-The first term of the Hamiltonian leaves the configurations invariant, while the second term acts in the following way:
-	\begin{align}
-		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-			\draw (-0.5,0) -- (0,0);
-			\draw [red, line width=0.25mm] (0,0) -- (1,0);
-			\draw (1,0) -- (1.5,0);
-			\draw [red, line width=0.25mm] (0,0) -- (0,1);
-			\draw (0,0.5) to node[above] {$1$} (1,0.5);
-			\draw [red, line width=0.25mm] (1,0) -- (1,1);
-			\node at (-0.7,0) {$a$};
-			\node at (1.7,0) {$b$};
-		\end{tikzpicture}&=
-		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-			\draw (-0.5,0) -- (0,0);
-			\draw [red, line width=0.25mm] (0,0) -- (1,0);
-			\draw (1,0) -- (1.5,0);
-			\draw [red, line width=0.25mm] (0,0) -- (0,1);
-			\draw [red, line width=0.25mm] (1,0) -- (1,1);
-			\node at (-0.7,0) {$a$};
-			\node at (1.7,0) {$b$};
-			\draw (0,0.5) to[bend left] node[above] {$1$} (0.4,0);
-			\draw (1,0.5) to[bend right] node[above] {$1$} (0.6,0);
-		\end{tikzpicture}=(-1)^{a+b}
-		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-			\draw (-0.5,0) -- (0,0);
-			\draw [red, line width=0.25mm] (0,0) -- (1,0);
-			\draw (1,0) -- (1.5,0);
-			\draw [red, line width=0.25mm] (0,0) -- (0,1);
-			\draw [red, line width=0.25mm] (1,0) -- (1,1);
-			\node at (-0.7,0) {$a$};
-			\node at (1.7,0) {$b$};
-		\end{tikzpicture}\equiv Z_a\otimes Z_b\\
-		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-			\draw [red, line width=0.25mm] (-0.5,0) -- (0,0);
-			\draw (0,0) to node[below] {$a$} (1,0);
-			\draw [red, line width=0.25mm] (1,0) -- (1.5,0);
-			\draw [red, line width=0.25mm] (0,0) -- (0,1);
-			\draw [red, line width=0.25mm] (1,0) -- (1,1);
-			\draw (0,0.5) to node[above] {$1$} (1,0.5);
-		\end{tikzpicture}&=
-		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-			\draw [red, line width=0.25mm] (-0.5,0) -- (0,0);
-			\draw (0,0) to node[below] {$a+1$} (1,0);
-			\draw [red, line width=0.25mm] (1,0) -- (1.5,0);
-			\draw [red, line width=0.25mm] (0,0) -- (0,1);
-			\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\equiv X_a
-	\end{align}
-Hence, in general the local Hamiltonian 
+with $a,b\in\{0,1\}$. The local Hamiltonian 
 	\begin{equation}
 		h_i = -\frac{1}{\sqrt{2}}\left(\ 
 		\begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
@@ -149,84 +106,129 @@ Hence, in general the local Hamiltonian
 		\node at (1.5,-0.5) {$i+1$};
 		\end{tikzpicture}\ \right)
 	\end{equation}
-acts on the chain in the following way:
-	\begin{align*}
-		h_i \left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+acts on these configurations in the following way: the first term of the Hamiltonian leaves the configurations invariant, while applying the second term yields
+	\begin{align}\label{eq:action}
+		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+			\draw (-0.5,0) to node [below] {$a$} (0,0);
+			\draw [red, line width=0.25mm] (0,0) -- (1,0);
+			\draw (1,0) to node [below] {$b$} (1.5,0);
+			\draw [red, line width=0.25mm] (0,0) -- (0,1);
+			\draw (0,0.5) to node[above] {$1$} (1,0.5);
+			\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}&=
+		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+			\draw (-0.5,0) to node [below] {$a$} (0,0);
+			\draw [red, line width=0.25mm] (0,0) -- (1,0);
+			\draw (1,0) to node [below] {$b$} (1.5,0);
+			\draw [red, line width=0.25mm] (0,0) -- (0,1);
+			\draw [red, line width=0.25mm] (1,0) -- (1,1);
+			\draw (0,0.5) to[bend left] node[above] {$1$} (0.4,0);
+			\draw (1,0.5) to[bend right] node[above] {$1$} (0.6,0);
+		\end{tikzpicture}=(-1)^{a+b}
+		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+			\draw (-0.5,0) to node [below] {$a$} (0,0);
+			\draw [red, line width=0.25mm] (0,0) -- (1,0);
+			\draw (1,0) to node [below] {$b$} (1.5,0);
+			\draw [red, line width=0.25mm] (0,0) -- (0,1);
+			\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\equiv Z_a\otimes Z_b\\\label{eq:action2}
+		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+			\draw [red, line width=0.25mm] (-0.5,0) -- (0,0);
+			\draw (0,0) to node[below] {$a$} (1,0);
+			\draw [red, line width=0.25mm] (1,0) -- (1.5,0);
+			\draw [red, line width=0.25mm] (0,0) -- (0,1);
+			\draw [red, line width=0.25mm] (1,0) -- (1,1);
+			\draw (0,0.5) to node[above] {$1$} (1,0.5);
+		\end{tikzpicture}&=
+		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+			\draw [red, line width=0.25mm] (-0.5,0) -- (0,0);
+			\draw (0,0) to node[below] {$a+1$} (1,0);
+			\draw [red, line width=0.25mm] (1,0) -- (1.5,0);
+			\draw [red, line width=0.25mm] (0,0) -- (0,1);
+			\draw [red, line width=0.25mm] (1,0) -- (1,1);
+		\end{tikzpicture}\equiv X_a
+	\end{align}
+A general basis state that lives in $(\mathbb{C}^2\oplus \mathbb{C})\otimes(\mathbb{C}^2\oplus \mathbb{C})\otimes(\mathbb{C}^2\oplus \mathbb{C})$ is of the form
+	\begin{equation}
+		\lvert x_{i-1}, x_i, x_{i+1}\rangle=\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw [blue, line width=0.25mm] (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
 		\draw [blue, line width=0.25mm] (0,0) to node[below] {$x_i$} (1,0);
 		\draw [blue, line width=0.25mm] (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
 		\draw [red, line width=0.25mm] (0,0) -- (0,1);
 		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\right)&=
-		h_i \left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
-		\draw [red, line width=0.25mm] (0,0) to node[below] {} (1,0);
-		\draw (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
-		\draw [red, line width=0.25mm] (0,0) -- (0,1);
-		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\oplus \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw [red, line width=0.25mm] (-0.5,0) to node[below, near start] {} (0,0);
-		\draw (0,0) to node[below] {$x_i$} (1,0);
-		\draw [red, line width=0.25mm] (1,0) to node[below, near end] {} (1.5,0);
-		\draw [red, line width=0.25mm] (0,0) -- (0,1);
-		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\right)\\
-		&=-\frac{1}{\sqrt{2}}\left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
-		\draw [red, line width=0.25mm] (0,0) to node[below] {} (1,0);
-		\draw (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
-		\draw [red, line width=0.25mm] (0,0) -- (0,1);
-		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\oplus \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw [red, line width=0.25mm] (-0.5,0) to node[below, near start] {} (0,0);
-		\draw (0,0) to node[below] {$x_i$} (1,0);
-		\draw [red, line width=0.25mm] (1,0) to node[below, near end] {} (1.5,0);
-		\draw [red, line width=0.25mm] (0,0) -- (0,1);
-		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\right)\\
-		&\hspace{20pt}-\frac{1}{\sqrt{2}}\left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
-		\draw [red, line width=0.25mm] (0,0) to node[below] {} (1,0);
-		\draw (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
-		\draw [red, line width=0.25mm] (0,0) -- (0,1);
-		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\draw (0,0.5) to node[above] {$1$} (1,0.5);
-		\end{tikzpicture}\oplus \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw [red, line width=0.25mm] (-0.5,0) to node[below, near start] {} (0,0);
-		\draw (0,0) to node[below] {$x_i$} (1,0);
-		\draw [red, line width=0.25mm] (1,0) to node[below, near end] {} (1.5,0);
-		\draw [red, line width=0.25mm] (0,0) -- (0,1);
-		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\draw (0,0.5) to node[above] {$1$} (1,0.5);
-		\end{tikzpicture}\right)\\
-		&=-\frac{1}{\sqrt{2}}\left(\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
-		\draw [red, line width=0.25mm] (0,0) to node[below] {} (1,0);
-		\draw (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
-		\draw [red, line width=0.25mm] (0,0) -- (0,1);
-		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\oplus \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw [red, line width=0.25mm] (-0.5,0) to node[below, near start] {} (0,0);
-		\draw (0,0) to node[below] {$x_i$} (1,0);
-		\draw [red, line width=0.25mm] (1,0) to node[below, near end] {} (1.5,0);
-		\draw [red, line width=0.25mm] (0,0) -- (0,1);
-		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\right)\\
-		&\hspace{20pt}-\frac{1}{\sqrt{2}}\left((-1)^{x_{i-1}+x_{i+1}}\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
-		\draw [red, line width=0.25mm] (0,0) to node[below] {} (1,0);
-		\draw (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
-		\draw [red, line width=0.25mm] (0,0) -- (0,1);
-		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\oplus \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw [red, line width=0.25mm] (-0.5,0) to node[below, near start] {} (0,0);
-		\draw (0,0) to node[below] {$x_i+1$} (1,0);
-		\draw [red, line width=0.25mm] (1,0) to node[below, near end] {} (1.5,0);
-		\draw [red, line width=0.25mm] (0,0) -- (0,1);
-		\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\right)\\
-		&=\left(\left(Z_{x_{i-1}}\oplus 0\right)\otimes\left(0\oplus\lvert*\rangle_{x_i}\langle*\rvert\right)\otimes\left(Z_{x_{i+1}}\oplus 0\right)\right.\\
-		&\hspace{20pt}+\left.\left(0\oplus\lvert*\rangle_{x_{i-1}}\langle*\rvert\right)\otimes\left(X_{x_i}\oplus 0\right)\otimes\left(0\oplus \lvert *\rangle_{x_{i-1}}\langle *\rvert\right)\right).
-	\end{align*}
-{\color{red} What happens in the last step?}\\
-Fixing boundary conditions to $*$ freezes out half of the valid configurations, which results in the Ising model.{\color{red} ???}
+		\end{tikzpicture}
+	\end{equation}
+with $x_{i-1}, x_i, x_{i+1}\in\{0,1,*\}$. The goal is now to find an operator that acts on this basis that gives exactly what we have derived in \eqref{eq:action} and \eqref{eq:action2}, which means we want an expression of $h_i$ of the form
+	\begin{equation}
+		h_i\lvert x_{i-1},x_i,x_{i+1}\rangle=-\frac{1}{\sqrt{2}}\left(\mathbb{I}+A\right)\lvert x_{i-1},x_i,x_{i+1}\rangle
+	\end{equation}
+with some operator $A$. Note that we do not need to worry about how it acts on forbidden state, e.g.\ $\lvert *,*,*\rangle$. Since there are two possible configurations, we distinguish between these two cases:
+	\begin{enumerate}
+		\item When $x_i=*$, we are in the case of $\eqref{eq:action}$, which means the object in the middle is projected onto the state $\lvert*\rangle\langle*\rvert$. A Pauli-$Z$ operator acts on the objects $x_{i-1}$ and $x_{i+1}$, but only on the $\mathbb{C}^2$-part of the Hilbert space. Hence, we additionally need an operator that acts on $\mathbb{C}$, but since we projected the site $i$ onto $\lvert *\rangle$, and any states of the form $\lvert *,*,\cdot\rangle$ and $\lvert \cdot,*,*\rangle$ are forbidden anyway, it does not matter which operator we put here and we just denote it $\hat{O}$. Following these arguments, the resulting expression for the operator $A$ is
+			\begin{equation}
+				A=(Z\oplus\hat{O})\otimes\lvert*\rangle\langle*\rvert\otimes(Z\oplus\hat{O}).
+			\end{equation}
+		\item When $x_{i-1}=x_{i+1}=*$, the outer sited are projected onto $\lvert*\rangle\langle*\rvert$ and as we have seen in \eqref{eq:action2}, the Hamiltonian acts as a Pauli-$X$ operator on the middle site. For the same reasons as above, we add the operator $\hat{O}$ and get
+			\begin{equation}
+				A=\lvert*\rangle\langle*\rvert\otimes(X\oplus\hat{O})\otimes\lvert*\rangle\langle*\rvert.
+			\end{equation}
+	\end{enumerate}
+The resulting local Hamiltonian is
+	\begin{equation}
+		h_i=-\frac{1}{\sqrt{2}}\left(\mathbb{I}+(Z\oplus\hat{O})\otimes\lvert*\rangle\langle*\rvert\otimes(Z\oplus\hat{O})+\lvert*\rangle\langle*\rvert\otimes(X\oplus\hat{O})\otimes\lvert*\rangle\langle*\rvert\right).
+	\end{equation}
+If we fix some edge, eg.\ the boundaries, to $*$ we restrict ourselves to states of the form
+	\begin{figure}[H]
+		\begin{tikzpicture}[baseline=(current bounding box.center)]
+		\draw[red,line width=0.4mm] (0.5,0) to node[below,near start] {$*$ fixed} (1.5,0);
+		\draw[red,line width=0.4mm] (1.5,0) -- (1.5,1);
+		\draw[black] (1.5,0) to node [below] {$\mathbb{C}^2$} (2.5,0);
+		\draw[red,line width=0.4mm] (2.5,0) -- (2.5,1);
+		\draw[red,line width=0.4mm] (2.5,0) -- (3.5,0);
+		\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+		\draw[black] (3.5,0) to node [below] {$\mathbb{C}^2$} (4.5,0);
+		\draw[red,line width=0.4mm] (4.5,0) -- (4.5,1);
+		\draw[red,line width=0.4mm] (4.5,0) -- (5.5,0);
+		\draw[red,line width=0.4mm] (5.5,0) -- (5.5,1);
+		\draw[black] (5.5,0) to node [below] {$\mathbb{C}^2$} (6.5,0);
+		\draw[red,line width=0.4mm] (6.5,0) -- (6.5,1);
+		\draw[red,line width=0.4mm] (6.5,0) -- (7.5,0);
+		\end{tikzpicture},
+	\end{figure}
+\noindent
+so we effectively have a system of qubits
+	\begin{figure}[H]
+		\begin{tikzpicture}[scale=1.5,baseline=(current bounding box.center)]
+		\fill[black] (0,0) circle (0.07cm);
+		\node at (0,-0.25) {$\mathbb{C}^2$};
+		\fill[black] (1.5,0) circle (0.07cm);
+		\node at (1.5,-0.25) {$\mathbb{C}^2$};
+		\fill[black] (3,0) circle (0.07cm);
+		\node at (3,-0.25) {$\mathbb{C}^2$};
+		\end{tikzpicture}.
+	\end{figure}
+\noindent
+On this Hilbert space, the effective Hamiltonian is 
+	\begin{equation}\label{eq:eff}
+		H_\mathrm{effective}=-\frac{1}{\sqrt{2}}\sum_{i\in\text{half chain}}\mathbb{I}+Z_iZ_{i+1}+X_i,
+	\end{equation}
+which is the Hamiltonian that corresponds to the transverse Ising model. The other possibility is to fix the boundaries to $\mathbb{C}^2$, in which case we have states of the form
+	\begin{figure}[H]
+		\begin{tikzpicture}
+		\draw[black] (-0.25,0) to node [below] {$\mathbb{C}^2$} (0.5,0);
+		\draw[red,line width=0.4mm] (0.5,0) -- (0.5,1);
+		\draw[red,line width=0.4mm] (0.5,0) -- (1.5,0);
+		\draw[red,line width=0.4mm] (1.5,0) -- (1.5,1);
+		\draw[black] (1.5,0) to node [below] {$\mathbb{C}^2$} (2.5,0);
+		\draw[red,line width=0.4mm] (2.5,0) -- (2.5,1);
+		\draw[red,line width=0.4mm] (2.5,0) -- (3.5,0);
+		\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+		\draw[black] (3.5,0) to node [below] {$\mathbb{C}^2$} (4.5,0);
+		\draw[red,line width=0.4mm] (4.5,0) -- (4.5,1);
+		\draw[red,line width=0.4mm] (4.5,0) -- (5.5,0);
+		\draw[red,line width=0.4mm] (5.5,0) -- (5.5,1);
+		\draw[black] (5.5,0) to node [below] {$\mathbb{C}^2$} (6.5,0);
+		\end{tikzpicture}.
+	\end{figure}
+\noindent
+The effective Hamiltonian for these states is also of the form \eqref{eq:eff}.
