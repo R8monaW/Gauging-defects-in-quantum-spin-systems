@@ -38,17 +38,17 @@ for whose construction we give a step-by-step manual using the ideas from tube a
 			\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
 			\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
 			\draw[] (90:0.5) -- (90:1.6);
-			\node at (90:.3cm){$a$};\node at (90:1.75cm){$a+x+y$};
+			\node at (90:.3cm){$a$};\node at (90:1.75cm){$a+x+z$};
 			\node at (-1,0.3) {$x$};
 			\node at (1.15,0.3) {$z$};
 			\node at (0,-1.3) {$y$};
 		\end{tikzpicture}
 	\end{figure}
 \noindent
-According to the figure above, $(*,*,a)\cong(*,*,a+x+y)$ for all possible labels $x,y,z$, so we pick $(*,*,0)$ as a representative.
+According to the figure above, $(*,*,a)\cong(*,*,a+x+z)$ for all possible labels $x,y,z$, so we pick $(*,*,0)$ as a representative.
 
 \subsection*{Step 2: Find primitive idempotents.} To find a representation of the annular category, we need to compute the primitive idempotents, i.e. we need to find morphisms that map $(*,*,0)$ to $(*,*,0)$ which square to themselves and are orthogonal to each other. Additionally, since we want \emph{primitive} idempotents, we need to make sure that they cannot be written as the sum of idempotents.
-Candidates for idempotents are the morphism where $x+y=0$:
+Candidates for idempotents are the morphism where $x+z=0$:
 	\begin{equation}
 		T_{0,0}=
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
@@ -285,7 +285,7 @@ which is diagrammatically
 			%			\node at (1.15,0.3) {$0$};
 			%			\node at (0,-1.3) {$0$};
 			\end{tikzpicture}
-			(-1)^x
+			+(-1)^x
 			\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
 			\draw[red,line width=0.4mm]
@@ -301,7 +301,7 @@ which is diagrammatically
 %						\node at (1.15,0.3) {$0$};
 						\node at (0,-1.3) {$1$};
 			\end{tikzpicture}
-			(-1)^y
+			+(-1)^y
 			\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
 			\draw[red,line width=0.4mm]
@@ -317,7 +317,7 @@ which is diagrammatically
 									\node at (1.15,0.3) {$1$};
 %			\node at (0,-1.3) {$1$};
 			\end{tikzpicture}
-			(-1)^{x+y}
+			+(-1)^{x+y}
 			\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
 			\draw[red,line width=0.4mm]
@@ -444,7 +444,7 @@ which is a vector in the morphism space
 		\begin{tikzpicture}
 			\draw[red,line width=0.4mm] (0,0) -- (1.5,0);
 			\draw (0.75,0) -- (0.75,1) node [pos=1.25]{$\alpha^\prime$};
-		\end{tikzpicture}
+		\end{tikzpicture}.
 	\end{equation}
 We now have to find a basis for every one of those morphism spaces, i.e.\ for every choice of $\alpha^\prime$. For fixed representation (fixed, $x,y$), we find a unique vector up to a multiplicative scalar for each $\alpha^\prime$, so each morphism space is one dimensional. We define the basis to be
 	\begin{equation}
