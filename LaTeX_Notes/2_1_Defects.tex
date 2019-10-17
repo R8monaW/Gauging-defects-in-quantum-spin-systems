@@ -3,19 +3,19 @@
 % !TEX spellcheck = en_US
 \label{Gauging}
 
-Our goal in this section is to present a framework to make physical and microscopic sense of a dynamical theory of defects for quantum (spin) systems. We restrict our attention to defects modelled by absent/missing quantum spins. (Extending this idea to more general defects modelled by different Hilbert spaces then becomes a straightforward task.)
+Our goal in this section is to present a framework to make physical and microscopic sense of a dynamical theory of defects for quantum (spin) systems. We restrict our attention to defects modeled by absent/missing quantum spins. (Extending this idea to more general defects modeled by different Hilbert spaces then becomes a straightforward task.)
 
-We build up to a theory of dynamical defects in stages. In the first stage we focus on the problem of modelling an \emph{indefinite} number of distinguishable spins. Building on this we can propose a kinematical space to model arbitrary numbers of quantum spins at various locations. This allows us to then consider the case of missing-spin defects for topologically ordered systems.
+We build up to a theory of dynamical defects in stages. In the first stage we focus on the problem of modeling an \emph{indefinite} number of distinguishable spins. Building on this we can propose a kinematical space to model arbitrary numbers of quantum spins at various locations. This allows us to then consider the case of missing-spin defects for topologically ordered systems.
 
 \subsection{Describing an indefinite number of distinguishable quantum spins}
 
-When we study quantum theory we learn that to describe the Hilbert space of systems comprised of two or more distinguishable subsystems we should use the tensor product:
+When we study quantum theory we learn that to describe the Hilbert space $\mathcal{H}_{AB}$ of systems comprised of two or more distinguishable subsystems we should use the tensor product:
 \begin{equation}
 	\mathcal{H}_{AB} \cong \mathcal{H}_A\otimes \mathcal{H}_B,
 \end{equation}
 where $\mathcal{H}_A$ and $\mathcal{H}_B$ are the Hilbert spaces for subsystems $A$ and $B$, respectively. We also learn that to describe a system with an \emph{indefinite} number of \emph{indistinguishable} particles we should use \emph{Fock space}. The construction of Fock space is often presented in a confusing way which intermixes the roles of exchange symmetry and indefinite particle number.
 
-What is not so commonly taught, but should be, is the arguably conceptually simpler construction of \emph{distinguishable Fock space}, appropriate for describing a collection of an indefinite number of distinguishable particles. Subsequently, one can obtain Bose-/Fermi-Fock space by imposing an equivalence relation under particle exchange. This approach emphasises the separation of concerns, and, as we will see, also affords us considerable freedom in modelling more exotic situations such as the description of dynamical defects.
+What is not so commonly taught, but should be, is the arguably conceptually simpler construction of \emph{distinguishable Fock space}, appropriate for describing a collection of an indefinite number of distinguishable particles. Subsequently, one can obtain Bose-/Fermi-Fock space by imposing an equivalence relation under particle exchange. This approach emphasises the separation of concerns, and, as we will see, also affords us considerable freedom in modeling more exotic situations such as the description of dynamical defects.
 
 Suppose we want to model the following situation. Imagine we have a system comprised of $N$ distinguishable quantum spins with local Hilbert space $\mathbb{C}^d$. As per the composite-system axiom of quantum mechanics, we model such a system with the Hilbert space
 \begin{equation}
@@ -55,7 +55,7 @@ it may be interpreted as the configuration space of $j$ hard-core identical scal
 
 The Hilbert space $\mathfrak{F}_{\le n}(\mathbb{C}^d)$ supplies us with just the kinematical data to describe a system of distinguishable particles. To incorporate additional dynamical information we must specify additional \emph{dynamical} data.
 
-\subsection{Modelling dynamically evolving defects}
+\subsection{Modeling dynamically evolving defects}
 We specify dynamics in quantum mechanics most directly via a one-parameter family of unitary operators $U_t:\mathcal{H}\rightarrow\mathcal{H}$; usually the family is continuous enough that we can represent them via a \emph{hamiltonian} $H$:
 \begin{equation}
 	U_t = e^{-it H}.

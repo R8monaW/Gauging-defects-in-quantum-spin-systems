@@ -22,7 +22,7 @@ This Hamiltonian involves the vertex
 	\end{tikzpicture},
 \end{figure}
 \noindent
-for whose construction we give a step-by-step manual using the ideas from tube algebras.
+for whose construction we give a step-by-step manual using the ideas from annular categories.
 
 \subsection{Computation of the bimodule vertex} 
 
@@ -340,13 +340,13 @@ which is diagrammatically
 	\begin{equation}
 		\begin{pmatrix} 0 & 0 & 0 & 0\\ 1 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ \end{pmatrix}P_{0,0} \begin{pmatrix} 0 & 1 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ \end{pmatrix}=P_{1,0}.\label{eqn:isoids}
 	\end{equation}
-However, the two matrices we multiply $P_{0,0}$ with are not elements of the matrix algebra (the matrices on the algebra only have entries on the diagonal). If they were elements of the algebra, they would form an isomorphism between $P_{0,0}$ and $P_{1,0}$, so we would pick one of them as a representative.
+However, the two matrices we multiply $P_{0,0}$ with are not elements of the matrix algebra (the matrices on the algebra only have entries on the diagonal). If they were elements of the algebra, they would form an isomorphism between $P_{0,0}$ and $P_{1,0}$, so we would pick either $P_{0,0}$ or $P_{1,0}$ as a representative.
 
 This step can be much more complicated for algebras with bigger dimensions. However, there is a nice trick which helps to see how many isomorphism classes there are, which is the Artin-Wedderburn theorem. It states that any semi-simple algebra can be decomposed into a direct sum of full matrix algebras, i.e.
 	\begin{equation}
 		\mathcal{M}\cong\bigoplus\mathcal{M}_d,
 	\end{equation}
-	where $\dim{\mathcal{M}_d}=d^2$. Within a full matrix algebra we can pick, for example, the primitive idempotent $\mathrm{diag}(1,0,\ldots)$ since the equivalent of the matrices in Eqn.~\ref{eqn:isoids} exist. We therefore only get one primitive idempotent for each full matrix algebra. In our example, the algebra is 4 dimensional. The possible decompositions are therefore 
+	where $\dim{\mathcal{M}_d}=d^2$. Within a full matrix algebra we can pick, for example, the primitive idempotent $\mathrm{diag}(1,0,\ldots)$ since the equivalent of the matrices in \ref{eqn:isoids} exist. We therefore only get one primitive idempotent for each full matrix algebra. In our case, the algebra is 4 dimensional. The possible decompositions are therefore 
 	$\mathcal{M}\cong\mathbb{C}\oplus\mathbb{C}\oplus\mathbb{C}\oplus\mathbb{C}$ and $\mathcal{M}_2$. We found the first decomposition was correct so we get four primitive idempotents (as we showed above). 
 	In case of a $5$-dimensional matrix algebra, the possible decompositions are
 	\begin{equation}
@@ -454,7 +454,7 @@ We now have to find a basis for every one of those morphism spaces, i.e.\ for ev
 			\node[above,right] at (.75,.15) {$(x,y)$};
 		\end{tikzpicture}\equiv
 		\frac{1}{4}
-		\sum_{a^\prime,b^\prime}(-1)^{a(x+\alpha)+b y}
+		\sum_{a,b}(-1)^{a(x+\alpha)+b y}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
 		\draw[red,line width=0.4mm]
@@ -471,14 +471,14 @@ We now have to find a basis for every one of those morphism spaces, i.e.\ for ev
 		\node at (0,-1.3) {$a$};
 		\end{tikzpicture}
 	\end{equation}
-The `inflation trick' developed in Refs.~\cite{BBJ18,BB19a,BB19b} picks out the representation $P_{0,0}$, and we will work with that from here on. This means
+The `inflation trick' developed in \cite{BBJ18,BB19a,BB19b} picks out the representation $P_{0,0}$, and we will work with that from here on. This means
 	\begin{equation}
 	\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 	\draw[red,line width=0.4mm] (0,-.25) -- (.75,0) -- (1.5,-.25);
 	\draw (0.75,0) -- (0.75,1) node [pos=1.25] {$\alpha$};
 	\end{tikzpicture}:=
 	\frac{1}{4}
-	\sum_{a^\prime,b^\prime}(-1)^{a\alpha}
+	\sum_{a,b}(-1)^{a\alpha}
 	\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 	\draw (0,0) circle (0.5cm);
 	\draw[red,line width=0.4mm]
@@ -496,7 +496,7 @@ The `inflation trick' developed in Refs.~\cite{BBJ18,BB19a,BB19b} picks out the 
 	\end{tikzpicture}
 	\end{equation}
 
-\subsection*{Step 5: Find associator of the extended category.} After the vertex itself is defined, we want to compute the $F$ symbols related to the new object. 
+\subsection*{Step 5: Find associator of the extended category.} After the vertex itself is defined, we want to compute the $F$-symbols related to the new object. 
 Our goal is to define a Hamiltonian for the chain which will be of the form
 	\begin{equation*}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
@@ -515,7 +515,7 @@ Our goal is to define a Hamiltonian for the chain which will be of the form
 			\draw [red, line width=0.25mm] (0.5,0) -- (0.5,1);			
 		\end{tikzpicture}\ .
 	\end{equation*}
-To compute $\alpha$ and $\beta$ above, in addition to the action on the spin chain, we will need the full set of $F$ symbols.
+To compute $\alpha$ and $\beta$ above, in addition to the action on the spin chain, we will need the full set of $F$-symbols.
 
 From the category $\Vec(\Z/2\Z)$, and the bimodule associators we have
 \begin{align}
@@ -525,7 +525,7 @@ From the category $\Vec(\Z/2\Z)$, and the bimodule associators we have
 \left(F_{*ab}^*\right)_{*,a+b}&=1&&\text{From \eqref{eqn:R}: $R$=+1}.
 \end{align}
 \noindent
-However, there are still some yet unknown $F$ symbols, namely
+However, there are still some yet unknown $F$-symbols, namely
 \begin{align}
 	\left(F_{a**}^{a+b}\right)_{*,b}&=??\\
 	\left(F_{*a*}^b\right)_{*,*}&=??\\
@@ -751,7 +751,7 @@ Attempting to use \eqref{eq:completeness} to compute $F_{***}^*$ is circular, so
 \node at (1.41421,-1.7) {$*$};
 \end{tikzpicture}.
 \end{equation}
-Both sides of the equation transform in the same representation of this 4-string action. We use this to find the $F$ symbols. Consider applying the annulus
+Both sides of the equation transform in the same representation of this 4-string action. We use this to find the $F$-symbols. Consider applying the annulus
 \begin{equation}
 \begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
 \draw[red,line width=0.4mm](-.9,0)--(-.9,-1);
@@ -896,4 +896,4 @@ We now have the full set of $F$ symbols
 		\left(F_{**a}^{a+b}\right)_{b,*}&=1\\
 		\left(F_{***}^*\right)_{a,b}&=\frac{(-1)^{ab}\varkappa_*}{\sqrt{2}},
 	\end{align*}
-which happen to be the $F$ symbols for the Ising category. 
+which happen to be the $F$-symbols for the Ising category. 

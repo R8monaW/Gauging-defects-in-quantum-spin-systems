@@ -93,11 +93,11 @@ We will now look at the example of a particle chain with $\Vec(\Z/2\Z)$ fusion r
 			\node at (6,-0.3) {$\bullet$};
 			\node at (7,-0.3) {$\bullet$};
 			\node at (8,-0.3) {$\bullet$};
-		\end{tikzpicture}
+		\end{tikzpicture},
 	\end{figure}
 \noindent
 where the vertical lines are fixed and the bullets can either be $0$ or $1$ (according to the fusion rules), hence each bullet represents the space $\mathbb{C}^2$.
-If we, for instance, only fuse $1$-particles to the chain, the value of the bullets is fixed by the fusion rules: When we fix the boundary labels (e.g., to $1$), the only possible labelling is
+If we, for instance, only fuse $1$-particles to the chain, the value of the bullets is fixed by the fusion rules: When we fix the boundary labels (e.g., to $1$), the only possible labeling is
 	\begin{figure}[H]
 		\begin{tikzpicture}
 			\draw (-0.25,0) -- (8.25,0);
@@ -126,7 +126,7 @@ If we, for instance, only fuse $1$-particles to the chain, the value of the bull
 			\node at (6,-0.3) {$1$};
 			\node at (7,-0.3) {$0$};
 			\node at (8,-0.3) {$1$};
-		\end{tikzpicture}
+		\end{tikzpicture}.
 	\end{figure}
 \noindent
 Hence, we have a unique ground state and the only vertices occurring in this case are
@@ -145,7 +145,7 @@ Hence, we have a unique ground state and the only vertices occurring in this cas
 			\node at (0,-0.3) {$1$};
 			\node at (1.5,-0.3) {$0$};
 			\node at (0.75,1.3) {$1$};
-		\end{tikzpicture}
+		\end{tikzpicture}.
 	\end{figure}
 \noindent
 Analogously, if we only allow $0$s to fuse to the chain, and the outer labels are fixed to $1$, the only possible labeling is 
@@ -177,7 +177,7 @@ Analogously, if we only allow $0$s to fuse to the chain, and the outer labels ar
 		\node at (6,-0.3) {$1$};
 		\node at (7,-0.3) {$1$};
 		\node at (8,-0.3) {$1$};
-		\end{tikzpicture}
+		\end{tikzpicture}.
 	\end{figure}
 	\noindent
 If we had fixed the outer labels to $0$, all bullets would have to be $0$. Hence, the only vertices occurring in these cases are
@@ -196,7 +196,7 @@ If we had fixed the outer labels to $0$, all bullets would have to be $0$. Hence
 		\node at (0,-0.3) {$1$};
 		\node at (1.5,-0.3) {$1$};
 		\node at (0.75,1.3) {$0$};
-		\end{tikzpicture}
+		\end{tikzpicture}.
 	\end{figure}
 \noindent
 This means that in the case of open boundary conditions, the chain has a \emph{unique ground state} once we fix the outer labels of the chain. The situation is different for periodic boundary conditions: since the only requirement here is that the label at site $n+1$ has to equal the label at site $1$, there are always two possibilities of labeling the chain. For instance, in the case of only fusing $1$s to the chain, the two possibilities are
@@ -235,7 +235,7 @@ This means that in the case of open boundary conditions, the chain has a \emph{u
 			\foreach \a in {15, 75, ..., 315} {
 				\node at (\a:0.85) {$0$};
 			};
-		\end{tikzpicture}
+		\end{tikzpicture}.
 	\end{figure}
 \noindent
 In case of fusing $0$ to the chain, we can either allow only $0$s or only $1$ as labels of the chain. Therefore, the chain with periodic boundary conditions has two ground states, hence it represents a qubit.
@@ -261,10 +261,10 @@ We will now introduce defects to this model, indicated by red lines that fuse to
 		\node at (6,-0.3) {$\bullet$};
 		\node at (7,-0.3) {$\bullet$};
 		\node at (8,-0.3) {$\bullet$};
-		\end{tikzpicture}
+		\end{tikzpicture}.
 	\end{figure}
 	\noindent
-Since the chain is represented by a category, $\Vec(\Z/2\Z)$ in our example, the defect is a $\Vec(\Z/2\Z)-\Vec(\Z/2\Z)$ bimodule, i.e.\ we are fusing an object from the bimodule to the chain. Here, we will use the bimodule $F_1$ (see Subsection \ref{sec:VecZp-bimodules}) to introduce defects to the $\Vec(\Z/2\Z)$-chain. $F_1$ has only one object, so in general we omit writing labels for the bimodule object, but indicate by a red line when the object is from the bimodule. When it is useful to indicate the label, we denote it $*$.
+Since the chain is represented by a category, $\Vec(\Z/2\Z)$ in our example, the defect is a $\Vec(\Z/2\Z)$-$\Vec(\Z/2\Z)$ bimodule, i.e.\ we are fusing an object from the bimodule to the chain. Here, we will use the bimodule $F_1$ (see Subsection \ref{sec:VecZp-bimodules}) to introduce defects to the $\Vec(\Z/2\Z)$-chain. $F_1$ has only one object, so in general we omit writing labels for the bimodule object, but indicate by a red line when the object is from the bimodule. When it is useful to indicate the label, we denote it $*$.
 
 The occurrence of one defect in a chain does not change the ground state of the system; The labels on the chain are still determined by the choice of labels on the boundary. This is different if we have more than one defect in the chain. For instance, for two defects the chain is
 	\begin{figure}[H]
@@ -287,7 +287,7 @@ The occurrence of one defect in a chain does not change the ground state of the 
 		\node at (6,-0.3) {{\color{orange}$\bullet$}};
 		\node at (7,-0.3) {$\bullet$};
 		\node at (8,-0.3) {$\bullet$};
-		\end{tikzpicture}
+		\end{tikzpicture},
 	\end{figure}
 \noindent
 where the colour of the orange bullets is not determined by the labels on the boundary of the chain. Hence, we get an additional qubit. In general, the number of additional qubits in the chain is $\#\mathrm{defects}-1$. This can be done analogously for the chain with periodic boundary conditions, the only difference is that in this case, we already have one qubit when there is no defect.
@@ -305,7 +305,7 @@ We now want to build a chain out of $\Vec(\Z/2\Z)$ and the bimodule $F_1$ in the
 	\draw[red,line width=0.4mm] (5.5,0) -- (5.5,1);
 	\draw[red,line width=0.4mm] (6.5,0) -- (6.5,1);
 	\draw[red,line width=0.4mm] (7.5,0) -- (7.5,1);
-	\end{tikzpicture}
+	\end{tikzpicture},
 \end{figure}
 \noindent
 where
