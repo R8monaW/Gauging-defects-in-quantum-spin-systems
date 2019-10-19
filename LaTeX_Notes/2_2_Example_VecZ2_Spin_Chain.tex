@@ -72,7 +72,7 @@ where $\mathcal{H}_n$ is the direct sum of all possible Hilbert spaces with $n$ 
 		\mathcal{H}\cong\bigotimes_{j=1}^N\left(\mathbb{C}\oplus\mathbb{C}^2\right).
 	\end{equation}
 
-We will now look at the example of a particle chain with $\Vec(\Z/2\Z)$ fusion rules, i.e.\ the objects are either $0$ or $1$ and the fusion is given by addition $\mathrm{mod}\ 2$. We consider the following chain:
+We will now look at a concrete example, namely a particle chain with $\Vec(\Z/2\Z)$ fusion rules and pairwise interaction. The objects in $\Vec(\Z/2\Z)$ are either $0$ or $1$ and the fusion is given by addition $\mathrm{mod}\ 2$. The labels $0$ or $1$ are referred to as the topological charge of the particle. Two neighboring particles interact according to the fusion rules of $\Vec(\Z/2\Z)$, i.e. two identical particles fuse to $0$ and two different particles fuse to $1$. In order to define the Hilbert space for a fixed particle we can use fusion trees. These are chains of the following form:
 	\begin{figure}[H]
 		\begin{tikzpicture}
 			\draw (-0.25,0) -- (8.25,0);
@@ -96,7 +96,7 @@ We will now look at the example of a particle chain with $\Vec(\Z/2\Z)$ fusion r
 		\end{tikzpicture},
 	\end{figure}
 \noindent
-where the vertical lines are fixed and the bullets can either be $0$ or $1$ (according to the fusion rules), hence each bullet represents the space $\mathbb{C}^2$.
+where the vertical lines are fixed and the bullets can either be $0$ or $1$, hence each bullet represents the space $\mathbb{C}^2$. The basis for the Hilbert space then corresponds to all possible labelings of the horizontal links which are allowed according to the fusion rules.
 If we, for instance, only fuse $1$-particles to the chain, the value of the bullets is fixed by the fusion rules: When we fix the boundary labels (e.g., to $1$), the only possible labeling is
 	\begin{figure}[H]
 		\begin{tikzpicture}

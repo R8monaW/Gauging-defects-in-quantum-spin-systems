@@ -19,6 +19,7 @@
 \usepackage[many]{tcolorbox}
 \usepackage{tensor} %Bimoduln
 \usepackage{here} %Erzwingen von Grafikpositionen
+\usepackage{subcaption}%subfigure
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \definecolor{light-gray}{gray}{0.85}
 \definecolor{nicegreen}{RGB}{60,183,82}
@@ -122,4 +123,11 @@
 \newtheorem*{remark}{Remark}
 \newtheorem*{note}{Note}
 
-%\usepackage[foot]{amsaddr}
+\usepackage[foot]{amsaddr}
+\makeatletter
+\renewcommand{\email}[2][]{%
+	\ifx\emails\@empty\relax\else{\g@addto@macro\emails{,\space}}\fi%
+	\@ifnotempty{#1}{\g@addto@macro\emails{\textrm{(#1)}\space}}%
+	\g@addto@macro\emails{#2}%
+}
+\makeatother

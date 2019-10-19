@@ -64,7 +64,62 @@ To introduce dynamics for our defect system we hence just need a hermitian matri
 
 In the context of topologically ordered models such as Kitaev's toric code we typically introduce dynamical information indirectly by describing the system via the ground eigenspace $\mathcal{V}\subset \mathcal{H}$ of a specific Hamiltonian $H$. In the case of the toric code for $N\times N$ quantum spins arranged on the torus, the ground eigenspace $\mathcal{V}_{\mathbb{T}}$ of the toric code Hamiltonian is four dimensional.
 
-Continuing in the context of the toric code, let's suppose we now have a lattice with a missing-qubit defect at some edge $e$. One can define a toric-code Hamiltonian for this new punctured torus; restricting to its ground eigenspace yields a \emph{four-dimensional subspace} $\mathcal{V}_{\mathbb{T}\setminus e}$. There is no obstruction to describing the ground eigenspace for two, three, etc.\ missing-qubit defects. What results is a rather intricate combinatorial problem, as, depending on where the defects are located, one gets higher or lower dimensional ground eigenspace. To see an example of the intricacies that easily result, consider two missing edges. The ground space for this system is $(\mathbb{C}^2)^{\otimes 3}$ except when the two edges are next to each other, in which case we have a single larger puncture (with smooth boundary) and the ground eigenspace is only $(\mathbb{C}^2)^{\otimes 2}$.
+Continuing in the context of the toric code, let's suppose we now have a lattice with a missing-qubit defect at some edge $e$, see Figure \ref{fig:1defect}. One can define a toric-code Hamiltonian for this new punctured torus; restricting to its ground eigenspace yields a \emph{four-dimensional subspace} $\mathcal{V}_{\mathbb{T}\setminus e}$. There is no obstruction to describing the ground eigenspace for two, three, etc.\ missing-qubit defects. What results is a rather intricate combinatorial problem, as, depending on where the defects are located, one gets higher or lower dimensional ground eigenspace. To see an example of the intricacies that easily result, consider two missing edges, see Figure \ref{fig:2adjdefects} and Figure \ref{fig:2distdefects}. The ground space for this system is $(\mathbb{C}^2)^{\otimes 3}$ except when the two edges are next to each other, in which case we have a single larger puncture (with smooth boundary) and the ground eigenspace is only $(\mathbb{C}^2)^{\otimes 2}$.
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[t]{0.2\linewidth}
+		\begin{tikzpicture}[scale=0.75,baseline=(current bounding box.center)]
+			%horizontal lines
+			\draw (-0.25,0) -- (3.25,0);
+			\draw (-0.25,-1) -- (3.25,-1);
+			\draw (-0.25,-2) -- (1,-2);
+			\draw (2,-2) -- (3.25,-2);
+			\draw (-0.25,-3) -- (3.25,-3);
+			%vertical lines
+			\draw (0,-3.25) -- (0,0.25);
+			\draw (1,-3.25) -- (1,0.25);
+			\draw (2,-3.25) -- (2,0.25);
+			\draw (3,-3.25) -- (3,0.25);
+		\end{tikzpicture}
+		\caption{One missing qubit defect on a Toric code lattice.}\label{fig:1defect}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.2\linewidth}
+		\begin{tikzpicture}[scale=0.75,baseline=(current bounding box.center)]
+			%horizontal lines
+			\draw (-0.25,0) -- (3.25,0);
+			\draw (-0.25,-1) -- (1,-1);
+			\draw (2,-1) -- (3.25,-1);
+			\draw (-0.25,-2) -- (1,-2);
+			\draw (2,-2) -- (3.25,-2);
+			\draw (-0.25,-3) -- (3.25,-3);
+			%vertical lines
+			\draw (0,-3.25) -- (0,0.25);
+			\draw (1,-3.25) -- (1,0.25);
+			\draw (2,-3.25) -- (2,0.25);
+			\draw (3,-3.25) -- (3,0.25);
+		\end{tikzpicture}
+		\caption{Two adjacent missing qubit defects on a Toric code lattice.}\label{fig:2adjdefects}
+	\end{subfigure}\hfill
+	\begin{subfigure}[t]{0.2\linewidth}
+		\begin{tikzpicture}[scale=0.75,baseline=(current bounding box.center)]
+		%horizontal lines
+		\draw (-0.25,0) -- (3.25,0);
+		\draw (-0.25,-1) -- (2,-1);
+		\draw (3,-1) -- (3.25,-1);
+		\draw (-0.25,-2) -- (1,-2);
+		\draw (2,-2) -- (3.25,-2);
+		\draw (-0.25,-3) -- (3.25,-3);
+		%vertical lines
+		\draw (0,-3.25) -- (0,0.25);
+		\draw (1,-3.25) -- (1,0.25);
+		\draw (2,-3.25) -- (2,0.25);
+		\draw (3,-3.25) -- (3,0.25);
+		\end{tikzpicture}
+		\caption{Two distant missing qubit defects on a Toric code lattice.}\label{fig:2distdefects}
+	\end{subfigure}
+	\caption{Depiction of different situations where missing qubit defects are inserted on a Toric code lattice. In the case of more than one missing link the ground space for the system depends on whether the defects are adjacent to each other or not.}
+\end{figure}
 
 We can incorporate such \emph{indirect} dynamical information into our kinematical space $\mathcal{F}_{\le n}(\mathbb{C}^d)$ as follows. We start by writing out 
 \begin{equation}
