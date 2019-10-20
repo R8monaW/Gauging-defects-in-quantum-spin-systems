@@ -64,11 +64,12 @@ To introduce dynamics for our defect system we hence just need a hermitian matri
 
 In the context of topologically ordered models such as Kitaev's toric code we typically introduce dynamical information indirectly by describing the system via the ground eigenspace $\mathcal{V}\subset \mathcal{H}$ of a specific Hamiltonian $H$. In the case of the toric code for $N\times N$ quantum spins arranged on the torus, the ground eigenspace $\mathcal{V}_{\mathbb{T}}$ of the toric code Hamiltonian is four dimensional.
 
-Continuing in the context of the toric code, let's suppose we now have a lattice with a missing-qubit defect at some edge $e$, see Figure \ref{fig:1defect}. One can define a toric-code Hamiltonian for this new punctured torus; restricting to its ground eigenspace yields a \emph{four-dimensional subspace} $\mathcal{V}_{\mathbb{T}\setminus e}$. There is no obstruction to describing the ground eigenspace for two, three, etc.\ missing-qubit defects. What results is a rather intricate combinatorial problem, as, depending on where the defects are located, one gets higher or lower dimensional ground eigenspace. To see an example of the intricacies that easily result, consider two missing edges, see Figure \ref{fig:2adjdefects} and Figure \ref{fig:2distdefects}. The ground space for this system is $(\mathbb{C}^2)^{\otimes 3}$ except when the two edges are next to each other, in which case we have a single larger puncture (with smooth boundary) and the ground eigenspace is only $(\mathbb{C}^2)^{\otimes 2}$.
+Continuing in the context of the toric code, let's suppose we now have a lattice with a missing-qubit defect at some edge $e$, see Figure \ref{fig:1defect}. One can define a toric-code Hamiltonian for this new punctured torus; restricting to its ground eigenspace yields a \emph{four-dimensional subspace} $\mathcal{V}_{\mathbb{T}\setminus e}$. There is no obstruction to describing the ground eigenspace for two, three, etc.\ missing-qubit defects. What results is a rather intricate combinatorial problem, as, depending on where the defects are located relative to each other, one gets higher or lower dimensional ground eigenspace. To see an example of the intricacies that easily result, consider the case of two missing edges: these can either be adjacent to each other or distant. In the latter case, depicted in Figure \ref{fig:2distdefects}), the ground space for this system is $(\mathbb{C}^2)^{\otimes 3}$ while in the case of adjacent defects we have a single larger puncture (with smooth boundary), see Figure \ref{fig:2adjdefects}, and the ground eigenspace is only $(\mathbb{C}^2)^{\otimes 2}$.
 
 \begin{figure}
 	\centering
 	\begin{subfigure}[t]{0.2\linewidth}
+		\centering
 		\begin{tikzpicture}[scale=0.75,baseline=(current bounding box.center)]
 			%horizontal lines
 			\draw (-0.25,0) -- (3.25,0);
@@ -82,9 +83,10 @@ Continuing in the context of the toric code, let's suppose we now have a lattice
 			\draw (2,-3.25) -- (2,0.25);
 			\draw (3,-3.25) -- (3,0.25);
 		\end{tikzpicture}
-		\caption{One missing qubit defect on a Toric code lattice.}\label{fig:1defect}
-	\end{subfigure}\hfill
+		\caption{One missing qubit defect on a toric code lattice.}\label{fig:1defect}
+	\end{subfigure}\hspace{40pt}
 	\begin{subfigure}[t]{0.2\linewidth}
+		\centering
 		\begin{tikzpicture}[scale=0.75,baseline=(current bounding box.center)]
 			%horizontal lines
 			\draw (-0.25,0) -- (3.25,0);
@@ -99,9 +101,10 @@ Continuing in the context of the toric code, let's suppose we now have a lattice
 			\draw (2,-3.25) -- (2,0.25);
 			\draw (3,-3.25) -- (3,0.25);
 		\end{tikzpicture}
-		\caption{Two adjacent missing qubit defects on a Toric code lattice.}\label{fig:2adjdefects}
-	\end{subfigure}\hfill
+		\caption{Two adjacent missing qubit defects on a toric code lattice.}\label{fig:2adjdefects}
+	\end{subfigure}\hspace{40pt}
 	\begin{subfigure}[t]{0.2\linewidth}
+		\centering
 		\begin{tikzpicture}[scale=0.75,baseline=(current bounding box.center)]
 		%horizontal lines
 		\draw (-0.25,0) -- (3.25,0);
@@ -116,9 +119,9 @@ Continuing in the context of the toric code, let's suppose we now have a lattice
 		\draw (2,-3.25) -- (2,0.25);
 		\draw (3,-3.25) -- (3,0.25);
 		\end{tikzpicture}
-		\caption{Two distant missing qubit defects on a Toric code lattice.}\label{fig:2distdefects}
+		\caption{Two distant missing qubit defects on a toric code lattice.}\label{fig:2distdefects}
 	\end{subfigure}
-	\caption{Depiction of different situations where missing qubit defects are inserted on a Toric code lattice. In the case of more than one missing link the ground space for the system depends on whether the defects are adjacent to each other or not.}
+	\caption{Depiction of different situations where missing qubit defects are inserted on a toric code lattice. In the case of more than one missing link the ground space for the system depends on whether the defects are adjacent to each other.}
 \end{figure}
 
 We can incorporate such \emph{indirect} dynamical information into our kinematical space $\mathcal{F}_{\le n}(\mathbb{C}^d)$ as follows. We start by writing out 
@@ -144,6 +147,6 @@ This equivalence relation collapses many of the direct sums appearing in $\mathc
 	\left(\mathcal{V}_{\le n}(\mathbb{C}^d)/\sim\right) = (\mathbb{C}^2\otimes \mathbb{C}^2)\oplus (\mathbb{C}^2\otimes \mathbb{C}^2\otimes \mathbb{C}^2)\oplus \cdots.
 \end{equation}
 
-Writing out the whole ground eigenspace and applying the equivalence relation to it results in a highly intricately combinatorial problem, which is why we exploit concepts from category theory to model defects in the system. Of course, the above description is not only restricted to the toric code case. In the next section, we show how ideas and techniques from category theory can be used to model dynamical defects in a system similar to the golden chain \cite{Feiguin2007}, namely a chain with $\Vec(\Z/2\Z)$ fusion rules.
+Writing out the whole ground eigenspace and applying the equivalence relation to it results in a highly intricately combinatorial problem, which is why we exploit concepts from category theory to model defects in the system. Of course, the above description is not only restricted to the toric code case. In the next section, we show how ideas and techniques from category theory can be used to model dynamical defects in a one-dimensional spin system.
 
   
