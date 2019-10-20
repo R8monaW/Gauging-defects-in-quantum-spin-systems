@@ -1,6 +1,321 @@
 \label{Ising}
-Recall that we want to build the Hamiltonian \eqref{VecZ2Hamiltonian}
-\begin{equation*}
+
+The chain model we want to study has the following structure: Given a fusion category $\mathcal{C}$, we take one distinguished object $X\in\mathcal{C}$ and study pairwise interaction within a chain of $N$ of these objects. To define a Hilbert space for this system, consider the fusion tree of the fusion process of $N$ objects of type $X$ as depicted below, which is a vector in the Hilbert space $C(X,X^{\otimes{N+1}})$.
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+		\draw (-0.25,0) -- (8.25,0);
+		\draw (0.5,0) to node[right, pos=0.975] {$X$} (0.5,1);
+		\draw (1.5,0) to node[right, pos=0.975] {$X$} (1.5,1);
+		\draw (2.5,0) to node[right, pos=0.975] {$X$} (2.5,1);
+		\draw (3.5,0) to node[right, pos=0.975] {$X$} (3.5,1);
+		\draw (4.5,0) to node[right, pos=0.975] {$X$} (4.5,1);
+		\draw (5.5,0) to node[right, pos=0.975] {$X$} (5.5,1);
+		\draw (6.5,0) to node[right, pos=0.975] {$X$} (6.5,1);
+		\draw (7.5,0) to node[right, pos=0.975] {$X$} (7.5,1);
+		\node at (-0.1,-0.3) {$X$};
+		\node at (1,-0.3) {$x_1$};
+		\node at (2,-0.3) {$x_2$};
+		\node at (3,-0.3) {$\dots$};
+		\node at (4,-0.3) {};
+		\node at (5,-0.3) {};
+		\node at (6,-0.3) {};
+		\node at (7,-0.3) {$x_{N-1}$};
+		\node at (8.1,-0.3) {$X$};
+	\end{tikzpicture}.
+\end{figure}
+\noindent
+According to the fusion rules of the category that is considered, only specific combinations of the $x_1,x_2,\dots$ are allowed. The basis of this Hilbert space then corresponds to all admissible labelings $\lvert x_1,x_2,\dots,x_{N-1}\rangle$ of the links with $x_i\in L_\mathcal{C}$. Note that in the figure above, the boundary labels are fixed to $X$, but this is not mandatory. One can also consider these labels part of the labels that define the basis.
+
+The interaction we want to study is a pairwise interaction where two neighboring particles favor to fuse to the vacuum $1$, i.e.\ we assign an energy gain to this fusion channel, e.g.\ $-1$. The local Hamiltonian that acts on sites $i$ and $i+1$ is then given by
+	\begin{equation}\label{eq:Ham}
+	h_i=-\frac{1}{\dim(X)}
+	\begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
+	\draw[] (0,0) to node [left,pos=0.8] {$X$} (-0.7,0.9);
+	\draw[] (0,0) to node [right,pos=0.8] {$X$} (0.7,0.9);
+	\draw (0,0) to node[right] {$1$} (0,-1);
+	\draw[] (0,-1) to node [left,pos=0.8] {$X$} (-0.7,-1.9);
+	\draw[] (0,-1) to node [right,pos=0.8] {$X$} (0.7,-1.9);
+	\node at (0.8,-2.5) {$i+1$};
+	\node at (-0.8,-2.5) {$i$};
+	\end{tikzpicture}.
+	\end{equation}
+The complete Hamiltonian is then given by summing over all sites of the chain, $H=\sum_i h_i$.
+
+In the example we want to study, $\Vec(\Z/2\Z)$, the objects are either $0$ or $1$ and the fusion is given by addition $\mathrm{mod}\ 2$. Note that here, the vacuum is denoted $0$. Two neighboring particles interact according to the fusion rules of $\Vec(\Z/2\Z)$, i.e. two identical particles fuse to $0$ and two different particles fuse to $1$. In order to define the Hilbert space for a fixed particle we can use fusion trees. These are chains of the following form:
+\begin{figure}[H]
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw (-0.25,0) -- (8.25,0);
+	\draw (0.5,0) -- (0.5,1);
+	\draw (1.5,0) -- (1.5,1);
+	\draw (2.5,0) -- (2.5,1);
+	\draw (3.5,0) -- (3.5,1);
+	\draw (4.5,0) -- (4.5,1);
+	\draw (5.5,0) -- (5.5,1);
+	\draw (6.5,0) -- (6.5,1);
+	\draw (7.5,0) -- (7.5,1);
+	\node at (0,-0.3) {$\bullet$};
+	\node at (1,-0.3) {$\bullet$};
+	\node at (2,-0.3) {$\bullet$};
+	\node at (3,-0.3) {$\bullet$};
+	\node at (4,-0.3) {$\bullet$};
+	\node at (5,-0.3) {$\bullet$};
+	\node at (6,-0.3) {$\bullet$};
+	\node at (7,-0.3) {$\bullet$};
+	\node at (8,-0.3) {$\bullet$};
+	\end{tikzpicture},
+\end{figure}
+\noindent
+where the vertical lines are fixed and the bullets can either be $0$ or $1$, hence each bullet represents the space $\mathbb{C}^2$. The basis for the Hilbert space then corresponds to all possible labelings of the horizontal links which are allowed according to the fusion rules.
+If we, for instance, only fuse $1$-particles to the chain, the value of the bullets is fixed by the fusion rules: When we fix the boundary labels (e.g., to $1$), the only possible labeling is
+\begin{figure}[H]
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw (-0.25,0) -- (8.25,0);
+	\draw (0.5,0) -- (0.5,1);
+	\draw (1.5,0) -- (1.5,1);
+	\draw (2.5,0) -- (2.5,1);
+	\draw (3.5,0) -- (3.5,1);
+	\draw (4.5,0) -- (4.5,1);
+	\draw (5.5,0) -- (5.5,1);
+	\draw (6.5,0) -- (6.5,1);
+	\draw (7.5,0) -- (7.5,1);
+	\node at (0.5,1.3) {$1$};
+	\node at (1.5,1.3) {$1$};
+	\node at (2.5,1.3) {$1$};
+	\node at (3.5,1.3) {$1$};
+	\node at (4.5,1.3) {$1$};
+	\node at (5.5,1.3) {$1$};
+	\node at (6.5,1.3) {$1$};
+	\node at (7.5,1.3) {$1$};
+	\node at (0,-0.3) {$1$};
+	\node at (1,-0.3) {$0$};
+	\node at (2,-0.3) {$1$};
+	\node at (3,-0.3) {$0$};
+	\node at (4,-0.3) {$1$};
+	\node at (5,-0.3) {$0$};
+	\node at (6,-0.3) {$1$};
+	\node at (7,-0.3) {$0$};
+	\node at (8,-0.3) {$1$};
+	\end{tikzpicture}.
+\end{figure}
+\noindent
+Hence, we have a unique ground state and the only vertices occurring in this case are
+\begin{figure}[H]	
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw (0,0) -- (1.5,0);
+	\draw (0.75,0) -- (0.75,1);
+	\node at (0,-0.3) {$0$};
+	\node at (1.5,-0.3) {$1$};
+	\node at (0.75,1.3) {$1$};
+	\end{tikzpicture}
+	\hspace{20pt}
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw (0,0) -- (1.5,0);
+	\draw (0.75,0) -- (0.75,1);
+	\node at (0,-0.3) {$1$};
+	\node at (1.5,-0.3) {$0$};
+	\node at (0.75,1.3) {$1$};
+	\end{tikzpicture}.
+\end{figure}
+\noindent
+Analogously, if we only allow $0$s to fuse to the chain, and the outer labels are fixed to $1$, the only possible labeling is 
+\begin{figure}[H]
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw (-0.25,0) -- (8.25,0);
+	\draw (0.5,0) -- (0.5,1);
+	\draw (1.5,0) -- (1.5,1);
+	\draw (2.5,0) -- (2.5,1);
+	\draw (3.5,0) -- (3.5,1);
+	\draw (4.5,0) -- (4.5,1);
+	\draw (5.5,0) -- (5.5,1);
+	\draw (6.5,0) -- (6.5,1);
+	\draw (7.5,0) -- (7.5,1);
+	\node at (0.5,1.3) {$0$};
+	\node at (1.5,1.3) {$0$};
+	\node at (2.5,1.3) {$0$};
+	\node at (3.5,1.3) {$0$};
+	\node at (4.5,1.3) {$0$};
+	\node at (5.5,1.3) {$0$};
+	\node at (6.5,1.3) {$0$};
+	\node at (7.5,1.3) {$0$};
+	\node at (0,-0.3) {$1$};
+	\node at (1,-0.3) {$1$};
+	\node at (2,-0.3) {$1$};
+	\node at (3,-0.3) {$1$};
+	\node at (4,-0.3) {$1$};
+	\node at (5,-0.3) {$1$};
+	\node at (6,-0.3) {$1$};
+	\node at (7,-0.3) {$1$};
+	\node at (8,-0.3) {$1$};
+	\end{tikzpicture}.
+\end{figure}
+\noindent
+If we had fixed the outer labels to $0$, all bullets would have to be $0$. Hence, the only vertices occurring in these cases are
+\begin{figure}[H]	
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw (0,0) -- (1.5,0);
+	\draw (0.75,0) -- (0.75,1);
+	\node at (0,-0.3) {$0$};
+	\node at (1.5,-0.3) {$0$};
+	\node at (0.75,1.3) {$0$};
+	\end{tikzpicture}
+	\hspace{20pt}
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw (0,0) -- (1.5,0);
+	\draw (0.75,0) -- (0.75,1);
+	\node at (0,-0.3) {$1$};
+	\node at (1.5,-0.3) {$1$};
+	\node at (0.75,1.3) {$0$};
+	\end{tikzpicture}.
+\end{figure}
+\noindent
+This means that in the case of open boundary conditions, the chain has a \emph{unique ground state} once we fix the outer labels of the chain. The situation is different for periodic boundary conditions: since the only requirement here is that the label at site $n+1$ has to equal the label at site $1$, there are always two possibilities of labeling the chain. For instance, in the case of only fusing $1$s to the chain, the two possibilities are
+\begin{figure}[H]
+	\begin{tikzpicture}[scale=1.5,baseline=(current bounding box.center)]
+	\def\Radius{1cm}
+	\draw (0,0) circle[radius=\Radius];
+	\draw
+	\foreach \a in {0, 30, ..., 330} {
+		(\a:\Radius) -- (\a:1.4)
+	};
+	\foreach \a in {0, 30, ..., 330} {
+		\node at (\a:1.55) {$1$};
+	};
+	\foreach \a in {45, 105, ..., 375} {
+		\node at (\a:0.85) {$0$};
+	};
+	\foreach \a in {15, 75, ..., 315} {
+		\node at (\a:0.85) {$1$};
+	};
+	\end{tikzpicture}
+	\hspace{40pt}
+	\begin{tikzpicture}[scale=1.5,baseline=(current bounding box.center)]
+	\def\Radius{1cm}
+	\draw (0,0) circle[radius=\Radius];
+	\draw
+	\foreach \a in {0, 30, ..., 330} {
+		(\a:\Radius) -- (\a:1.4)
+	};
+	\foreach \a in {0, 30, ..., 330} {
+		\node at (\a:1.55) {$1$};
+	};
+	\foreach \a in {45, 105, ..., 375} {
+		\node at (\a:0.85) {$1$};
+	};
+	\foreach \a in {15, 75, ..., 315} {
+		\node at (\a:0.85) {$0$};
+	};
+	\end{tikzpicture}.
+\end{figure}
+\noindent
+In case of fusing $0$ to the chain, we can either allow only $0$s or only $1$ as labels of the chain. Therefore, the chain with periodic boundary conditions has two ground states, hence it represents a qubit. Note that all vertices that have occurred so far are defined within the fusion category.
+
+We will now introduce defects to this model, indicated by red lines that fuse to the chain, e.g.\ a chain with one defect would be
+\begin{figure}[H]
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw (-0.25,0) -- (8.25,0);
+	\draw (0.5,0) -- (0.5,1);
+	\draw (1.5,0) -- (1.5,1);
+	\draw (2.5,0) -- (2.5,1);
+	\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+	\draw (4.5,0) -- (4.5,1);
+	\draw (5.5,0) -- (5.5,1);
+	\draw (6.5,0) -- (6.5,1);
+	\draw (7.5,0) -- (7.5,1);
+	\node at (0,-0.3) {$\bullet$};
+	\node at (1,-0.3) {$\bullet$};
+	\node at (2,-0.3) {$\bullet$};
+	\node at (3,-0.3) {$\bullet$};
+	\node at (4,-0.3) {$\bullet$};
+	\node at (5,-0.3) {$\bullet$};
+	\node at (6,-0.3) {$\bullet$};
+	\node at (7,-0.3) {$\bullet$};
+	\node at (8,-0.3) {$\bullet$};
+	\end{tikzpicture}.
+\end{figure}
+\noindent
+Since the chain is represented by a category, $\Vec(\Z/2\Z)$ in our example, the defect is a $\Vec(\Z/2\Z)$-$\Vec(\Z/2\Z)$ bimodule, i.e.\ we are fusing an object from the bimodule to the chain. Here, we will use the bimodule $F_1$ (see Subsection \ref{sec:VecZp-bimodules}) to introduce defects to the $\Vec(\Z/2\Z)$-chain. $F_1$ has only one object, so in general we omit writing labels for the bimodule object, but indicate by a red line when the object is from the bimodule. When it is useful to indicate the label, we denote it $*$.
+
+The occurrence of one defect in a chain does not change the ground state of the system; The labels on the chain are still determined by the choice of labels on the boundary. This is different if we have more than one defect in the chain. For instance, for two defects the chain is
+\begin{figure}[H]
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw (-0.25,0) -- (8.25,0);
+	\draw (0.5,0) -- (0.5,1);
+	\draw (1.5,0) -- (1.5,1);
+	\draw (2.5,0) -- (2.5,1);
+	\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+	\draw (4.5,0) -- (4.5,1);
+	\draw (5.5,0) -- (5.5,1);
+	\draw[red,line width=0.4mm] (6.5,0) -- (6.5,1);
+	\draw (7.5,0) -- (7.5,1);
+	\node at (0,-0.3) {$\bullet$};
+	\node at (1,-0.3) {$\bullet$};
+	\node at (2,-0.3) {$\bullet$};
+	\node at (3,-0.3) {$\bullet$};
+	\node at (4,-0.3) {{\color{orange}$\bullet$}};
+	\node at (5,-0.3) {{\color{orange}$\bullet$}};
+	\node at (6,-0.3) {{\color{orange}$\bullet$}};
+	\node at (7,-0.3) {$\bullet$};
+	\node at (8,-0.3) {$\bullet$};
+	\end{tikzpicture},
+\end{figure}
+\noindent
+where the color of the orange bullets is not determined by the labels on the boundary of the chain. Hence, we get an additional qubit. In general, the number of additional qubits in the chain is $\#\mathrm{defects}-1$. This can be done analogously for the chain with periodic boundary conditions, the only difference is that in this case, we already have one qubit when there is no defect.
+
+We could also allow the bimodule object to live on the horizontal lines of the chain. In particular,
+We now want to build a chain out of $\Vec(\Z/2\Z)$ and the bimodule $F_1$ in the following way: consider the chain
+\begin{figure}[H]
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw[blue,line width=0.4mm] (-0.25,0) -- (8.25,0);
+	\draw[red,line width=0.4mm] (0.5,0) -- (0.5,1);
+	\draw[red,line width=0.4mm] (1.5,0) -- (1.5,1);
+	\draw[red,line width=0.4mm] (2.5,0) -- (2.5,1);
+	\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+	\draw[red,line width=0.4mm] (4.5,0) -- (4.5,1);
+	\draw[red,line width=0.4mm] (5.5,0) -- (5.5,1);
+	\draw[red,line width=0.4mm] (6.5,0) -- (6.5,1);
+	\draw[red,line width=0.4mm] (7.5,0) -- (7.5,1);
+	\end{tikzpicture},
+\end{figure}
+\noindent
+where
+\begin{equation}\label{eq:configs}
+\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+\draw[blue,line width=0.4mm] (0,0) -- (1,0);
+\end{tikzpicture}=
+\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+\draw[black] (0,0) -- (1,0);
+\end{tikzpicture}\oplus
+\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
+\draw[red,line width=0.4mm] (0,0) -- (1,0);
+\end{tikzpicture},
+\end{equation}
+which means that it is either an object from the category ($0$ or $1$) or an object from the bimodule (which can only be $*$), i.e., $\mathbb{C}^2\oplus\mathbb{C}\cong\mathbb{C}^3$. Valid configurations then look like
+\begin{figure}[H]
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
+	\draw[black] (-0.25,0) to node [below] {$\mathbb{C}^2$} (0.5,0);
+	\draw[red,line width=0.4mm] (0.5,0) -- (0.5,1);
+	\draw[red,line width=0.4mm] (0.5,0) -- (1.5,0);
+	\draw[red,line width=0.4mm] (1.5,0) -- (1.5,1);
+	\draw[black] (1.5,0) to node [below] {$\mathbb{C}^2$} (2.5,0);
+	\draw[red,line width=0.4mm] (2.5,0) -- (2.5,1);
+	\draw[red,line width=0.4mm] (2.5,0) -- (3.5,0);
+	\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+	\draw[black] (3.5,0) to node [below] {$\mathbb{C}^2$} (4.5,0);
+	\draw[red,line width=0.4mm] (4.5,0) -- (4.5,1);
+	\draw[red,line width=0.4mm] (4.5,0) -- (5.5,0);
+	\draw[red,line width=0.4mm] (5.5,0) -- (5.5,1);
+	\draw[black] (5.5,0) to node [below] {$\mathbb{C}^2$} (6.5,0);
+	\draw[red,line width=0.4mm] (6.5,0) -- (6.5,1);
+	\draw[red,line width=0.4mm] (6.5,0) -- (7.5,0);
+	\draw[red,line width=0.4mm] (7.5,0) -- (7.5,1);
+	\draw[black] (7.5,0) to node [below] {$\mathbb{C}^2$} (8.25,0);
+	\end{tikzpicture},
+\end{figure}
+\noindent
+so we have a non-trivial Hilbert space. Our goal is to construct a local Hamiltonian of the form \ref{eq:Ham} for this chain. For our model this means that it is energetically favored to fuse to the $0$ object of $\Vec(\Z/2\Z)$. Hence, the full Hamiltonian is of the form
+\begin{equation}
 H=-\sum \frac{1}{\sqrt{2}}
 \begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
 \draw[red,line width=0.4mm] (0,0) -- (-0.7,0.9);
@@ -12,23 +327,25 @@ H=-\sum \frac{1}{\sqrt{2}}
 %			\node at (-0.8,1.1) {$*$};
 %			\node at (0.8,-2.1) {$*$};
 %			\node at (-0.8,-2.1) {$*$};
-\end{tikzpicture}.
-\end{equation*}
-This Hamiltonian involves the vertex
+\end{tikzpicture},\label{VecZ2Hamiltonian}
+\end{equation}
+where the sum goes over all sites of the chain and the normalization factor results from the fact that $\dim(*)=\sqrt{2}$. This Hamiltonian involves the vertex
 \begin{figure}[H]	
-	\begin{tikzpicture}
+	\begin{tikzpicture}[baseline=(current bounding box.center)]
 	\draw[red,line width=0.4mm] (0,0) -- (1.5,0);
 	\draw[black] (0.75,0) -- (0.75,1);
-	\end{tikzpicture},
+	\end{tikzpicture}.
 \end{figure}
 \noindent
-for whose construction we give a step-by-step manual using the ideas from annular categories.
+Since this vertex is neither defined in the category $\Vec(\Z/2\Z)$ nor in the bimodule $F_1$, we need to construct it. More precisely, for each choice of labels we need a basis for the corresponding morphism space. 
+%For now, we will restrict to the case that only objects of the category are allowed to be on horizontal lines, but we will come back to other possibilities later. Although we will not need this specific vertex in the final chain we are going to construct, we go through its computation in detail to explain how these vertices can be constructed in general. 
+We do the construction of the required vertex step-by-step using ideas from tube algebras.
 
 \subsection{Computation of the bimodule vertex} 
 
 \subsection*{Step 1: Compute isomorphism classes of objects and pick a representative.} In general, what we aim for are representations of the annular category of the form
 	\begin{figure}[H]
-		\begin{tikzpicture}[scale=1.2]
+		\begin{tikzpicture}[scale=1.2,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
 			\draw[red,line width=0.4mm]
 			\foreach \a in {-60, -120} {
