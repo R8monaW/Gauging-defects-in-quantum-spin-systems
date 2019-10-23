@@ -15,7 +15,7 @@ When we study quantum theory we learn that to describe the Hilbert space $\mathc
 \end{equation}
 where $\mathcal{H}_A$ and $\mathcal{H}_B$ are the Hilbert spaces for subsystems $A$ and $B$, respectively. We also learn that to describe a system with an \emph{indefinite} number of \emph{indistinguishable} particles we should use \emph{Fock space}. The construction of Fock space is often presented in a confusing way which intermixes the roles of exchange symmetry and indefinite particle number.
 
-What is not so commonly taught, but should be, is the arguably conceptually simpler construction of \emph{distinguishable Fock space}, appropriate for describing a collection of an indefinite number of distinguishable particles. Subsequently, one can obtain Bose-/Fermi-Fock space by imposing an equivalence relation under particle exchange. This approach emphasizes the separation of concerns, and, as we will see, also affords us considerable freedom in modeling more exotic situations such as the description of dynamical defects.
+What is not so commonly taught, but should be, is the arguably conceptually simpler construction of \emph{distinguishable Fock space} \todo{cite advanced quantum theory video playlist}, appropriate for describing a collection of an indefinite number of distinguishable particles. Subsequently, one can obtain Bose-/Fermi-Fock space by imposing an equivalence relation under particle exchange. This approach emphasizes the separation of concerns, and, as we will see, also affords us considerable freedom in modeling more exotic situations such as the description of dynamical defects.
 
 Suppose we want to model the following situation. Imagine we have a system comprised of $N$ distinguishable quantum spins with local Hilbert space $\mathbb{C}^d$. As per the composite-system axiom of quantum mechanics, we model such a system with the Hilbert space
 \begin{equation}
@@ -29,15 +29,15 @@ What if we don't know beforehand how many particles we'll end up with? Let's ass
 \end{equation}
 By convention and assumption the space describing zero particles, the \emph{vacuum}, is assigned the Hilbert space $(\mathbb{C}^d)^{\otimes 0} \cong \mathbb{C}$.
 
-It is now easy to incorporate additional constraints on the numbers of particles, e.g., to describe a system comprised of \emph{either} zero \emph{or} one distinguishable quantum spin we would use
+It is now easy to incorporate additional constraints on the numbers of particles, e.g., to describe a system comprised of \emph{either} zero distinguishable quantum spins \emph{or} one distinguishable quantum spin we would use
 \begin{equation}
 	\mathfrak{F}_{\le 1} (\mathbb{C}^d) \cong \mathbb{C}\oplus \mathbb{C}^d.
 \end{equation}
 We could call this the Hilbert space of a ``maybe'' quantum spin.
 
-Let's now consider the central situation for this work. How should we describe a quantum lattice of $n$ sites, where either a single quantum spin is present at a site, or not? (We call the case where a spin is absent a \emph{defect}.) According to the discussion above we should use simply tensor up $N$ ``maybe'' quantum spins:
+Let's now consider the central situation for this work. How should we describe a quantum lattice of $n$ sites, where either a single quantum spin is present at a site, or not? (We call the case where a spin is absent a \emph{defect}.) According to the discussion above we should simply tensor up $N$ ``maybe'' quantum spins:
 \begin{equation}
-	\mathfrak{F}_{\le n}(\mathbb{C}^d) \equiv \bigotimes_{N=0}^n \mathfrak{F}_{\le 1}(\mathbb{C}^d) \cong (\mathbb{C}\oplus \mathbb{C}^d)^{\otimes N}
+	\mathfrak{F}_{\le n}(\mathbb{C}^d) \equiv \bigotimes_{N=0}^n \mathfrak{F}_{\le 1}(\mathbb{C}^d) \cong (\mathbb{C}\oplus \mathbb{C}^d)^{\otimes N}.
 \end{equation}
 Expanding out the tensor factors leads to the equivalent definition
 \begin{equation}
@@ -62,9 +62,9 @@ We specify dynamics in quantum mechanics most directly via a one-parameter famil
 \end{equation}
 To introduce dynamics for our defect system we hence just need a hermitian matrix acting on $\mathfrak{F}_{\le n}(\mathbb{C}^d)$. This is easy enough in the abstract, however, particularly for topologically ordered systems we introduce dynamical information more indirectly.
 
-In the context of topologically ordered models such as Kitaev's toric code we typically introduce dynamical information indirectly by describing the system via the ground eigenspace $\mathcal{V}\subset \mathcal{H}$ of a specific Hamiltonian $H$. In the case of the toric code for $N\times N$ quantum spins arranged on the torus, the ground eigenspace $\mathcal{V}_{\mathbb{T}}$ of the toric code Hamiltonian is four dimensional.
+In the context of topologically ordered models such as Kitaev's toric code \cite{Kit03} we typically introduce dynamical information indirectly by describing the system via the ground eigenspace $\mathcal{V}\subset \mathcal{H}$ of a specific Hamiltonian $H$. In the case of the toric code for $N\times N$ quantum spins arranged on the torus, the ground eigenspace $\mathcal{V}_{\mathbb{T}}$ of the toric code Hamiltonian is four dimensional.
 
-Continuing in the context of the toric code, let's suppose we now have a lattice with a missing-qubit defect at some edge $e$, see Figure \ref{fig:1defect}. One can define a toric-code Hamiltonian for this new punctured torus; restricting to its ground eigenspace yields a \emph{four-dimensional subspace} $\mathcal{V}_{\mathbb{T}\setminus e}$. There is no obstruction to describing the ground eigenspace for two, three, etc.\ missing-qubit defects. What results is a rather intricate combinatorial problem, as, depending on where the defects are located relative to each other, one gets higher or lower dimensional ground eigenspace. To see an example of the intricacies that easily result, consider the case of two missing edges: these can either be adjacent to each other or distant. In the latter case, depicted in Figure \ref{fig:2distdefects}), the ground space for this system is $(\mathbb{C}^2)^{\otimes 3}$ while in the case of adjacent defects we have a single larger puncture (with smooth boundary), see Figure \ref{fig:2adjdefects}, and the ground eigenspace is only $(\mathbb{C}^2)^{\otimes 2}$.
+Continuing in the context of the toric code, let's suppose we now have a lattice with a missing-qubit defect at some edge $e$, see Figure \ref{fig:1defect} \todo{cite Poking holes and cutting corners to achieve Clifford gates with the surface code}. One can define a toric-code Hamiltonian for this new punctured torus; restricting to its ground eigenspace yields a \emph{four-dimensional subspace} $\mathcal{V}_{\mathbb{T}\setminus e}$. There is no obstruction to describing the ground eigenspace for two, three, etc.\ missing-qubit defects. What results is a rather intricate combinatorial problem, as, depending on where the defects are located relative to each other, one gets higher or lower dimensional ground eigenspace. To see an example of the intricacies that easily result, consider the case of two missing edges: these can either be adjacent to each other or distant. In the latter case, depicted in Figure \ref{fig:2distdefects}), the ground space for this system is $(\mathbb{C}^2)^{\otimes 3}$ while in the case of adjacent defects we have a single larger puncture (with smooth boundary), see Figure \ref{fig:2adjdefects}, and the ground eigenspace is only $(\mathbb{C}^2)^{\otimes 2}$.
 
 \begin{figure}
 	\centering
