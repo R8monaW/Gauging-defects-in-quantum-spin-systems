@@ -1095,9 +1095,10 @@ to both sides, resolving the vertices where necessary. The equation becomes
 \node at (-1.41421,-1.7) {$*$};
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
-\end{tikzpicture}\\
+\end{tikzpicture}\\[10pt]
 %
-&=
+\begin{split}
+=&
 \left(F_{***}^*\right)_{a,0}(-1)^{(x_1+x_2)x_3}
 \begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
 \draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
@@ -1110,7 +1111,7 @@ to both sides, resolving the vertices where necessary. The equation becomes
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
 \end{tikzpicture}
-+
+\\&+
 \left(F_{***}^*\right)_{a,1}(-1)^{x_0+(1+x_1+x_2)x_3}
 \begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
 \draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
@@ -1123,9 +1124,11 @@ to both sides, resolving the vertices where necessary. The equation becomes
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
 \end{tikzpicture}
-\\
+\end{split}
+\\[10pt]
 %
-&=(-1)^{(a+x_0)(x_1+x_2)}
+\begin{split}
+=&(-1)^{(a+x_0)(x_1+x_2)}
 	\left(
 	\left(F_{***}^*\right)_{a+x_0+x_3,x_1+x_2}
 	\begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
@@ -1139,8 +1142,9 @@ to both sides, resolving the vertices where necessary. The equation becomes
 	\node at (0,-1.7) {$*$};
 	\node at (1.41421,-1.7) {$*$};
 	\end{tikzpicture}
-	+
-	\left(F_{***}^*\right)_{a+x_0+x_3,1+x_1+x_2}
+	\right.
+	\\&+
+	\left(F_{***}^*\right)_{a+x_0+x_3,1+x_1+x_2}\left.
 	\begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
 	\draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 	\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$1+x_1+x_2$};
@@ -1151,7 +1155,8 @@ to both sides, resolving the vertices where necessary. The equation becomes
 	\node at (-1.41421,-1.7) {$*$};
 	\node at (0,-1.7) {$*$};
 	\node at (1.41421,-1.7) {$*$};
-	\end{tikzpicture}\right),
+	\end{tikzpicture}\right)
+\end{split}
 \end{align}
 where in the second step, \eqref{eqn:Ftransform} has been applied to the left-hand side. This equation reduces to
 \begin{align}
