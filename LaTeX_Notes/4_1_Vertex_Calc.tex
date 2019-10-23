@@ -340,7 +340,7 @@ where the sum goes over all sites of the chain and the normalization factor resu
 Since this vertex is neither defined in the category $\Vec(\Z/2\Z)$ nor in the bimodule $F_1$, we need to construct it. More precisely, for each choice of labels we need a basis for the corresponding morphism space. 
 %For now, we will restrict to the case that only objects of the category are allowed to be on horizontal lines, but we will come back to other possibilities later. Although we will not need this specific vertex in the final chain we are going to construct, we go through its computation in detail to explain how these vertices can be constructed in general. 
 We do the construction of the required vertex step-by-step using ideas from tube algebras.
-
+\newpage
 \subsection{Computation of the bimodule vertex} 
 
 \subsection*{Step 1: Compute isomorphism classes of objects and pick a representative.} In general, what we aim for are representations of the annular category of the form
@@ -359,7 +359,7 @@ We do the construction of the required vertex step-by-step using ideas from tube
 			\node at (-1,0.3) {$x$};
 			\node at (1.15,0.3) {$z$};
 			\node at (0,-1.3) {$y$};
-		\end{tikzpicture}
+		\end{tikzpicture}.
 	\end{figure}
 \noindent
 According to the figure above, $(*,*,a)\cong(*,*,a+x+z)$ for all possible labels $x,y,z$, so we pick $(*,*,0)$ as a representative.
@@ -433,10 +433,10 @@ Candidates for idempotents are the morphism where $x+z=0$:
 		\node at (-1,0.3) {$1$};
 		\node at (1.15,0.3) {$1$};
 		\node at (0,-1.3) {$1$};
-		\end{tikzpicture}
+		\end{tikzpicture}.
 	\end{equation}
 \noindent
-The first morphism can be interpreted as the identity morphism and it obviously squares to itself. It is easy to see that the second and third diagrams square to the first. To square the final morphism, we need to do the following calculation\todo{make less ugly}:\vspace{5pt}
+The first morphism can be interpreted as the identity morphism and it obviously squares to itself. It is easy to see that the second and third diagrams square to the first. To square the final morphism, we need to do the following calculation:\vspace{5pt}
 	\begin{equation*}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
@@ -467,17 +467,17 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 			};
 			\draw[] (90:0.5) -- (90:2);
 			\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
-			\draw ([shift=(-120:1.15cm)]0,0) arc (-120:-60:1.15cm);
+			\draw ([shift=(-120:1.25cm)]0,0) arc (-120:-60:1.25cm);
 			\draw ([shift=(240:0.85cm)]0,0) arc (240:90:0.85cm);
-%			\draw ([shift=(240:1.3cm)]0,0) arc (240:90:1.3cm);
-			\draw[] ([shift=(240:1.0cm)]0,0) to [bend left=70] ([shift=(90:1.4cm)]0,0);
+			\draw ([shift=(240:1.15cm)]0,0) arc (240:90:1.15cm);
+%			\draw[] ([shift=(240:1.0cm)]0,0) to [bend left=80] ([shift=(90:1.4cm)]0,0);
 			\draw ([shift=(-60:1.45cm)]0,0) arc (-60:90:1.45cm);
 			\draw ([shift=(-120:1.6cm)]0,0) arc (-120:-60:1.6cm);
 			\node at (90:.3cm){$0$};\node at (90:2.25cm){$0$};
-			\node at (-1,0.3) {$1$};
+			\node at (-1.1,0.8) {$1$};
 			\node at (1.15,0.3) {$1$};
-			\node at (0,-1.35) {$1$};
-			\node at (-.4,0.6) {$1$};
+			\node at (0,-1.4) {$1$};
+			\node at (-0.8,0.6) {$1$};
 			\node at (1.5,0.6) {$1$};
 			\node at (0,-1.8) {$1$};
 		\end{tikzpicture}
@@ -526,7 +526,7 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 %			\node at (-1,0.3) {$0$};
 %			\node at (1.15,0.3) {$0$};
 %			\node at (0,-1.35) {$0$};
-		\end{tikzpicture}\vspace{5pt}
+		\end{tikzpicture}\vspace{5pt}.
 	\end{equation*}
 Hence, the second candidate does not square to itself but to the first candidate. 
 Similar computations show that $T_{a,b}T_{c,d}=T_{a+c,b+d}$. 
@@ -659,7 +659,7 @@ which is diagrammatically
 	\end{equation}
 However, the two matrices we multiply $P_{0,0}$ with are not elements of the matrix algebra (the matrices on the algebra only have entries on the diagonal). If they were elements of the algebra, they would form an isomorphism between $P_{0,0}$ and $P_{1,0}$, so we would pick either $P_{0,0}$ or $P_{1,0}$ as a representative.
 
-This step can be much more complicated for algebras with bigger dimensions. However, there is a nice trick which helps to see how many isomorphism classes there are, which is the Artin-Wedderburn theorem \todo{cite}. It states that any semi-simple algebra can be decomposed into a direct sum of full matrix algebras, i.e.
+This step can be much more complicated for algebras with bigger dimensions. However, there is a nice trick which helps to see how many isomorphism classes there are, which is the Artin-Wedderburn theorem (see, for example, \cite{Beachy1999}). It states that any semi-simple algebra can be decomposed into a direct sum of full matrix algebras, i.e.
 	\begin{equation}
 		\mathcal{M}\cong\bigoplus\mathcal{M}_d,
 	\end{equation}
@@ -690,8 +690,8 @@ so we get two or five primitive idempotents respectively.
 		\node at (90:.3cm){$0$};\node at (90:1.75cm){$\alpha+\gamma$};
 		\node at (-1,0.3) {$\alpha$};
 		\node at (1.15,0.3) {$\gamma$};
-		\node at (0,-1.3) {$\beta$};
-		\end{tikzpicture}
+		\node at (0,-1.4) {$\beta$};
+		\end{tikzpicture}.
 	\end{equation}
 %\noindent
 In general, the basis vectors are determined by the choice of $\alpha,\beta$ and $\gamma$, therefore there are up to $2^3=8$ possible basis vectors for each representation. However, it is possible that some of these vectors are linearly dependent, which is the case in our example, as we will see. Putting the general annuli around the primitive idempotents $P_{x,y}$ yields
@@ -786,7 +786,7 @@ We now have to find a basis for every one of those morphism spaces, i.e.\ for ev
 		\node[rotate=65] at (-1,0.3) {$\alpha+b$};
 		\node at (1.15,0.3) {$b$};
 		\node at (0,-1.3) {$a$};
-		\end{tikzpicture}
+		\end{tikzpicture}.
 	\end{equation}
 The `inflation trick' developed in \cite{BBJ18,BB19a,BB19b} picks out the representation $P_{0,0}$, and we work with that from here on. This means
 	\begin{equation}
@@ -931,7 +931,7 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\draw (0,0) circle (0.5cm);
 		\draw[red,line width=0.4mm]
 		\foreach \a in {-60, -120} {
-			(\a:0.5) -- (\a:1.6)
+			(\a:0.5) -- (\a:2.5)
 		};
 		\draw[] (90:0.5) -- (90:1.6);
 		\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
@@ -946,7 +946,7 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\node at (1.15,0.3) {$y$};
 %		\node at (2.3,-1.7) {$a$};
 		\node at (0,-1.35) {$x$};
-		\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
+		%\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}
 		\\
 		&=\frac{1}{4}\sum_{x,y}(-1)^{(a+b)x}
@@ -954,7 +954,7 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\draw (0,0) circle (0.5cm);
 		\draw[red,line width=0.4mm]
 		\foreach \a in {-60, -120} {
-			(\a:0.5) -- (\a:1.6)
+			(\a:0.5) -- (\a:2.5)
 		};
 		\draw[] (90:0.5) -- (90:1.6);
 		\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
@@ -969,14 +969,14 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\node at (1.15,0.3) {$y$};
 		%		\node at (2.3,-1.7) {$a$};
 		\node at (0,-1.35) {$x$};
-		\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
+		%\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}
 		=\frac{1}{4}\sum_{x,y}(-1)^{(a+b)x}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
 		\draw[red,line width=0.4mm]
 		\foreach \a in {-60, -120} {
-			(\a:0.5) -- (\a:1.6)
+			(\a:0.5) -- (\a:2.5)
 		};
 		\draw[] (90:0.5) -- (90:1.6) node[pos=1,above]{$a+b$};
 		\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
@@ -991,14 +991,14 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\node[rotate=-60] at (1.15,0.3) {$y+a$};
 		%		\node at (2.3,-1.7) {$a$};
 		\node at (0,-1.35) {$x$};
-		\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
+		%\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}\\
 		&=\frac{1}{4}\sum_{x,y^\prime}(-1)^{(a+b)x}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
 		\draw[red,line width=0.4mm]
 		\foreach \a in {-60, -120} {
-			(\a:0.5) -- (\a:1.6)
+			(\a:0.5) -- (\a:2.5)
 		};
 		\draw[] (90:0.5) -- (90:1.6) node[pos=1,above]{$a+b$};
 		\draw ([shift=(-60:1cm)]0,0) arc (-60:90:1cm);
@@ -1008,7 +1008,7 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\node[rotate=60] at (-1,0.3) {$a+b+y^\prime$};
 		\node at (1.15,0.3) {$y^\prime$};
 		\node at (0,-1.35) {$x$};
-		\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
+		%\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}
 		=\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
 		\draw[] (0,0) -- (0,1) node[pos=1,above]{$a+b$};
@@ -1070,12 +1070,12 @@ Attempting to use \eqref{eq:completeness} to compute $F_{***}^*$ is circular, so
 \end{equation}
 Both sides of the equation transform in the same representation of this 4-string action. We use this to find the $F$-symbols. Consider applying the annulus
 \begin{equation}
-\begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
+\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 \draw[red,line width=0.4mm](-.9,0)--(-.9,-1);
 \draw[red,line width=0.4mm](0,0)--(0,-1);\draw[red,line width=0.4mm](0,.2)--(0,1);
 \draw[red,line width=0.4mm](.9,0)--(.9,-1);
-\draw[rounded corners] (0,.6)--(-1.5,0)--(-.9,-.5)node[pos=.5,left]{$x_0$};
-\draw[rounded corners] (0,.8)--(1.5,0)--(.9,-.5)node[pos=.5,right]{$x_1$};
+\draw[rounded corners] (0,.7)--(-1.6,0)--(-.9,-.5)node[pos=.5,left]{$x_0$};
+\draw[rounded corners] (0,.9)--(1.6,0)--(.9,-.5)node[pos=.5,right]{$\ x_1$};
 \draw[rounded corners] (-.9,-.9)--(0,-.6)node[pos=.5,above]{$x_2$};
 \draw[rounded corners] (0,-.9)--(.9,-.6)node[pos=.5,above]{$x_3$};
 \draw[rounded corners] (-2,-1) rectangle (2,1);
@@ -1083,11 +1083,9 @@ Both sides of the equation transform in the same representation of this 4-string
 \end{tikzpicture}\label{eqn:Ftransform}
 \end{equation}
 to both sides, resolving the vertices where necessary. The equation becomes
-\todo{enlarge text?}
 \begin{align}
-\scalebox{.7}{$
-(-1)^{(a+x_0)(x_1+x_2)}
-\begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
+(-&1)^{(a+x_0)(x_1+x_2)}
+\begin{tikzpicture}[scale=0.6,baseline=(current bounding box.center)]
 \draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 \draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,left] {$a+x_0+x_3$};
 \draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
@@ -1097,12 +1095,11 @@ to both sides, resolving the vertices where necessary. The equation becomes
 \node at (-1.41421,-1.7) {$*$};
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
-\end{tikzpicture}
-$}
-%&
-\scalebox{.7}{$=
+\end{tikzpicture}\\
+%
+&=
 \left(F_{***}^*\right)_{a,0}(-1)^{(x_1+x_2)x_3}
-\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
+\begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
 \draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 \draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$x_1+x_2$};
 \draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
@@ -1115,7 +1112,7 @@ $}
 \end{tikzpicture}
 +
 \left(F_{***}^*\right)_{a,1}(-1)^{x_0+(1+x_1+x_2)x_3}
-\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
+\begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
 \draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 \draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$1+x_1+x_2$};
 \draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
@@ -1125,14 +1122,13 @@ $}
 \node at (-1.41421,-1.7) {$*$};
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
-\end{tikzpicture}$}
+\end{tikzpicture}
 \\
 %
-\scalebox{.7}{$=
-	(-1)^{(a+x_0)(x_1+x_2)}
+&=(-1)^{(a+x_0)(x_1+x_2)}
 	\left(
 	\left(F_{***}^*\right)_{a+x_0+x_3,x_1+x_2}
-	\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
+	\begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
 	\draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 	\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$x_1+x_2$};
 	\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
@@ -1145,7 +1141,7 @@ $}
 	\end{tikzpicture}
 	+
 	\left(F_{***}^*\right)_{a+x_0+x_3,1+x_1+x_2}
-	\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
+	\begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
 	\draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 	\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$1+x_1+x_2$};
 	\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
@@ -1155,8 +1151,7 @@ $}
 	\node at (-1.41421,-1.7) {$*$};
 	\node at (0,-1.7) {$*$};
 	\node at (1.41421,-1.7) {$*$};
-	\end{tikzpicture}\right)
-	$},
+	\end{tikzpicture}\right),
 \end{align}
 where in the second step, \eqref{eqn:Ftransform} has been applied to the left-hand side. This equation reduces to
 \begin{align}
