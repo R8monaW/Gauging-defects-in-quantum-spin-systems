@@ -1,0 +1,115 @@
+\input{HeaderPRX.tex}
+
+\begin{document}
+
+% The following information is for internal review, please remove them for submission
+\widetext
+\leftline{Version xx as of \today}
+\leftline{Primary authors: Joe E. Physics}
+\leftline{To be submitted to (PRL, PRD-RC, PRD, PLB; choose one.)}
+\leftline{Comment to {\tt d0-run2eb-nnn@fnal.gov} by xxx, yyy}
+\centerline{\em D\O\ INTERNAL DOCUMENT -- NOT FOR PUBLIC DISTRIBUTION}
+
+% the following line is for submission, including submission to the arXiv!!
+%\hspace{5.2in} \mbox{Fermilab-Pub-04/xxx-E}
+
+\title{Gauging defects in quantum spin systems}
+\input author_list.tex       % D0 authors (remove the first 3 lines
+                             % of this file prior to submission, they
+                             % contain a time stamp for the authorlist)
+                             % (includes institutions and visitors)
+\date{\today}
+
+
+\begin{abstract}
+\input{0_Abstract.tex}
+\end{abstract}
+
+\pacs{}
+\maketitle
+
+\section{Introduction}
+\input{1_Introduction.tex}
+
+\section{Dynamical theory of defects for quantum spin systems}
+\input{2_1_Defects.tex}
+\input{2_2_Example_VecZ2_Spin_Chain.tex}
+
+\section{Background}\label{S:defs}
+In this section, we provide all the definitions and notation in the vein of category theory that are used throughout the subsequent computations. We do not give exhaustive details and explanations whenever it is not necessary for this work but refer to the literature where those can be found.
+
+\input{3_1_Fusion_Category.tex}
+\input{3_2_Bimodules.tex}
+\input{3_3_VecZp_Bimodules.tex}
+\input{3_4_Bimodule_Tensor_Products.tex}
+\input{3_5_Annular_Category.tex}
+
+\section{A $\Vec(\Z/2\Z)$ spin chain}
+\input{4_1_Vertex_Calc.tex}
+\input{4_2_Hamiltonian.tex}
+
+
+\section{Conclusion}
+\label{Conclusion}
+In this paper, we have presented a framework to make sense of defect gauging in quantum (spin) systems. Whereas the kinematical theory can be built from distinguishable Fock space, dynamics are generally harder to implement. In order to perform this task we use a description via the ground eigenspace of a specific Hamiltonian. This reduces the problem to a combinatorial one, which can be handled by techniques from annular categories.
+
+We have also provided the example of a one-dimensional spin chain with $\Vec(\Z/2\Z)$ fusion rules. In this case, allowing the presence of defects and fixing the boundary results in the Hamiltonian of the transverse Ising model and, hence, gives rise to a critical theory.
+
+Since our approach is not only restricted to one-dimensional systems it would be interesting to study higher dimensional models, such as the Toric code, and add defects in this more general situation. Another interesting setting is to insert fusion categories with different fusion rules than $\Vec(\Z/2\Z)$ (e.g.\ the Fibonacci category) to our method. Even in this case, it provides a framework to build physical models with dynamically evolving defects. These theories can describe topological phases with more computational power than their counterparts without defects and are, therefore, more convenient for quantum information processing tasks.
+
+
+
+\input acknowledgement.tex   % input acknowledgement
+
+
+\bibliographystyle{halpha}
+\bibliography{literature}
+
+%\begin{thebibliography}{99}
+%
+%  \bibitem{d0det}
+%    Standard D\O\ detector reference:  \\
+%V.M.~Abazov {\sl et al.} (D0 Collaboration),
+%Nucl. Instrum. Methods Phys. Res. A {\bf 565}, 463  (2006).
+%
+%  \bibitem{d0lumi}
+%    ** New ** D\O\ luminosity reference: \\
+%T.~Andeen {\sl et al.}, FERMILAB-TM-2365 (2007).
+%
+%  \bibitem{pdg}
+%   Particle Data Group reference: \\
+%   W.-M.~Yao {\sl et al.}, Journal of Physics G {\bf 33}, 1 (2006).
+%
+%  \bibitem{geant}
+%    {\sc Geant} reference: \\
+%    R. Brun and F. Carminati, CERN Program Library Long Writeup W5013, 1993 (unpublished).
+%
+%  \bibitem{pythia}
+%    {\sc Pythia} reference: \\
+%    T. Sj\"{o}strand {\sl et al.}, Comput. Phys. Commun. {\bf 135}, 238 (2001).
+%
+%  \bibitem{cteq}
+%    {\sc Cteq6} reference: \\
+%    J. Pumplin {\sl et al.}, JHEP {\bf 0207} 012 (2002) and
+%    D. Stump {\sl et al.}, JHEP {\bf 0310} 046 (2003).
+%
+%  \bibitem{cls}
+%    LEP CL$_S$ reference: \\
+%    T. Junk, Nucl. Instrum. Methods A {\bf 434}, 435 (1999).
+%
+%  \bibitem{d0limit}
+%   D\O\ Bayesian reference: \\
+%   I. Bertram {\sl et al.}, FERMILAB-TM-2104 (2000).
+%
+%  \bibitem{d0jets}
+%  D\O\ cone-jet reference: \\
+%G.C.~Blazey {\it et al.}, in
+%{\sl Proceedings of the Workshop: QCD and Weak Boson
+%Physics in Run II,} edited by U.~Baur, R.K.~Ellis, and
+%D. Zeppenfeld, Fermilab-Pub-00/297 (2000).
+%
+%\end{thebibliography}
+
+\end{document}
+%
+% ****** End of file template.aps ******
