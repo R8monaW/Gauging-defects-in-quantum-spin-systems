@@ -2,7 +2,133 @@
 % !TEX root = Notes_Gauging_Defects.tex
 % !TEX spellcheck = en_US
 
-\input{Header.tex}
+\documentclass[a4paper,oneside]{amsart}
+
+\pdfoutput=1
+\usepackage{geometry}            % See geometry.pdf to 
+\geometry{a4paper}                   % ... or a4paper or \usepackage{color}
+\usepackage[utf8]{inputenc} %Sonderzeichen/Zeichenkodierung
+\usepackage[english]{babel} %Sprache
+\usepackage{graphicx}
+\usepackage{amsmath, mathtools}
+\usepackage{amsthm}
+\usepackage{enumerate}
+\usepackage[textsize=tiny]{todonotes}
+\usepackage[many]{tcolorbox}
+\usepackage{tensor} %Bimoduln
+\usepackage{here} %Erzwingen von Grafikpositionen
+\usepackage{subcaption}%subfigure
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\definecolor{light-gray}{gray}{0.85}
+\definecolor{nicegreen}{RGB}{60,183,82}
+%\RequirePackage{doi}
+\usepackage{amssymb}
+\usepackage[breaklinks]{hyperref}
+\definecolor{darkblue}{RGB}{0,0,127} % choose colors
+\definecolor{darkgreen}{RGB}{0,180,0}
+\definecolor{darkred}{RGB}{180,0,0}
+\hypersetup{
+	colorlinks, 
+	linkcolor=darkblue, 
+	citecolor=darkgreen, 
+	filecolor=red, 
+	urlcolor=blue,
+	pdftitle={Gauging defects in quantum spin systems}, 
+	pdfauthor={Jacob C. Bridgeman, Alexander Hahn, Tobias J. Osborne, and Ramona Wolf}
+}
+
+
+\allowdisplaybreaks
+
+%%Mathematik
+%\usepackage{chemmacros}
+%\usepackage{amssymb}
+%\usepackage{latexsym}
+%%Tabellen
+%\usepackage{arydshln}
+%\usepackage{multirow}
+%\usepackage[automark]{scrpage2} %Kopf und Fu�zeilen
+%\usepackage{rotating} %Rotieren von Grafiken
+%\usepackage{braket} %Bra-Ket Notation
+%\usepackage{blkarray} %Beschriftung von Matrizen
+%\usepackage{mathrsfs} %curly Buchstaben
+
+%tikz
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathreplacing,shapes.misc}
+\usetikzlibrary{arrows,shapes,positioning}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{through,calc}
+\usetikzlibrary{patterns}
+\usetikzlibrary{plotmarks}
+\usetikzlibrary{automata}
+\tikzstyle arrowstyle=[scale=1]
+\usepackage{extarrows}
+
+%%% here we define our palette
+
+\definecolor{spacecadet}{HTML}{0D284C}
+\definecolor{munsell}{HTML}{008FA8}
+\definecolor{banana}{HTML}{FFD932}
+\definecolor{cgblue}{HTML}{007CA5}
+\definecolor{isabelline}{HTML}{EAEDEA}
+
+%%%
+
+\DeclareMathOperator{\supp}{supp}
+\DeclareMathOperator{\conf}{conf}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\im}{im}
+\DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\vspan}{span}
+\DeclareMathOperator{\res}{res}
+\DeclareMathOperator{\real}{Re}
+\DeclareMathOperator{\imag}{Im}
+\DeclareMathOperator{\diff}{diff}
+\DeclareMathOperator{\homeo}{Homeo}
+\DeclareMathOperator{\Mor}{Mor}
+\DeclareMathOperator{\Ob}{Ob}
+\DeclareMathOperator{\target}{Target}
+\DeclareMathOperator{\source}{Source}
+\DeclareMathOperator{\aut}{Aut}
+\DeclareMathOperator{\Sch}{Sch}
+\DeclareMathOperator{\Conf}{Conf}
+\DeclareMathOperator{\Diff}{Diff}
+\DeclareMathOperator{\Endstar}{End^*}
+\DeclareMathOperator{\End}{End}
+
+\newcommand{\cat}{\mathcal{C}}
+\newcommand{\ann}{\mathrm{Ann}}
+\renewcommand{\Vec}{\textbf{Vec}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\theoremstyle{plain}% default
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{prototypedefinition}{Prototype Definition}[section]
+\newtheorem{physicalintuition}{Physical intuition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{fact}{Fact}[section]
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+\newtheorem*{note}{Note}
+
+\usepackage[foot]{amsaddr}
+\makeatletter
+\renewcommand{\email}[2][]{%
+	\ifx\emails\@empty\relax\else{\g@addto@macro\emails{,\space}}\fi%
+	\@ifnotempty{#1}{\g@addto@macro\emails{\textrm{(#1)}\space}}%
+	\g@addto@macro\emails{#2}%
+}
+\makeatother
+
 \title{Gauging defects in quantum spin systems}
 \author{Jacob C. Bridgeman$^*$}
 \address[*]{Perimeter Institute for Theoretical Physics, Waterloo, Ontario, Canada}
@@ -11,7 +137,7 @@
 \author{Tobias J.\ Osborne$^\dagger$}
 \author{Ramona Wolf$^\dagger$}
 \address[$\dagger$]{Institut für Theoretische Physik, Leibniz Universität Hannover, Hannover, Germany}
-\email{alexander.hahn@htp-tel.de, tobias.osborne@itp.uni-hannover.de, ramona.wolf@itp.uni-hannover.de}
+\email{alexander.hahn@htp-tel.de,\\ tobias.osborne@itp.uni-hannover.de, ramona.wolf@itp.uni-hannover.de}
 
 %\address{Perimeter Institute for Theoretical Physics, Waterloo, Ontario, Canada}
 %\address{Institut für Theoretische Physik, Leibniz Universität Hannover, Hannover, Germany}
