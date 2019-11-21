@@ -108,6 +108,7 @@ with $a,b\in\{0,1\}$. The local Hamiltonian
 	\end{equation}
 acts on these configurations in the following way: the first term of the Hamiltonian leaves the configurations invariant, while applying the second term yields
 	\begin{align}\label{eq:action}
+	\begin{split}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (-0.5,0) to node [below] {$a$} (0,0);
 			\draw [red, line width=0.25mm] (0,0) -- (1,0);
@@ -124,14 +125,17 @@ acts on these configurations in the following way: the first term of the Hamilto
 			\draw [red, line width=0.25mm] (1,0) -- (1,1);
 			\draw (0,0.5) to[bend left] node[above] {$1$} (0.4,0);
 			\draw (1,0.5) to[bend right] node[above] {$1$} (0.6,0);
-		\end{tikzpicture}=(-1)^{a+b}
+		\end{tikzpicture}\\
+		&=(-1)^{a+b}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (-0.5,0) to node [below] {$a$} (0,0);
 			\draw [red, line width=0.25mm] (0,0) -- (1,0);
 			\draw (1,0) to node [below] {$b$} (1.5,0);
 			\draw [red, line width=0.25mm] (0,0) -- (0,1);
 			\draw [red, line width=0.25mm] (1,0) -- (1,1);
-		\end{tikzpicture}\equiv Z_a\otimes Z_b\\\label{eq:action2}
+		\end{tikzpicture}\equiv Z_a\otimes Z_b
+		\end{split}
+		\\\label{eq:action2}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw [red, line width=0.25mm] (-0.5,0) -- (0,0);
 			\draw (0,0) to node[below] {$a$} (1,0);
