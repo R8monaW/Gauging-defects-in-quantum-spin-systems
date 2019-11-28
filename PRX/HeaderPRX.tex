@@ -39,7 +39,8 @@
 \usepackage[many]{tcolorbox}
 \usepackage{tensor} %Bimoduln
 \usepackage{here} %Erzwingen von Grafikpositionen
-%\usepackage{subcaption}%subfigure
+\usepackage{subcaption}%subfigure
+\captionsetup{compatibility=false}
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \definecolor{light-gray}{gray}{0.85}
 \definecolor{nicegreen}{RGB}{60,183,82}
@@ -123,3 +124,9 @@
 \hyphenation{ALPGEN}
 \hyphenation{EVTGEN}
 \hyphenation{PYTHIA}
+
+%Section numbering
+\renewcommand{\thesection}{\Roman{section}}
+\setcounter{secnumdepth}{1}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\setcounter{secnumdepth}{2}
