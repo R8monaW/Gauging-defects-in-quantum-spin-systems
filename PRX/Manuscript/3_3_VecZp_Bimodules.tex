@@ -9,17 +9,17 @@ We now list all the $\Vec(\Z/p\Z)$-$\Vec(\Z/p\Z)$ bimodules since we are going t
 		\item The trivial bimodule $T$, which is coming from the subgroup $\{(0,0)\}$. It has $p^2$ simple objects, which are labeled by the cosets $\{(g,h)\}$ of the group, i.e.\ a simple object in $T$ is $(g,h)$. The left and right action is given as follows
 			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$(g,h)$};
+				\node[bwred](m) at (0,0) {$(g,h)$};
 				\node(b) at (-1,0) {$a$};
-				\node[red](abm) at (0,2) {$(g+a,h)$};
-				\draw[red,line width=0.4mm] (m)-- (abm);
+				\node[bwred](abm) at (0,2) {$(g+a,h)$};
+				\draw[bwred,line width=0.4mm] (m)-- (abm);
 				\draw (b) to [bend left] (0,1);
 				\end{tikzpicture}\hspace{20pt}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$(g,h)$};
+				\node[bwred](m) at (0,0) {$(g,h)$};
 				\node(b) at (1,0) {$a$};
-				\node[red](abm) at (0,2) {$(g,h+a)$};
-				\draw[red,line width=0.4mm] (m)-- (abm);
+				\node[bwred](abm) at (0,2) {$(g,h+a)$};
+				\draw[bwred,line width=0.4mm] (m)-- (abm);
 				\draw (b) to [bend right] (0,1);
 				\end{tikzpicture}
 			\end{equation}
@@ -27,20 +27,20 @@ We now list all the $\Vec(\Z/p\Z)$-$\Vec(\Z/p\Z)$ bimodules since we are going t
 		and the associator for this bimodule is trivial:
 			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$(g,h)$};
+				\node[bwred](m) at (0,0) {$(g,h)$};
 				\node(a) at (-1,0) {$a$};
 				\node(b) at (1,0) {$b$};
-				\node[red](abm) at (0,3) {$(g+a,h+b)$};
-				\draw[red,line width=0.4mm] (m) -- (abm);
+				\node[bwred](abm) at (0,3) {$(g+a,h+b)$};
+				\draw[bwred,line width=0.4mm] (m) -- (abm);
 				\draw (a) to [bend left] (0,1);
 				\draw (b) to [bend right] (0,2);
 				\end{tikzpicture}\ =
 				\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$(g,h)$};
+				\node[bwred](m) at (0,0) {$(g,h)$};
 				\node(a) at (-1,0) {$a$};
 				\node(b) at (1,0) {$b$};
-				\node[red](abm) at (0,3) {$(g+a,h+b)$};
-				\draw[red,line width=0.4mm] (m) -- (abm);
+				\node[bwred](abm) at (0,3) {$(g+a,h+b)$};
+				\draw[bwred,line width=0.4mm] (m) -- (abm);
 				\draw (b) to [bend right] (0,1);
 				\draw (a) to [bend left] (0,2);
 				\end{tikzpicture}.
@@ -48,17 +48,17 @@ We now list all the $\Vec(\Z/p\Z)$-$\Vec(\Z/p\Z)$ bimodules since we are going t
 		\item The bimodule $L$ from the subgroup $H=\langle(1,0)\rangle\cong \Z/p\Z$, which has $p$ simple objects. The labels are given by the cosets $\{(h,g)|h\in\Z/p\Z\}$, hence the label for a simple object in $L$ is $g$. Left and right action are given by 
 			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$g$};
+				\node[bwred](m) at (0,0) {$g$};
 				\node(b) at (-1,0) {$a$};
-				\node[red](abm) at (0,2) {$g$};
-				\draw[red,line width=0.4mm] (m)-- (abm);
+				\node[bwred](abm) at (0,2) {$g$};
+				\draw[bwred,line width=0.4mm] (m)-- (abm);
 				\draw (b) to [bend left] (0,1);
 				\end{tikzpicture}\hspace{20pt}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$g$};
+				\node[bwred](m) at (0,0) {$g$};
 				\node(b) at (1,0) {$a$};
-				\node[red](abm) at (0,2) {$g+a$};
-				\draw[red,line width=0.4mm] (m)-- (abm);
+				\node[bwred](abm) at (0,2) {$g+a$};
+				\draw[bwred,line width=0.4mm] (m)-- (abm);
 				\draw (b) to [bend right] (0,1);
 				\end{tikzpicture}
 			\end{equation}
@@ -67,17 +67,17 @@ We now list all the $\Vec(\Z/p\Z)$-$\Vec(\Z/p\Z)$ bimodules since we are going t
 		\item $F_0$, the bimodule from the subgroup $\langle(0,1),(1,0)\rangle\cong\Z/p\Z\times\Z/p\Z$, which has only one object that is denoted $*$. Left and right actions are
 			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$*$};
+				\node[bwred](m) at (0,0) {$*$};
 				\node(b) at (-1,0) {$a$};
-				\node[red](abm) at (0,2) {$*$};
-				\draw[red,line width=0.4mm] (m)-- (abm);
+				\node[bwred](abm) at (0,2) {$*$};
+				\draw[bwred,line width=0.4mm] (m)-- (abm);
 				\draw (b) to [bend left] (0,1);
 				\end{tikzpicture}\hspace{20pt}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$*$};
+				\node[bwred](m) at (0,0) {$*$};
 				\node(b) at (1,0) {$a$};
-				\node[red](abm) at (0,2) {$*$};
-				\draw[red,line width=0.4mm] (m)-- (abm);
+				\node[bwred](abm) at (0,2) {$*$};
+				\draw[bwred,line width=0.4mm] (m)-- (abm);
 				\draw (b) to [bend right] (0,1);
 				\end{tikzpicture}
 			\end{equation}
@@ -89,17 +89,17 @@ Furthermore, there are several invertible bimodules:
 		\item The bimodule $X_k$, coming from the subgroup $\{(-k,1)\}\cong\Z/p\Z$ with $p$ simple objects. The cosets of this group are $\{n(-k,1)+(h,0)|n\in\Z/p\Z\}$, hence the object labels are $h$. Left and right action is given by 
 			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$h$};
+				\node[bwred](m) at (0,0) {$h$};
 				\node(b) at (-1,0) {$a$};
-				\node[red](abm) at (0,2) {$h+a$};
-				\draw[red,line width=0.4mm] (m)-- (abm);
+				\node[bwred](abm) at (0,2) {$h+a$};
+				\draw[bwred,line width=0.4mm] (m)-- (abm);
 				\draw (b) to [bend left] (0,1);
 				\end{tikzpicture}\hspace{20pt}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$h$};
+				\node[bwred](m) at (0,0) {$h$};
 				\node(b) at (1,0) {$a$};
-				\node[red](abm) at (0,2) {$h+ka$};
-				\draw[red,line width=0.4mm] (m)-- (abm);
+				\node[bwred](abm) at (0,2) {$h+ka$};
+				\draw[bwred,line width=0.4mm] (m)-- (abm);
 				\draw (b) to [bend right] (0,1);
 				\end{tikzpicture}
 			\end{equation}
@@ -108,20 +108,20 @@ Furthermore, there are several invertible bimodules:
 		\item The bimodule $F_q$, with $q\in H^2(\Z/p\Z,U(1))\cong\Z/q\Z$. As $F_0$, it comes from the subgroup $\langle(0,1),(1,0)\rangle$ and has only one object denoted $*$. Also, left and right action are defined in the same way as they are in $F_0$, but now the associator is non-trivial:
 			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$*$};
+				\node[bwred](m) at (0,0) {$*$};
 				\node(a) at (-1,0) {$a$};
 				\node(b) at (1,0) {$b$};
-				\node[red](abm) at (0,3) {$*$};
-				\draw[red,line width=0.4mm] (m) -- (abm);
+				\node[bwred](abm) at (0,3) {$*$};
+				\draw[bwred,line width=0.4mm] (m) -- (abm);
 				\draw (a) to [bend left] (0,1);
 				\draw (b) to [bend right] (0,2);
 				\end{tikzpicture}\ =e^{\frac{2\pi i}{p}qab}
 				\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$*$};
+				\node[bwred](m) at (0,0) {$*$};
 				\node(a) at (-1,0) {$a$};
 				\node(b) at (1,0) {$b$};
-				\node[red](abm) at (0,3) {$*$};
-				\draw[red,line width=0.4mm] (m) -- (abm);
+				\node[bwred](abm) at (0,3) {$*$};
+				\draw[bwred,line width=0.4mm] (m) -- (abm);
 				\draw (b) to [bend right] (0,1);
 				\draw (a) to [bend left] (0,2);
 				\end{tikzpicture}.
@@ -129,20 +129,20 @@ Furthermore, there are several invertible bimodules:
 		We are especially interested in the $\Vec(\Z/2\Z)$-$\Vec(\Z/2\Z)$ bimodule $F_1$ which we use to introduce defects to a $\Vec(\Z/2\Z)$ spin chain in Sec.~\ref{Ising}. In this case the associator is given by
 			\begin{equation}
 				\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$*$};
+				\node[bwred](m) at (0,0) {$*$};
 				\node(a) at (-1,0) {$a$};
 				\node(b) at (1,0) {$b$};
-				\node[red](abm) at (0,3) {$*$};
-				\draw[red,line width=0.4mm] (m) -- (abm);
+				\node[bwred](abm) at (0,3) {$*$};
+				\draw[bwred,line width=0.4mm] (m) -- (abm);
 				\draw (a) to [bend left] (0,1);
 				\draw (b) to [bend right] (0,2);
 				\end{tikzpicture}\ =(-1)^{ab}
 				\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
-				\node[red](m) at (0,0) {$*$};
+				\node[bwred](m) at (0,0) {$*$};
 				\node(a) at (-1,0) {$a$};
 				\node(b) at (1,0) {$b$};
-				\node[red](abm) at (0,3) {$*$};
-				\draw[red,line width=0.4mm] (m) -- (abm);
+				\node[bwred](abm) at (0,3) {$*$};
+				\draw[bwred,line width=0.4mm] (m) -- (abm);
 				\draw (b) to [bend right] (0,1);
 				\draw (a) to [bend left] (0,2);
 				\end{tikzpicture}.\label{eqn:F1}

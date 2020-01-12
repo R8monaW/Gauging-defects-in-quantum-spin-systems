@@ -12,21 +12,21 @@
 	which satisfies some coherence conditions that can be found in Sec.~7.1 of \cite{Etingof2015}. If we choose bases for all the vector spaces $\mathcal{M}(a\triangleright m,n)$, this associator can be written in terms of a tensor $L$ using string diagrams
 		\begin{equation}
 			\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
-			\node[red](m) at (0,0) {$m$};
+			\node[bwred](m) at (0,0) {$m$};
 			\node(b) at (-1,0) {$b$};
 			\node(a) at (-2,0) {$a$};
-			\node[red](abm) at (0,3) {$n$};
-			\draw[red,line width=0.4mm] (m) to node[right] {$p$} (abm);
+			\node[bwred](abm) at (0,3) {$n$};
+			\draw[bwred,line width=0.4mm] (m) to node[right] {$p$} (abm);
 			\draw (b) to [bend left] (0,1);
 			\draw (a) to [bend left] (0,2);
 			\end{tikzpicture}\ =\sum_q \left(L^n_{abm}\right)_{p,q}
 			\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
-			\node[red](m) at (0,0) {$m$};
+			\node[bwred](m) at (0,0) {$m$};
 			\node(b) at (-1,0) {$b$};
 			\node(a) at (-2,0) {$a$};
-			\node[red](abm) at (0,3) {$n$};
+			\node[bwred](abm) at (0,3) {$n$};
 			\node(ab) at (-1.2,1.8) {$q$};
-			\draw[red,line width=0.4mm] (m) to (abm);
+			\draw[bwred,line width=0.4mm] (m) to (abm);
 			\draw (b) to [bend right] (-1.5,1.1);
 			\draw (a) to [bend left] (0,2);
 			\end{tikzpicture},\label{eqn:L}
@@ -38,21 +38,21 @@
 	(satisfying some coherence conditions), which we can represent by a tensor $R$:
 		\begin{equation}
 			\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
-			\node[red](m) at (0,0) {$m$};
+			\node[bwred](m) at (0,0) {$m$};
 			\node(b) at (1,0) {$a$};
 			\node(a) at (2,0) {$b$};
-			\node[red](abm) at (0,3) {$n$};
-			\draw[red,line width=0.4mm] (m) to node [left] {$p$} (abm);
+			\node[bwred](abm) at (0,3) {$n$};
+			\draw[bwred,line width=0.4mm] (m) to node [left] {$p$} (abm);
 			\draw (b) to [bend right] (0,1);
 			\draw (a) to [bend right] (0,2);
 			\end{tikzpicture}\ =\sum_q\left(R^n_{mab}\right)_{p,q}
 			\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
-			\node[red](m) at (0,0) {$m$};
+			\node[bwred](m) at (0,0) {$m$};
 			\node(b) at (1,0) {$a$};
 			\node(a) at (2,0) {$b$};
-			\node[red](abm) at (0,3) {$n$};
+			\node[bwred](abm) at (0,3) {$n$};
 			\node(ab) at (1.2,1.8) {$q$};
-			\draw[red,line width=0.4mm] (m) to (abm);
+			\draw[bwred,line width=0.4mm] (m) to (abm);
 			\draw (b) to [bend left] (1.5,1.1);
 			\draw (a) to [bend right] (0,2);
 			\end{tikzpicture}.\label{eqn:R}
@@ -71,20 +71,20 @@
 	As above, after choosing bases for the morphism spaces, this can be represented in terms of string diagrams with a tensor $C$:
 		\begin{equation}
 			\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
-			\node[red](m) at (0,0) {$m$};
+			\node[bwred](m) at (0,0) {$m$};
 			\node(a) at (-1,0) {$a$};
 			\node(b) at (1,0) {$b$};
-			\node[red](abm) at (0,3) {$n$};
-			\draw[red,line width=0.4mm] (m) to node [left] {$p$} (abm);
+			\node[bwred](abm) at (0,3) {$n$};
+			\draw[bwred,line width=0.4mm] (m) to node [left] {$p$} (abm);
 			\draw (a) to [bend left] (0,1);
 			\draw (b) to [bend right] (0,2);
 			\end{tikzpicture}\ =\sum_q\left(C^n_{amb}\right)_{pq}
 			\begin{tikzpicture}[scale=0.9,baseline=(current bounding box.center)]
-			\node[red](m) at (0,0) {$m$};
+			\node[bwred](m) at (0,0) {$m$};
 			\node(a) at (-1,0) {$a$};
 			\node(b) at (1,0) {$b$};
-			\node[red](abm) at (0,3) {$n$};
-			\draw[red,line width=0.4mm] (m) to node [right] {$q$} (abm);
+			\node[bwred](abm) at (0,3) {$n$};
+			\draw[bwred,line width=0.4mm] (m) to node [right] {$q$} (abm);
 			\draw (b) to [bend right] (0,1);
 			\draw (a) to [bend left] (0,2);
 			\end{tikzpicture}.

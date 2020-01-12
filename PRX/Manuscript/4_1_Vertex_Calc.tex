@@ -225,7 +225,7 @@ We now introduce defects to this model, indicated by red lines that fuse to the 
 	\draw (0.5,0) -- (0.5,1);
 	\draw (1.5,0) -- (1.5,1);
 	\draw (2.5,0) -- (2.5,1);
-	\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+	\draw[bwred,line width=0.4mm] (3.5,0) -- (3.5,1);
 	\draw (4.5,0) -- (4.5,1);
 	\draw (5.5,0) -- (5.5,1);
 	\draw (6.5,0) -- (6.5,1);
@@ -252,10 +252,10 @@ The occurrence of one defect in a chain does not change the ground state of the 
 	\draw (0.5,0) -- (0.5,1);
 	\draw (1.5,0) -- (1.5,1);
 	\draw (2.5,0) -- (2.5,1);
-	\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+	\draw[bwred,line width=0.4mm] (3.5,0) -- (3.5,1);
 	\draw (4.5,0) -- (4.5,1);
 	\draw (5.5,0) -- (5.5,1);
-	\draw[red,line width=0.4mm] (6.5,0) -- (6.5,1);
+	\draw[bwred,line width=0.4mm] (6.5,0) -- (6.5,1);
 	\draw (7.5,0) -- (7.5,1);
 	\node at (0,-0.3) {$\bullet$};
 	\node at (1,-0.3) {$\bullet$};
@@ -277,14 +277,14 @@ We now want to build a chain out of $\Vec(\Z/2\Z)$ and the bimodule $F_1$ in the
 	\centering
 	\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
 	\draw[blue,line width=0.4mm] (-0.25,0) -- (8.25,0);
-	\draw[red,line width=0.4mm] (0.5,0) -- (0.5,1);
-	\draw[red,line width=0.4mm] (1.5,0) -- (1.5,1);
-	\draw[red,line width=0.4mm] (2.5,0) -- (2.5,1);
-	\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
-	\draw[red,line width=0.4mm] (4.5,0) -- (4.5,1);
-	\draw[red,line width=0.4mm] (5.5,0) -- (5.5,1);
-	\draw[red,line width=0.4mm] (6.5,0) -- (6.5,1);
-	\draw[red,line width=0.4mm] (7.5,0) -- (7.5,1);
+	\draw[bwred,line width=0.4mm] (0.5,0) -- (0.5,1);
+	\draw[bwred,line width=0.4mm] (1.5,0) -- (1.5,1);
+	\draw[bwred,line width=0.4mm] (2.5,0) -- (2.5,1);
+	\draw[bwred,line width=0.4mm] (3.5,0) -- (3.5,1);
+	\draw[bwred,line width=0.4mm] (4.5,0) -- (4.5,1);
+	\draw[bwred,line width=0.4mm] (5.5,0) -- (5.5,1);
+	\draw[bwred,line width=0.4mm] (6.5,0) -- (6.5,1);
+	\draw[bwred,line width=0.4mm] (7.5,0) -- (7.5,1);
 	\end{tikzpicture},
 \end{figure}
 \noindent
@@ -297,7 +297,7 @@ where
 \draw[black] (0,0) -- (1,0);
 \end{tikzpicture}\oplus
 \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-\draw[red,line width=0.4mm] (0,0) -- (1,0);
+\draw[bwred,line width=0.4mm] (0,0) -- (1,0);
 \end{tikzpicture},
 \end{equation}
 which means that it is either an object from the category ($0$ or $1$) or an object from the bimodule (which can only be $*$), i.e., $\mathbb{C}^2\oplus\mathbb{C}\cong\mathbb{C}^3$. Valid configurations then look like
@@ -305,21 +305,21 @@ which means that it is either an object from the category ($0$ or $1$) or an obj
 	\centering
 	\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
 	\draw[black] (-0.25,0) to node [below] {$\mathbb{C}^2$} (0.5,0);
-	\draw[red,line width=0.4mm] (0.5,0) -- (0.5,1);
-	\draw[red,line width=0.4mm] (0.5,0) -- (1.5,0);
-	\draw[red,line width=0.4mm] (1.5,0) -- (1.5,1);
+	\draw[bwred,line width=0.4mm] (0.5,0) -- (0.5,1);
+	\draw[bwred,line width=0.4mm] (0.5,0) -- (1.5,0);
+	\draw[bwred,line width=0.4mm] (1.5,0) -- (1.5,1);
 	\draw[black] (1.5,0) to node [below] {$\mathbb{C}^2$} (2.5,0);
-	\draw[red,line width=0.4mm] (2.5,0) -- (2.5,1);
-	\draw[red,line width=0.4mm] (2.5,0) -- (3.5,0);
-	\draw[red,line width=0.4mm] (3.5,0) -- (3.5,1);
+	\draw[bwred,line width=0.4mm] (2.5,0) -- (2.5,1);
+	\draw[bwred,line width=0.4mm] (2.5,0) -- (3.5,0);
+	\draw[bwred,line width=0.4mm] (3.5,0) -- (3.5,1);
 	\draw[black] (3.5,0) to node [below] {$\mathbb{C}^2$} (4.5,0);
-	\draw[red,line width=0.4mm] (4.5,0) -- (4.5,1);
-	\draw[red,line width=0.4mm] (4.5,0) -- (5.5,0);
-	\draw[red,line width=0.4mm] (5.5,0) -- (5.5,1);
+	\draw[bwred,line width=0.4mm] (4.5,0) -- (4.5,1);
+	\draw[bwred,line width=0.4mm] (4.5,0) -- (5.5,0);
+	\draw[bwred,line width=0.4mm] (5.5,0) -- (5.5,1);
 	\draw[black] (5.5,0) to node [below] {$\mathbb{C}^2$} (6.5,0);
-	\draw[red,line width=0.4mm] (6.5,0) -- (6.5,1);
-	\draw[red,line width=0.4mm] (6.5,0) -- (7.5,0);
-	\draw[red,line width=0.4mm] (7.5,0) -- (7.5,1);
+	\draw[bwred,line width=0.4mm] (6.5,0) -- (6.5,1);
+	\draw[bwred,line width=0.4mm] (6.5,0) -- (7.5,0);
+	\draw[bwred,line width=0.4mm] (7.5,0) -- (7.5,1);
 	\draw[black] (7.5,0) to node [below] {$\mathbb{C}^2$} (8.25,0);
 	\end{tikzpicture},
 \end{figure}
@@ -328,11 +328,11 @@ so we have a non-trivial Hilbert space. Our goal is to construct a local Hamilto
 \begin{equation}
 H=-\sum \frac{1}{\sqrt{2}}
 \begin{tikzpicture}[scale=0.5,baseline=(current bounding box.center)]
-\draw[red,line width=0.4mm] (0,0) -- (-0.7,0.9);
-\draw[red,line width=0.4mm] (0,0) -- (0.7,0.9);
+\draw[bwred,line width=0.4mm] (0,0) -- (-0.7,0.9);
+\draw[bwred,line width=0.4mm] (0,0) -- (0.7,0.9);
 \draw (0,0) to node[right] {$0$} (0,-1);
-\draw[red,line width=0.4mm] (0,-1) -- (-0.7,-1.9);
-\draw[red,line width=0.4mm] (0,-1) -- (0.7,-1.9);
+\draw[bwred,line width=0.4mm] (0,-1) -- (-0.7,-1.9);
+\draw[bwred,line width=0.4mm] (0,-1) -- (0.7,-1.9);
 %			\node at (0.8,1.1) {$*$};
 %			\node at (-0.8,1.1) {$*$};
 %			\node at (0.8,-2.1) {$*$};
@@ -343,7 +343,7 @@ where the sum goes over all sites of the chain and the normalization factor resu
 \begin{figure}[H]	
 	\centering
 	\begin{tikzpicture}[baseline=(current bounding box.center)]
-	\draw[red,line width=0.4mm] (0,0) -- (1.5,0);
+	\draw[bwred,line width=0.4mm] (0,0) -- (1.5,0);
 	\draw[black] (0.75,0) -- (0.75,1);
 	\end{tikzpicture}.
 \end{figure}
@@ -359,7 +359,7 @@ We do the construction of the required vertex step-by-step using ideas from tube
 		\centering
 		\begin{tikzpicture}[scale=1.2,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:1.6)
 			};
@@ -383,7 +383,7 @@ Candidates for idempotents are the morphism where $x+z=0$:
 		T_{0,0}:={}&
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:1.6)
 			};
@@ -400,7 +400,7 @@ Candidates for idempotents are the morphism where $x+z=0$:
 		T_{0,1}:={}&
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
-		\draw[red,line width=0.4mm]
+		\draw[bwred,line width=0.4mm]
 		\foreach \a in {-60, -120} {
 			(\a:0.5) -- (\a:1.6)
 		};
@@ -417,7 +417,7 @@ Candidates for idempotents are the morphism where $x+z=0$:
 		T_{1,0}:={}&
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
-		\draw[red,line width=0.4mm]
+		\draw[bwred,line width=0.4mm]
 		\foreach \a in {-60, -120} {
 			(\a:0.5) -- (\a:1.6)
 		};
@@ -434,7 +434,7 @@ Candidates for idempotents are the morphism where $x+z=0$:
 		T_{1,1}:={}&
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
-		\draw[red,line width=0.4mm]
+		\draw[bwred,line width=0.4mm]
 		\foreach \a in {-60, -120} {
 			(\a:0.5) -- (\a:1.6)
 		};
@@ -454,7 +454,7 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 	\begin{align*}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:2)
 			};
@@ -475,7 +475,7 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 		\end{tikzpicture}
 		&=-\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:2)
 			};
@@ -497,7 +497,7 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 		\end{tikzpicture}\\
 		&=\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:2)
 			};
@@ -524,7 +524,7 @@ The first morphism can be interpreted as the identity morphism and it obviously 
 		\end{tikzpicture}\\
 		&=\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:1.6)
 			};
@@ -606,7 +606,7 @@ which is diagrammatically
 		\left(
 			\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:1.6)
 			};
@@ -622,7 +622,7 @@ which is diagrammatically
 			+(-1)^x
 			\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:1.6)
 			};
@@ -638,7 +638,7 @@ which is diagrammatically
 			&+(-1)^y
 			\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:1.6)
 			};
@@ -654,7 +654,7 @@ which is diagrammatically
 			&\left.+(-1)^{x+y}
 			\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:1.6)
 			};
@@ -697,7 +697,7 @@ so we get two or five primitive idempotents respectively.
 	\begin{equation}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
-		\draw[red,line width=0.4mm]
+		\draw[bwred,line width=0.4mm]
 		\foreach \a in {-60, -120} {
 			(\a:0.5) -- (\a:1.6)
 		};
@@ -719,7 +719,7 @@ In general, the basis vectors are determined by the choice of $\alpha,\beta$ and
 	\sum_{a,b}(-1)^{ax+by}
 	\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 	\draw (0,0) circle (0.5cm);
-	\draw[red,line width=0.4mm]
+	\draw[bwred,line width=0.4mm]
 	\foreach \a in {-60, -120} {
 		(\a:0.5) -- (\a:2)
 	};
@@ -743,7 +743,7 @@ In general, the basis vectors are determined by the choice of $\alpha,\beta$ and
 	\sum_{a,b}(-1)^{a(x+\alpha+\gamma)+by}
 	\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 	\draw (0,0) circle (0.5cm);
-	\draw[red,line width=0.4mm]
+	\draw[bwred,line width=0.4mm]
 	\foreach \a in {-60, -120} {
 		(\a:0.5) -- (\a:1.6)
 	};
@@ -762,7 +762,7 @@ In general, the basis vectors are determined by the choice of $\alpha,\beta$ and
 	\sum_{a^\prime,b^\prime}(-1)^{a^\prime(x+\alpha^\prime)+b^\prime y}
 	\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 	\draw (0,0) circle (0.5cm);
-	\draw[red,line width=0.4mm]
+	\draw[bwred,line width=0.4mm]
 	\foreach \a in {-60, -120} {
 		(\a:0.5) -- (\a:1.6)
 	};
@@ -779,14 +779,14 @@ In general, the basis vectors are determined by the choice of $\alpha,\beta$ and
 which is a vector in the morphism space
 	\begin{equation}	
 		\begin{tikzpicture}
-			\draw[red,line width=0.4mm] (0,0) -- (1.5,0);
+			\draw[bwred,line width=0.4mm] (0,0) -- (1.5,0);
 			\draw (0.75,0) -- (0.75,1) node [pos=1.25]{$\alpha^\prime$};
 		\end{tikzpicture}.
 	\end{equation}
 We now have to find a basis for every one of those morphism spaces, i.e.\ for every choice of $\alpha^\prime$. For fixed representation (fixed, $x,y$), we find a unique vector up to a multiplicative scalar for each $\alpha^\prime$, so each morphism space is one dimensional. We define the basis to be
 	\begin{equation}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-			\draw[red,line width=0.4mm] (0,-.25) -- (.75,0) -- (1.5,-.25);
+			\draw[bwred,line width=0.4mm] (0,-.25) -- (.75,0) -- (1.5,-.25);
 			\draw (0.75,0) -- (0.75,1) node [pos=1.25] {$\alpha$};
 			\node[above,right] at (.75,.15) {$(x,y)$};
 		\end{tikzpicture}\equiv
@@ -794,7 +794,7 @@ We now have to find a basis for every one of those morphism spaces, i.e.\ for ev
 		\sum_{a,b}(-1)^{a(x+\alpha)+b y}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
-		\draw[red,line width=0.4mm]
+		\draw[bwred,line width=0.4mm]
 		\foreach \a in {-60, -120} {
 			(\a:0.5) -- (\a:1.6)
 		};
@@ -811,14 +811,14 @@ We now have to find a basis for every one of those morphism spaces, i.e.\ for ev
 The `inflation trick' developed in \cite{BBJ18,BB19a,BB19b} picks out the representation $P_{0,0}$, and we work with that from here on. This means
 	\begin{equation}
 	\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-	\draw[red,line width=0.4mm] (0,-.25) -- (.75,0) -- (1.5,-.25);
+	\draw[bwred,line width=0.4mm] (0,-.25) -- (.75,0) -- (1.5,-.25);
 	\draw (0.75,0) -- (0.75,1) node [pos=1.25] {$\alpha$};
 	\end{tikzpicture}:=
 	\frac{1}{4}
 	\sum_{a,b}(-1)^{a\alpha}
 	\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 	\draw (0,0) circle (0.5cm);
-	\draw[red,line width=0.4mm]
+	\draw[bwred,line width=0.4mm]
 	\foreach \a in {-60, -120} {
 		(\a:0.5) -- (\a:1.6)
 	};
@@ -838,18 +838,18 @@ Our goal is to define a Hamiltonian for the chain which will be of the form
 	\begin{equation*}
 		\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 		\draw (.5,.25)--(.5,.75) node [pos=.5,left]{0};
-		\draw [red, line width=0.25mm] (0,0) -- (.5,.25) -- (1,0);
-		\draw [red, line width=0.25mm] (0,1) -- (.5,.75)--(1,1);
+		\draw [bwred, line width=0.25mm] (0,0) -- (.5,.25) -- (1,0);
+		\draw [bwred, line width=0.25mm] (0,1) -- (.5,.75)--(1,1);
 		\end{tikzpicture}
 		=
 		\alpha\ \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-			\draw [red, line width=0.25mm] (0,0) -- (0,1);
-			\draw [red, line width=0.25mm] (0.5,0) -- (0.5,1);
+			\draw [bwred, line width=0.25mm] (0,0) -- (0,1);
+			\draw [bwred, line width=0.25mm] (0.5,0) -- (0.5,1);
 		\end{tikzpicture}
 		+\beta\ \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 			\draw (0,0.5) -- (0.5,0.5);
-			\draw [red, line width=0.25mm] (0,0) -- (0,1);
-			\draw [red, line width=0.25mm] (0.5,0) -- (0.5,1);			
+			\draw [bwred, line width=0.25mm] (0,0) -- (0,1);
+			\draw [bwred, line width=0.25mm] (0.5,0) -- (0.5,1);			
 		\end{tikzpicture}\ .
 	\end{equation*}
 To compute $\alpha$ and $\beta$ above, in addition to the action on the spin chain, we will need the full set of $F$-symbols.
@@ -903,15 +903,15 @@ From the fusion rules, $d_*=\sqrt{2}$, so
 \begin{equation}
 \label{eq:completeness2}
 \begin{tikzpicture}[scale=1.2,baseline=(current bounding box.center)]
-\draw[red,line width=0.4mm] (0,0) to (0,1);
+\draw[bwred,line width=0.4mm] (0,0) to (0,1);
 \draw (0.5,0) to node [right] {$a$} (0.5,1);
 \end{tikzpicture}=
 \begin{tikzpicture}[scale=1.2,baseline=(current bounding box.center)]
-\draw[red,line width=0.4mm] (0,0) to (0.25,0.25);
+\draw[bwred,line width=0.4mm] (0,0) to (0.25,0.25);
 \draw (0.5,0) to node [right] {$a$} (0.25,0.25);
-\draw[red,line width=0.4mm] (0,1) to (0.25,0.75);
+\draw[bwred,line width=0.4mm] (0,1) to (0.25,0.75);
 \draw (0.5,1) to node [right] {$a$} (0.25,0.75);
-\draw[red,line width=0.4mm] (0.25,0.25) to (0.25,0.75);
+\draw[bwred,line width=0.4mm] (0.25,0.25) to (0.25,0.75);
 \end{tikzpicture}.
 \end{equation}
 The computation for $F_{**a}^{a+b}$ is particularly straightforward:
@@ -919,8 +919,8 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
 			\draw[] (0,0) -- (0,1) node[pos=1,above]{$a+b$};
 			\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,left] {$b$};
-			\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
-			\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
+			\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+			\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
 			\draw (0,0) -- (0.707107,-0.707107);
 			\draw (0.707107,-0.707107) -- (1.41421,-1.41421);
 			\node at (-1.41421,-1.7) {$*$};
@@ -930,7 +930,7 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\frac{1}{4}\sum_{x,y}(-1)^{bx}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 			\draw (0,0) circle (0.5cm);
-			\draw[red,line width=0.4mm]
+			\draw[bwred,line width=0.4mm]
 			\foreach \a in {-60, -120} {
 				(\a:0.5) -- (\a:1.6)
 			};
@@ -950,7 +950,7 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		&=\frac{1}{4}\sum_{x,y}(-1)^{bx}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
-		\draw[red,line width=0.4mm]
+		\draw[bwred,line width=0.4mm]
 		\foreach \a in {-60, -120} {
 			(\a:0.5) -- (\a:2.5)
 		};
@@ -967,13 +967,13 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\node at (1.15,0.3) {$y$};
 %		\node at (2.3,-1.7) {$a$};
 		\node at (0,-1.35) {$x$};
-		%\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
+		%\draw[bwred,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}
 		\\
 		&=\frac{1}{4}\sum_{x,y}(-1)^{(a+b)x}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
-		\draw[red,line width=0.4mm]
+		\draw[bwred,line width=0.4mm]
 		\foreach \a in {-60, -120} {
 			(\a:0.5) -- (\a:2.5)
 		};
@@ -990,13 +990,13 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\node at (1.15,0.3) {$y$};
 		%		\node at (2.3,-1.7) {$a$};
 		\node at (0,-1.35) {$x$};
-		%\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
+		%\draw[bwred,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}
 		\\
 		&=\frac{1}{4}\sum_{x,y}(-1)^{(a+b)x}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
-		\draw[red,line width=0.4mm]
+		\draw[bwred,line width=0.4mm]
 		\foreach \a in {-60, -120} {
 			(\a:0.5) -- (\a:2.5)
 		};
@@ -1013,13 +1013,13 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\node[rotate=-60] at (1.15,0.3) {$y+a$};
 		%		\node at (2.3,-1.7) {$a$};
 		\node at (0,-1.35) {$x$};
-		%\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
+		%\draw[bwred,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}
 		\\
 		&=\frac{1}{4}\sum_{x,y^\prime}(-1)^{(a+b)x}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
-		\draw[red,line width=0.4mm]
+		\draw[bwred,line width=0.4mm]
 		\foreach \a in {-60, -120} {
 			(\a:0.5) -- (\a:2.5)
 		};
@@ -1031,16 +1031,16 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		\node[rotate=60] at (-1,0.3) {$a+b+y^\prime$};
 		\node at (1.15,0.3) {$y^\prime$};
 		\node at (0,-1.35) {$x$};
-		%\draw[red,line width=0.4mm] (-60:1.6)--(-60:2.5);
+		%\draw[bwred,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}
 		\\
 		&=\begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
 		\draw[] (0,0) -- (0,1) node[pos=1,above]{$a+b$};
-		\draw[red,line width=0.4mm] (0,0) -- (-0.707107,-0.707107);
+		\draw[bwred,line width=0.4mm] (0,0) -- (-0.707107,-0.707107);
 		\draw[] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
-		\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
-		\draw[red,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
-		\draw[red,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
+		\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
+		\draw[bwred,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
+		\draw[bwred,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
 		\node at (-1.41421,-1.7) {$a$};
 		\node at (0,-1.7) {$*$};
 		\node at (1.41421,-1.7) {$*$};
@@ -1056,12 +1056,12 @@ Attempting to use \eqref{eq:completeness} to compute $F_{***}^*$ is circular, so
 \begin{equation}
 \begin{split}
 \begin{tikzpicture}[scale=0.7,baseline=(current bounding box.center)]
-\draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[bwred,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 \draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,left] {$a$};
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
-\draw[red,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
-\draw[red,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[bwred,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
+\draw[bwred,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
 \node at (-1.41421,-1.7) {$*$};
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
@@ -1069,12 +1069,12 @@ Attempting to use \eqref{eq:completeness} to compute $F_{***}^*$ is circular, so
 =&
 \left(F_{***}^*\right)_{a,0}
 \begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
-\draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[bwred,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 \draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,left] {$0$};
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
-\draw[red,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
-\draw[red,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[bwred,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
+\draw[bwred,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
 \node at (-1.41421,-1.7) {$*$};
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
@@ -1082,12 +1082,12 @@ Attempting to use \eqref{eq:completeness} to compute $F_{***}^*$ is circular, so
 &+
 \left(F_{***}^*\right)_{a,1}
 \begin{tikzpicture}[xscale=-1,scale=0.7,baseline=(current bounding box.center)]
-\draw[red] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[bwred] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 \draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,left] {$1$};
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
-\draw[red,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
-\draw[red,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[bwred,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
+\draw[bwred,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
 \node at (-1.41421,-1.7) {$*$};
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
@@ -1097,9 +1097,9 @@ Attempting to use \eqref{eq:completeness} to compute $F_{***}^*$ is circular, so
 Both sides of the equation transform in the same representation of this 4-string action. We use this to find the $F$-symbols. Consider applying the annulus
 \begin{equation}
 \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-\draw[red,line width=0.4mm](-.9,0)--(-.9,-1);
-\draw[red,line width=0.4mm](0,0)--(0,-1);\draw[red,line width=0.4mm](0,.2)--(0,1);
-\draw[red,line width=0.4mm](.9,0)--(.9,-1);
+\draw[bwred,line width=0.4mm](-.9,0)--(-.9,-1);
+\draw[bwred,line width=0.4mm](0,0)--(0,-1);\draw[bwred,line width=0.4mm](0,.2)--(0,1);
+\draw[bwred,line width=0.4mm](.9,0)--(.9,-1);
 \draw[rounded corners] (0,.7)--(-1.6,0)--(-.9,-.5)node[pos=.5,left]{$x_0$};
 \draw[rounded corners] (0,.9)--(1.6,0)--(.9,-.5)node[pos=.5,right]{$\ x_1$};
 \draw[rounded corners] (-.9,-.9)--(0,-.6)node[pos=.5,above]{$x_2$};
@@ -1112,12 +1112,12 @@ to both sides, resolving the vertices where necessary. The equation becomes
 \begin{align}
 (-&1)^{(a+x_0)(x_1+x_2)}
 \begin{tikzpicture}[scale=0.6,baseline=(current bounding box.center)]
-\draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[bwred,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 \draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,left] {$a+x_0+x_3$};
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
-\draw[red,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
-\draw[red,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[bwred,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
+\draw[bwred,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
 \node at (-1.41421,-1.7) {$*$};
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
@@ -1127,12 +1127,12 @@ to both sides, resolving the vertices where necessary. The equation becomes
 =&
 \left(F_{***}^*\right)_{a,0}(-1)^{(x_1+x_2)x_3}
 \begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
-\draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[bwred,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 \draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$x_1+x_2$};
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
-\draw[red,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
-\draw[red,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[bwred,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
+\draw[bwred,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
 \node at (-1.41421,-1.7) {$*$};
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
@@ -1140,12 +1140,12 @@ to both sides, resolving the vertices where necessary. The equation becomes
 \\&+
 \left(F_{***}^*\right)_{a,1}(-1)^{x_0+(1+x_1+x_2)x_3}
 \begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
-\draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+\draw[bwred,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 \draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$1+x_1+x_2$};
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
-\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
-\draw[red,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
-\draw[red,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
+\draw[bwred,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
+\draw[bwred,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
 \node at (-1.41421,-1.7) {$*$};
 \node at (0,-1.7) {$*$};
 \node at (1.41421,-1.7) {$*$};
@@ -1158,12 +1158,12 @@ to both sides, resolving the vertices where necessary. The equation becomes
 	\left(
 	\left(F_{***}^*\right)_{a+x_0+x_3,x_1+x_2}
 	\begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
-	\draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+	\draw[bwred,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 	\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$x_1+x_2$};
-	\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
-	\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
-	\draw[red,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
-	\draw[red,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
+	\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+	\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
+	\draw[bwred,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
+	\draw[bwred,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
 	\node at (-1.41421,-1.7) {$*$};
 	\node at (0,-1.7) {$*$};
 	\node at (1.41421,-1.7) {$*$};
@@ -1172,12 +1172,12 @@ to both sides, resolving the vertices where necessary. The equation becomes
 	\\&+
 	\left(F_{***}^*\right)_{a+x_0+x_3,1+x_1+x_2}\left.
 	\begin{tikzpicture}[xscale=-1,scale=0.6,baseline=(current bounding box.center)]
-	\draw[red,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
+	\draw[bwred,line width=0.4mm] (0,0) -- (0,1) node[pos=1,above,text=black]{$*$};
 	\draw[] (0,0) -- (-0.707107,-0.707107) node [pos=.5,right] {$1+x_1+x_2$};
-	\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
-	\draw[red,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
-	\draw[red,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
-	\draw[red,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
+	\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (-1.41421,-1.41421);
+	\draw[bwred,line width=0.4mm] (-0.707107,-0.707107) -- (0,-1.41421);
+	\draw[bwred,line width=0.4mm] (0,0) -- (0.707107,-0.707107);
+	\draw[bwred,line width=0.4mm] (0.707107,-0.707107) -- (1.41421,-1.41421);
 	\node at (-1.41421,-1.7) {$*$};
 	\node at (0,-1.7) {$*$};
 	\node at (1.41421,-1.7) {$*$};
