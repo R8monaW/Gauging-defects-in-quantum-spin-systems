@@ -157,9 +157,9 @@ acts on these configurations in the following way: the first term of the Hamilto
 A general basis state that lives in $(\mathbb{C}^2\oplus \mathbb{C})\otimes(\mathbb{C}^2\oplus \mathbb{C})\otimes(\mathbb{C}^2\oplus \mathbb{C})$ is of the form
 	\begin{equation}
 		\lvert x_{i-1}, x_i, x_{i+1}\rangle=\begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-		\draw [blue, line width=0.25mm] (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
-		\draw [blue, line width=0.25mm] (0,0) to node[below] {$x_i$} (1,0);
-		\draw [blue, line width=0.25mm] (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
+		\draw [bwblue, line width=0.25mm] (-0.5,0) to node[below, near start] {$x_{i-1}$} (0,0);
+		\draw [bwblue, line width=0.25mm] (0,0) to node[below] {$x_i$} (1,0);
+		\draw [bwblue, line width=0.25mm] (1,0) to node[below, near end] {$x_{i+1}$} (1.5,0);
 		\draw [bwred, line width=0.25mm] (0,0) -- (0,1);
 		\draw [bwred, line width=0.25mm] (1,0) -- (1,1);
 		\end{tikzpicture}
@@ -211,10 +211,10 @@ so we effectively have a system of qubits
 		\begin{tikzpicture}[scale=1.5,baseline=(current bounding box.center)]
 		\fill[black] (0,0) circle (0.07cm);
 		\node at (0,-0.25) {$\mathbb{C}^2$};
-		\fill[black] (1.5,0) circle (0.07cm);
-		\node at (1.5,-0.25) {$\mathbb{C}^2$};
-		\fill[black] (3,0) circle (0.07cm);
-		\node at (3,-0.25) {$\mathbb{C}^2$};
+		\fill[black] (1,0) circle (0.07cm);
+		\node at (1,-0.25) {$\mathbb{C}^2$};
+		\fill[black] (2,0) circle (0.07cm);
+		\node at (2,-0.25) {$\mathbb{C}^2$};
 		\end{tikzpicture}.
 	\end{figure}
 \noindent

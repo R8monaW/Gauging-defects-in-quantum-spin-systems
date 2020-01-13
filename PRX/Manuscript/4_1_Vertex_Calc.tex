@@ -261,9 +261,9 @@ The occurrence of one defect in a chain does not change the ground state of the 
 	\node at (1,-0.3) {$\bullet$};
 	\node at (2,-0.3) {$\bullet$};
 	\node at (3,-0.3) {$\bullet$};
-	\node at (4,-0.3) {{\color{orange}$\bullet$}};
-	\node at (5,-0.3) {{\color{orange}$\bullet$}};
-	\node at (6,-0.3) {{\color{orange}$\bullet$}};
+	\node at (4,-0.3) {{\color{atomictangerine}$\bullet$}};
+	\node at (5,-0.3) {{\color{atomictangerine}$\bullet$}};
+	\node at (6,-0.3) {{\color{atomictangerine}$\bullet$}};
 	\node at (7,-0.3) {$\bullet$};
 	\node at (8,-0.3) {$\bullet$};
 	\end{tikzpicture},
@@ -276,7 +276,7 @@ We now want to build a chain out of $\Vec(\Z/2\Z)$ and the bimodule $F_1$ in the
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}[scale=0.8,baseline=(current bounding box.center)]
-	\draw[blue,line width=0.4mm] (-0.25,0) -- (8.25,0);
+	\draw[bwblue,line width=0.4mm] (-0.25,0) -- (8.25,0);
 	\draw[bwred,line width=0.4mm] (0.5,0) -- (0.5,1);
 	\draw[bwred,line width=0.4mm] (1.5,0) -- (1.5,1);
 	\draw[bwred,line width=0.4mm] (2.5,0) -- (2.5,1);
@@ -291,7 +291,7 @@ We now want to build a chain out of $\Vec(\Z/2\Z)$ and the bimodule $F_1$ in the
 where
 \begin{equation}\label{eq:configs}
 \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
-\draw[blue,line width=0.4mm] (0,0) -- (1,0);
+\draw[bwblue,line width=0.4mm] (0,0) -- (1,0);
 \end{tikzpicture}=
 \begin{tikzpicture}[scale=1,baseline=(current bounding box.center)]
 \draw[black] (0,0) -- (1,0);
@@ -856,10 +856,10 @@ To compute $\alpha$ and $\beta$ above, in addition to the action on the spin cha
 
 From the category $\Vec(\Z/2\Z)$, and the bimodule associators we have
 \begin{align}
-\left(F_{abc}^{a+b+c}\right)_{a+b,b+c}&=1&&\text{From Example~\ref{example:vecG}: $F$=+1}\\
-\left(F_{ab*}^*\right)_{a+b,*}&=1&&\text{From \eqref{eqn:L}: $L$=+1} \\
+\left(F_{abc}^{a+b+c}\right)_{a+b,b+c}&=1&&\text{From Example~\ref{example:vecG}:} \\& &&F=+1\nonumber\\
+\left(F_{ab*}^*\right)_{a+b,*}&=1&&\text{From \eqref{eqn:L}:} L=+1 \\
 \left(F_{a*b}^*\right)_{*,*}&=(-1)^{ab}&&\text{From \eqref{eqn:F1}} \\
-\left(F_{*ab}^*\right)_{*,a+b}&=1&&\text{From \eqref{eqn:R}: $R$=+1}.
+\left(F_{*ab}^*\right)_{*,a+b}&=1&&\text{From \eqref{eqn:R}:} R=+1.
 \end{align}
 \noindent
 However, there are still some yet unknown $F$-symbols, namely
@@ -947,7 +947,7 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 			\node at (0,-1.35) {$x$};
 		\end{tikzpicture}
 		\\
-		&=\frac{1}{4}\sum_{x,y}(-1)^{bx}
+		=\frac{1}{4}\sum_{x,y}&(-1)^{bx}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
 		\draw[bwred,line width=0.4mm]
@@ -970,7 +970,7 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		%\draw[bwred,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}
 		\\
-		&=\frac{1}{4}\sum_{x,y}(-1)^{(a+b)x}
+		=\frac{1}{4}\sum_{x,y}&(-1)^{(a+b)x}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
 		\draw[bwred,line width=0.4mm]
@@ -993,7 +993,7 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		%\draw[bwred,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}
 		\\
-		&=\frac{1}{4}\sum_{x,y}(-1)^{(a+b)x}
+		=\frac{1}{4}\sum_{x,y}&(-1)^{(a+b)x}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
 		\draw[bwred,line width=0.4mm]
@@ -1016,7 +1016,7 @@ The computation for $F_{**a}^{a+b}$ is particularly straightforward:
 		%\draw[bwred,line width=0.4mm] (-60:1.6)--(-60:2.5);
 		\end{tikzpicture}
 		\\
-		&=\frac{1}{4}\sum_{x,y^\prime}(-1)^{(a+b)x}
+		=\frac{1}{4}\sum_{x,y^\prime}&(-1)^{(a+b)x}
 		\begin{tikzpicture}[scale=.75,baseline=(current bounding box.center)]
 		\draw (0,0) circle (0.5cm);
 		\draw[bwred,line width=0.4mm]
