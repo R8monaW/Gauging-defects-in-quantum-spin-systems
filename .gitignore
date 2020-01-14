@@ -30,11 +30,9 @@ arXivSubmission.tar.gz
 
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
-*.bbl
 *.bcf
 *.blg
 *-blx.aux
-*-blx.bib
 *.run.xml
 
 ## Build tool auxiliary files:
@@ -45,7 +43,6 @@ arXivSubmission.tar.gz
 *.synctex.gz(busy)
 *.pdfsync
 *.synctex*
-*Notes.bib
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms

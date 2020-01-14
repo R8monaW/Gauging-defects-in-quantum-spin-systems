@@ -1,0 +1,666 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{CGPW16}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname doi\endcsname\relax
+  \def\doi#1{\burlalt{#1}{https://dx.doi.org/#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2}\fi
+\expandafter\ifx\csname burlalt\endcsname\relax
+  \def\burlalt#1#2{\href{#2}{#1}}\fi
+
+\bibitem[And61]{andersonLocalizedMagneticStates1961}
+P.~W. Anderson.
+\newblock Localized {{Magnetic States}} in {{Metals}}.
+\newblock {\em Phys. Rev.}, 124(1):41--53, 1961.
+
+\bibitem[BASP14]{BASP14}
+B.~J. Brown, A.~Al-Shimary, and J.~K. Pachos.
+\newblock Entropic {Barriers} for {Two}-{Dimensional} {Quantum} {Memories}.
+\newblock {\em Phys. Rev. Lett.}, 112(12):120503, 2014,
+  \doi{10.1103/physrevlett.112.120503}.
+\newblock \burlalt{arXiv:1307.6222}{https://arxiv.org/abs/1307.6222}.
+
+\bibitem[BB19a]{BB19b}
+J.~C. Bridgeman and D.~Barter.
+\newblock {Computing data for Levin-Wen with defects}.
+\newblock 2019.
+\newblock \burlalt{arXiv:1907.06692}{https://arxiv.org/abs/1907.06692}.
+
+\bibitem[BB19b]{BB19a}
+J.~C. Bridgeman and D.~Barter.
+\newblock {Computing Defects Associated to Bounded Domain Wall Structures: The
+  $\mathrm{Vec}(\mathbb{Z}/p\mathbb{Z})$ case}.
+\newblock 2019.
+\newblock \burlalt{arXiv:1901.08069}{https://arxiv.org/abs/1901.08069}.
+
+\bibitem[BBCW14]{BBCW14}
+M.~Barkeshli, P.~Bonderson, M.~Cheng, and Z.~Wang.
+\newblock {Symmetry} {Fractionalization}, {Defects}, and {Gauging} of
+  {Topological} {Phases}.
+\newblock 2014.
+\newblock \burlalt{arXiv:1410.4540}{https://arxiv.org/abs/1410.4540}.
+
+\bibitem[BBD17]{BBD17}
+J.~C. Bridgeman, S.~D. Bartlett, and A.~C. Doherty.
+\newblock Tensor networks with a twist: {Anyon}-permuting domain walls and
+  defects in projected entangled pair states.
+\newblock {\em Phys. Rev. B}, 96(24):245122, 2017,
+  \doi{10.1103/physrevb.96.245122}.
+\newblock \burlalt{arXiv:1708.08930}{https://arxiv.org/abs/1708.08930}.
+
+\bibitem[BBJ]{BBJSkeletal}
+D.~Barter, J.~C. Bridgeman, and C.~Jones.
+\newblock In preparation.
+
+\bibitem[BBJ18]{BBJ18}
+J.~C. Bridgeman, D.~Barter, and C.~Jones.
+\newblock {Fusing Binary Interface Defects in Topological Phases: The
+  $\mathrm{Vec}(\mathbb{Z}/p\mathbb{Z})$ case}.
+\newblock 2018.
+\newblock \burlalt{arXiv:1810.09469}{https://arxiv.org/abs/1810.09469}.
+
+\bibitem[BBJ19]{BBJ19}
+D.~Barter, J.~C. Bridgeman, and C.~Jones.
+\newblock Domain {W}alls in {T}opological {P}hases and the {B}rauer-{P}icard
+  {R}ing for $\mathrm{Vec}(\mathbb{Z}/p\mathbb{Z})$.
+\newblock {\em Commun. Math. Phys.}, 369(3):1167--1185, 2019,
+  \doi{10.1007/s00220-019-03338-2}.
+\newblock \burlalt{arXiv:1806.01279}{https://arxiv.org/abs/1806.01279}.
+
+\bibitem[BC17]{bridgemanHandwavingInterpretiveDance2017}
+J.~C. Bridgeman and C.~T. Chubb.
+\newblock {Hand-waving and interpretive dance: an introductory course on tensor
+  networks}.
+\newblock {\em J. Phys. A: Math. Theor.}, 50(22):223001, 2017,
+  \doi{10.1088/1751-8121/aa6dc3}.
+\newblock \burlalt{arXiv:1603.03039}{https://arxiv.org/abs/1603.03039}.
+
+\bibitem[Bea99]{Beachy1999}
+J.~A. Beachy.
+\newblock {\em Introductory {Lectures} on {Rings} and {Modules}}.
+\newblock Cambridge University Press, 1999.
+
+\bibitem[BJ19]{BJ19}
+M.~Bischoff and C.~Jones.
+\newblock Computing fusion rules for spherical {G}-extensions of fusion
+  categories.
+\newblock 2019.
+\newblock \burlalt{arXiv:1909.02816}{https://arxiv.org/abs/1909.02816}.
+
+\bibitem[BJQ13a]{BJQ13}
+M.~Barkeshli, C.-M. Jian, and X.-L. Qi.
+\newblock Genons, twist defects, and projective non-{A}belian braiding
+  statistics.
+\newblock {\em Phys. Rev. B}, 87(4):045130, 2013,
+  \doi{10.1103/PhysRevB.87.045130}.
+\newblock \burlalt{arXiv:1208.4834}{https://arxiv.org/abs/1208.4834}.
+
+\bibitem[BJQ13b]{BJQ13b}
+M.~Barkeshli, C.-M. Jian, and X.-L. Qi.
+\newblock Theory of defects in {Abelian} topological states.
+\newblock {\em Phys. Rev. B}, 88(23):235103, 2013,
+  \doi{10.1103/physrevb.88.235103}.
+\newblock \burlalt{arXiv:1305.7203}{https://arxiv.org/abs/1305.7203}.
+
+\bibitem[BLKW17]{BLKW17}
+B.~J. Brown, K.~Laubscher, M.~S. Kesselring, and J.~R. Wootton.
+\newblock Poking {Holes} and {Cutting} {Corners} to {Achieve} {Clifford}
+  {Gates} with the {Surface} {Code}.
+\newblock {\em Phys. Rev. X}, 7(2):021029, 2017,
+  \doi{10.1103/physrevx.7.021029}.
+\newblock \burlalt{arXiv:1609.04673}{https://arxiv.org/abs/1609.04673}.
+
+\bibitem[BLP{\etalchar{+}}16]{BLPSW16}
+B.~J. Brown, D.~Loss, J.~K. Pachos, C.~N. Self, and J.~R. Wootton.
+\newblock Quantum memories at finite temperature.
+\newblock {\em Rev. Mod. Phys.}, 88(4):045005, 2016,
+  \doi{10.1103/RevModPhys.88.045005}.
+\newblock \burlalt{arXiv:1411.6643}{https://arxiv.org/abs/1411.6643}.
+
+\bibitem[Bom10]{Bombin2010}
+H.~Bombin.
+\newblock Topological {Order} with a {Twist}: {Ising} {Anyons} from an
+  {Abelian} {Model}.
+\newblock {\em Phys. Rev. Lett.}, 105(3):030403, 2010,
+  \doi{10.1103/physrevlett.105.030403}.
+\newblock \burlalt{arXiv:1004.1838}{https://arxiv.org/abs/1004.1838}.
+
+\bibitem[Bon07]{Bonderson}
+P.~Bonderson.
+\newblock {Non-Abelian Anyons and Interferometry}, 2007.
+\newblock \urlprefix\url{https://thesis.library.caltech.edu/2447/2/thesis.pdf}.
+
+\bibitem[BRSX15]{BRSX15}
+Z.~Bi, A.~Rasmussen, K.~Slagle, and C.~Xu.
+\newblock Classification and description of bosonic symmetry protected
+  topological phases with semiclassical nonlinear sigma models.
+\newblock {\em Phys. Rev. B}, 91(13):134404, 2015,
+  \doi{10.1103/physrevb.91.134404}.
+\newblock \burlalt{arXiv:1309.0515}{https://arxiv.org/abs/1309.0515}.
+
+\bibitem[BS09]{BS09}
+F.~A. Bais and J.~K. Slingerland.
+\newblock Condensate-induced transitions between topologically ordered phases.
+\newblock {\em Phys. Rev. B}, 79(4):045316, 2009,
+  \doi{10.1103/physrevb.79.045316}.
+\newblock \burlalt{arXiv:0808.0627}{https://arxiv.org/abs/0808.0627}.
+
+\bibitem[BSS08]{BSS08}
+P.~Bonderson, K.~Shtengel, and J.~K. Slingerland.
+\newblock {Interferometry of non-Abelian anyons}.
+\newblock {\em Ann. Phys.}, 323(11):2709--2755, 2008,
+  \doi{10.1016/j.aop.2008.01.012}.
+\newblock \burlalt{arXiv:0707.4206}{https://arxiv.org/abs/0707.4206}.
+
+\bibitem[BSS12]{BSS12}
+F.~J. Burnell, S.~H. Simon, and J.~K. Slingerland.
+\newblock Phase transitions in topological lattice models via topological
+  symmetry breaking.
+\newblock {\em New J. Phys.}, 14(1):015004, 2012,
+  \doi{10.1088/1367-2630/14/1/015004}.
+\newblock \burlalt{arXiv:1012.0317}{https://arxiv.org/abs/1012.0317}.
+
+\bibitem[BW10]{BW10}
+M.~Barkeshli and X.-G. Wen.
+\newblock Anyon {Condensation} and {Continuous} {Topological} {Phase}
+  {Transitions} in {Non}-{Abelian} {Fractional} {Quantum} {Hall} {States}.
+\newblock {\em Phys. Rev. Lett.}, 105(21):216804, 2010,
+  \doi{10.1103/physrevlett.105.216804}.
+\newblock \burlalt{arXiv:1007.2030}{https://arxiv.org/abs/1007.2030}.
+
+\bibitem[BW11]{BW11}
+M.~Barkeshli and X.-G. Wen.
+\newblock Bilayer quantum {Hall} phase transitions and the orbifold
+  non-{Abelian} fractional quantum {Hall} states.
+\newblock {\em Phys. Rev. B}, 84(11):115121, 2011,
+  \doi{10.1103/physrevb.84.115121}.
+\newblock \burlalt{arXiv:1010.4270}{https://arxiv.org/abs/1010.4270}.
+
+\bibitem[CCW16]{CCW16}
+I.~Cong, M.~Cheng, and Z.~Wang.
+\newblock Topological {Quantum} {Computation} with {Gapped} {Boundaries}.
+\newblock 2016.
+\newblock \burlalt{arXiv:1609.02037}{https://arxiv.org/abs/1609.02037}.
+
+\bibitem[CCW17a]{CCW17b}
+I.~Cong, M.~Cheng, and Z.~Wang.
+\newblock Defects between gapped boundaries in two-dimensional topological
+  phases of matter.
+\newblock {\em Phys. Rev. B}, 96(19):195129, 2017,
+  \doi{10.1103/physrevb.96.195129}.
+\newblock \burlalt{arXiv:1703.03564}{https://arxiv.org/abs/1703.03564}.
+
+\bibitem[CCW17b]{CCW17}
+I.~Cong, M.~Cheng, and Z.~Wang.
+\newblock Universal {Quantum} {Computation} with {Gapped} {Boundaries}.
+\newblock {\em Phys. Rev. Lett.}, 119(17):170504, 2017,
+  \doi{10.1103/physrevlett.119.170504}.
+\newblock \burlalt{arXiv:1707.05490}{https://arxiv.org/abs/1707.05490}.
+
+\bibitem[CG14]{CG14}
+M.~Cheng and Z.-C. Gu.
+\newblock Topological {Response} {Theory} of {Abelian} {Symmetry}-{Protected}
+  {Topological} {Phases} in {Two} {Dimensions}.
+\newblock {\em Phys. Rev. Lett.}, 112(14):141602, 2014,
+  \doi{10.1103/physrevlett.112.141602}.
+\newblock \burlalt{arXiv:1302.4803}{https://arxiv.org/abs/1302.4803}.
+
+\bibitem[CGLW13]{CGLW13}
+X.~Chen, Z.-C. Gu, Z.-X. Liu, and X.-G. Wen.
+\newblock Symmetry protected topological orders and the group cohomology of
+  their symmetry group.
+\newblock {\em Phys. Rev. B}, 87(15):155114, 2013,
+  \doi{10.1103/physrevb.87.155114}.
+\newblock \burlalt{arXiv:1106.4772}{https://arxiv.org/abs/1106.4772}.
+
+\bibitem[CGPW16]{CGPW16}
+S.~X. Cui, C.~Galindo, J.~Y. Plavnik, and Z.~Wang.
+\newblock On {Gauging} {Symmetry} of {Modular} {Categories}.
+\newblock {\em Commun. Math. Phys.}, 348(3):1043--1064, 2016,
+  \doi{10.1007/s00220-016-2633-8}.
+\newblock \burlalt{arXiv:1510.03475}{https://arxiv.org/abs/1510.03475}.
+
+\bibitem[CGW11]{CGW11}
+X.~Chen, Z.-C. Gu, and X.-G. Wen.
+\newblock Classification of gapped symmetric phases in one-dimensional spin
+  systems.
+\newblock {\em Phys. Rev. B}, 83(3):035107, 2011,
+  \doi{10.1103/physrevb.83.035107}.
+\newblock \burlalt{arXiv:1008.3745}{https://arxiv.org/abs/1008.3745}.
+
+\bibitem[CSW19]{CSZW18}
+S.~X. Cui, M.~{Shokrian Zini}, and Z.~Wang.
+\newblock On generalized symmetries and structure of modular categories.
+\newblock {\em Sci. China Math.}, 62(3):417--446, 2019,
+  \doi{10.1007/s11425-018-9455-5}.
+\newblock \burlalt{arXiv:1809.00245}{https://arxiv.org/abs/1809.00245}.
+
+\bibitem[Del19]{D19}
+C.~Delaney.
+\newblock Fusion rules for permutation extensions of modular tensor categories.
+\newblock 2019.
+\newblock \burlalt{arXiv:1909.03003}{https://arxiv.org/abs/1909.03003}.
+
+\bibitem[DIP16]{DIP16}
+N.~Delfosse, P.~Iyer, and D.~Poulin.
+\newblock Generalized surface codes and packing of logical qubits.
+\newblock 2016.
+\newblock \burlalt{arXiv:1606.07116}{https://arxiv.org/abs/1606.07116}.
+
+\bibitem[DKLP02]{DKLP2002}
+E.~Dennis, A.~Kitaev, A.~Landahl, and J.~Preskill.
+\newblock Topological quantum memory.
+\newblock {\em J. Math. Phys.}, 43(9):4452--4505, 2002,
+  \doi{10.1063/1.1499754}.
+\newblock
+  \burlalt{arXiv:quant-ph/0110143}{https://arxiv.org/abs/quant-ph/0110143}.
+
+\bibitem[DSS19]{DSPS14}
+C.~L. Douglas, C.~{Schommer-Pries}, and N.~Snyder.
+\newblock {The balanced tensor product of module categories}.
+\newblock {\em Kyoto J. Math.}, 59(1):167--179, 2019,
+  \doi{10.1215/21562261-2018-0006}.
+\newblock \burlalt{arXiv:1406.4204}{https://arxiv.org/abs/1406.4204}.
+
+\bibitem[EGNO15]{Etingof2015}
+P.~Etingof, S.~Gelaki, D.~Nikshych, and V.~Ostrik.
+\newblock {\em Tensor {C}ategories}, volume 205 of {\em Mathematical Surveys
+  and Monographs}.
+\newblock Amer. Math. Soc., 2015.
+\newblock \doi{10.1090/surv/205}.
+
+\bibitem[EH13]{EH13}
+A.~M. Essin and M.~Hermele.
+\newblock Classifying fractionalization: {Symmetry} classification of gapped
+  $\mathbb{Z}_2$ spin liquids in two dimensions.
+\newblock {\em Phys. Rev. B}, 87(10):104406, 2013,
+  \doi{10.1103/physrevb.87.104406}.
+\newblock \burlalt{arXiv:1212.0593}{https://arxiv.org/abs/1212.0593}.
+
+\bibitem[EJP18]{EMJP18}
+C.~{Edie-Michell}, C.~Jones, and J.~Plavnik.
+\newblock {Fusion} {Rules} for $\mathbb{Z}/2\mathbb{Z}$ {Permutation}
+  {Gauging}.
+\newblock 2018.
+\newblock \burlalt{arXiv:1804.01657}{https://arxiv.org/abs/1804.01657}.
+
+\bibitem[EN14]{EN14}
+D.~V. Else and C.~Nayak.
+\newblock Classifying symmetry-protected topological phases through the
+  anomalous action of the symmetry on the edge.
+\newblock {\em Phys. Rev. B}, 90(23):235137, 2014,
+  \doi{10.1103/physrevb.90.235137}.
+\newblock \burlalt{arXiv:1409.5436}{https://arxiv.org/abs/1409.5436}.
+
+\bibitem[ENO10]{ENO10}
+P.~Etingof, D.~Nikshych, and V.~Ostrik.
+\newblock Fusion categories and homotopy theory.
+\newblock {\em Quantum Topol.}, 1(3):209--273, 2010, \doi{10.4171/qt/6}.
+\newblock \burlalt{arXiv:0909.3140}{https://arxiv.org/abs/0909.3140}.
+
+\bibitem[ET19]{ET19}
+D.~V. Else and R.~Thorngren.
+\newblock Crystalline topological phases as defect networks.
+\newblock {\em Phys. Rev. B}, 99(11):115116, 2019,
+  \doi{10.1103/physrevb.99.115116}.
+\newblock \burlalt{arXiv:1810.10539}{https://arxiv.org/abs/1810.10539}.
+
+\bibitem[FK10]{FK10}
+L.~Fidkowski and A.~Kitaev.
+\newblock Effects of interactions on the topological classification of free
+  fermion systems.
+\newblock {\em Phys. Rev. B}, 81(13):134509, 2010,
+  \doi{10.1103/PhysRevB.81.134509}.
+\newblock \burlalt{arXiv:0904.2197}{https://arxiv.org/abs/0904.2197}.
+
+\bibitem[FK11]{FK11}
+L.~Fidkowski and A.~Kitaev.
+\newblock Topological phases of fermions in one dimension.
+\newblock {\em Phys. Rev. B}, 83(7):075103, 2011,
+  \doi{10.1103/physrevb.83.075103}.
+\newblock \burlalt{arXiv:1008.4138}{https://arxiv.org/abs/1008.4138}.
+
+\bibitem[FKLW02]{FKLW02}
+M.~H. Freedman, A.~Kitaev, M.~J. Larsen, and Z.~Wang.
+\newblock Topological quantum computation.
+\newblock {\em Bull. Am. Math. Soc.}, 40(01):31--39, 2002,
+  \doi{10.1090/s0273-0979-02-00964-3}.
+\newblock
+  \burlalt{arXiv:quant-ph/0101025}{https://arxiv.org/abs/quant-ph/0101025}.
+
+\bibitem[FLW02a]{FLW02}
+M.~H. Freedman, M.~Larsen, and Z.~Wang.
+\newblock A {Modular} {Functor} {Which} is {Universal} for {Quantum}
+  {Computation}.
+\newblock {\em Commun. Math. Phys.}, 227(3):605--622, 2002,
+  \doi{10.1007/s002200200645}.
+\newblock
+  \burlalt{arXiv:quant-ph/0001108}{https://arxiv.org/abs/quant-ph/0001108}.
+
+\bibitem[FLW02b]{FLW02b}
+M.~H. Freedman, M.~J. Larsen, and Z.~Wang.
+\newblock The {Two}-{Eigenvalue} {Problem} and {Density} of {Jones}
+  {Representation} of {Braid} {Groups}.
+\newblock {\em Commun. Math. Phys.}, 228(1):177--199, 2002,
+  \doi{10.1007/s002200200636}.
+\newblock \burlalt{arXiv:math/0103200}{https://arxiv.org/abs/math/0103200}.
+
+\bibitem[FM13]{FM13}
+D.~S. Freed and G.~W. Moore.
+\newblock Twisted {Equivariant} {Matter}.
+\newblock {\em Ann. Henri Poincar{\'{e}}}, 14(8):1927--2023, 2013,
+  \doi{10.1007/s00023-013-0236-x}.
+\newblock \burlalt{arXiv:1208.5055}{https://arxiv.org/abs/1208.5055}.
+
+\bibitem[FPSV15]{JPSV15}
+J.~Fuchs, J.~Priel, C.~Schweigert, and A.~Valentino.
+\newblock On the {Brauer} {Groups} of {Symmetries} of {Abelian}
+  {Dijkgraaf}-{Witten} {Theories}.
+\newblock {\em Commun. Math. Phys.}, 339(2):385--405, 2015,
+  \doi{10.1007/s00220-015-2420-y}.
+\newblock \burlalt{arXiv:1404.6646}{https://arxiv.org/abs/1404.6646}.
+
+\bibitem[Fre98]{Freedman1998}
+M.~H. Freedman.
+\newblock \textit{{P}/{NP}}, and the quantum field computer.
+\newblock {\em Proc. Natl. Acad. Sci. USA}, 95(1):98--101, 1998,
+  \doi{10.1073/pnas.95.1.98}.
+
+\bibitem[Fre14]{F14}
+D.~S. Freed.
+\newblock Short-range entanglement and invertible field theories.
+\newblock 2014.
+\newblock \burlalt{arXiv:1406.7278}{https://arxiv.org/abs/1406.7278}.
+
+\bibitem[FSV13]{FSV13}
+J.~Fuchs, C.~Schweigert, and A.~Valentino.
+\newblock Bicategories for {Boundary} {Conditions} and for {Surface} {Defects}
+  in 3-d {TFT}.
+\newblock {\em Commun. Math. Phys.}, 321(2):543--575, 2013,
+  \doi{10.1007/s00220-013-1723-0}.
+\newblock \burlalt{arXiv:1203.4568}{https://arxiv.org/abs/1203.4568}.
+
+\bibitem[FTL{\etalchar{+}}07]{Feiguin2007}
+A.~Feiguin, S.~Trebst, A.~W.~W. Ludwig, M.~Troyer, A.~Kitaev, Z.~Wang, and
+  M.~H. Freedman.
+\newblock {I}nteracting {A}nyons in {T}opological {Q}uantum {L}iquids: {T}he
+  {G}olden {C}hain.
+\newblock {\em Phys. Rev. Lett.}, 98(16):160409, 2007,
+  \doi{10.1103/physrevlett.98.160409}.
+\newblock
+  \burlalt{arXiv:cond-mat/0612341}{https://arxiv.org/abs/cond-mat/0612341}.
+
+\bibitem[Hew97]{hewsonKondoProblemHeavy1997}
+A.~C. Hewson.
+\newblock {\em The {{Kondo Problem}} to {{Heavy Fermions}}}.
+\newblock Camb. Univ. Press, 1997.
+
+\bibitem[HK10]{HK10}
+M.~Z. Hasan and C.~L. Kane.
+\newblock \textit{Colloquium}: {Topological} insulators.
+\newblock {\em Rev. Mod. Phys.}, 82(4):3045--3067, 2010,
+  \doi{10.1103/revmodphys.82.3045}.
+\newblock \burlalt{arXiv:1002.3895}{https://arxiv.org/abs/1002.3895}.
+
+\bibitem[HW12]{HW12}
+L.-Y. Hung and X.-G. Wen.
+\newblock Quantized topological terms in weakly coupled gauge theories and
+  their connection to symmetry protected topological phases.
+\newblock 2012.
+\newblock \burlalt{arXiv:1211.2767}{https://arxiv.org/abs/1211.2767}.
+
+\bibitem[Kap14]{K14}
+A.~Kapustin.
+\newblock Symmetry {Protected} {Topological} {Phases}, {Anomalies}, and
+  {Cobordisms}: {Beyond} {Group} {Cohomology}.
+\newblock 2014.
+\newblock \burlalt{arXiv:1403.1467}{https://arxiv.org/abs/1403.1467}.
+
+\bibitem[Kit03]{Kit03}
+A.~Kitaev.
+\newblock Fault-tolerant quantum computation by anyons.
+\newblock {\em Ann. Phys.}, 303(1):2--30, 2003,
+  \doi{10.1016/S0003-4916(02)00018-0}.
+\newblock
+  \burlalt{arXiv:quant-ph/9707021}{https://arxiv.org/abs/quant-ph/9707021}.
+
+\bibitem[Kit09]{Kitaev2009}
+A.~Kitaev.
+\newblock Periodic table for topological insulators and superconductors.
+\newblock In V.~Lebedev and M.~Feigel'man, editors, {\em {AIP} Conference
+  Proceedings}, volume 1134, pages 22--30, Chernogolokova, 2009. {AIP},
+  \burlalt{arXiv:0901.2686}{https://arxiv.org/abs/0901.2686}.
+\newblock \doi{10.1063/1.3149495}.
+
+\bibitem[KK12]{KK12}
+A.~Kitaev and L.~Kong.
+\newblock Models for {Gapped} {Boundaries} and {Domain} {Walls}.
+\newblock {\em Commun. Math. Phys.}, 313(2):351--373, 2012,
+  \doi{10.1007/s00220-012-1500-5}.
+\newblock \burlalt{arXiv:1104.5047}{https://arxiv.org/abs/1104.5047}.
+
+\bibitem[KPEB18]{KPEB18}
+M.~S. Kesselring, F.~Pastawski, J.~Eisert, and B.~J. Brown.
+\newblock The boundaries and twist defects of the color code and their
+  applications to topological quantum computation.
+\newblock {\em Quantum}, 2:101, 2018, \doi{10.22331/q-2018-10-19-101}.
+\newblock \burlalt{arXiv:1806.02820}{https://arxiv.org/abs/1806.02820}.
+
+\bibitem[LG12]{LG12}
+M.~Levin and Z.-C. Gu.
+\newblock Braiding statistics approach to symmetry-protected topological
+  phases.
+\newblock {\em Phys. Rev. B}, 86(11):115109, 2012,
+  \doi{10.1103/physrevb.86.115109}.
+\newblock \burlalt{arXiv:1202.3120}{https://arxiv.org/abs/1202.3120}.
+
+\bibitem[LS12]{LS12}
+M.~Levin and A.~Stern.
+\newblock Classification and analysis of two-dimensional {A}belian fractional
+  topological insulators.
+\newblock {\em Phys. Rev. B}, 86(11):115131, 2012,
+  \doi{10.1103/physrevb.86.115131}.
+\newblock \burlalt{arXiv:1205.1244}{https://arxiv.org/abs/1205.1244}.
+
+\bibitem[LV12]{LV12}
+Y.-M. Lu and A.~Vishwanath.
+\newblock Theory and classification of interacting integer topological phases
+  in two dimensions: {A} {C}hern-{S}imons approach.
+\newblock {\em Phys. Rev. B}, 86(12):125119, 2012,
+  \doi{10.1103/physrevb.86.125119}.
+\newblock \burlalt{arXiv:1205.3156}{https://arxiv.org/abs/1205.3156}.
+
+\bibitem[LV16]{LV16}
+Y.-M. Lu and A.~Vishwanath.
+\newblock Classification and properties of symmetry-enriched topological
+  phases: {C}hern-{S}imons approach with applications to ${Z}_2$ spin liquids.
+\newblock {\em Phys. Rev. B}, 93(15):155121, 2016,
+  \doi{10.1103/physrevb.93.155121}.
+\newblock \burlalt{arXiv:1302.2634}{https://arxiv.org/abs/1302.2634}.
+
+\bibitem[MFCV14]{MFCV15}
+M.~A. Metlitski, L.~Fidkowski, X.~Chen, and A.~Vishwanath.
+\newblock Interaction effects on {3D} topological superconductors: surface
+  topological order from vortex condensation, the 16 fold way and fermionic
+  {Kramers} doublets.
+\newblock 2014.
+\newblock \burlalt{arXiv:1406.3032}{https://arxiv.org/abs/1406.3032}.
+
+\bibitem[MR13]{MR13}
+A.~Mesaros and Y.~Ran.
+\newblock Classification of symmetry enriched topological phases with exactly
+  solvable models.
+\newblock {\em Phys. Rev. B}, 87(15):155115, 2013,
+  \doi{10.1103/physrevb.87.155115}.
+\newblock \burlalt{arXiv:1212.0835}{https://arxiv.org/abs/1212.0835}.
+
+\bibitem[NCMT14]{NCMT14}
+T.~Neupert, C.~Chamon, C.~Mudry, and R.~Thomale.
+\newblock Wire deconstructionism of two-dimensional topological phases.
+\newblock {\em Phys. Rev. B}, 90(20):205101, 2014,
+  \doi{10.1103/physrevb.90.205101}.
+\newblock \burlalt{arXiv:1403.0953}{https://arxiv.org/abs/1403.0953}.
+
+\bibitem[NSS{\etalchar{+}}08]{NSSFD08}
+C.~Nayak, S.~H. Simon, A.~Stern, M.~Freedman, and S.~{Das Sarma}.
+\newblock {Non}-{Abelian} anyons and topological quantum computation.
+\newblock {\em Rev. Mod. Phys.}, 80(3):1083--1159, 2008,
+  \doi{10.1103/RevModPhys.80.1083}.
+\newblock \burlalt{arXiv:0707.1889}{https://arxiv.org/abs/0707.1889}.
+
+\bibitem[Ocn94]{ocneanu}
+A.~Ocneanu.
+\newblock Chirality for operator algebras.
+\newblock In H.~Araki, Y.~Kawahigashi, and H.~Kosaki, editors, {\em Subfactors
+  Taniguchi Symposium}, pages 39--63, Kyuzeso, 1994. World Sci. Publ.
+
+\bibitem[Osb16]{OsborneVideoLectureAQT}
+Tobias~J. Osborne.
+\newblock Lecture on {Advanced} {Quantum} {Theory}, 2016.
+\newblock
+  \urlprefix\url{https://www.youtube.com/playlist?list=PLDfPUNusx1Eo60qx3Od2KLUL4b7VDPo9F}.
+
+\bibitem[PY15]{PY15}
+F.~Pastawski and B.~Yoshida.
+\newblock Fault-tolerant logical gates in quantum error-correcting codes.
+\newblock {\em Phys. Rev. A}, 91(1):012305, 2015,
+  \doi{10.1103/physreva.91.012305}.
+\newblock \burlalt{arXiv:1408.1720}{https://arxiv.org/abs/1408.1720}.
+
+\bibitem[QZ11]{QZ11}
+X.-L. Qi and S.-C. Zhang.
+\newblock Topological insulators and superconductors.
+\newblock {\em Rev. Mod. Phys.}, 83(4):1057--1110, 2011,
+  \doi{10.1103/revmodphys.83.1057}.
+\newblock \burlalt{arXiv:1008.2026}{https://arxiv.org/abs/1008.2026}.
+
+\bibitem[RH07]{RH07}
+R.~Raussendorf and J.~Harrington.
+\newblock Fault-{Tolerant} {Quantum} {Computation} with {High} {Threshold} in
+  {Two} {Dimensions}.
+\newblock {\em Phys. Rev. Lett.}, 98(19):190504, 2007,
+  \doi{10.1103/physrevlett.98.190504}.
+\newblock
+  \burlalt{arXiv:quant-ph/0610082}{https://arxiv.org/abs/quant-ph/0610082}.
+
+\bibitem[SRFL08]{SRFL08}
+A.~P. Schnyder, S.~Ryu, A.~Furusaki, and A.~W.~W. Ludwig.
+\newblock Classification of topological insulators and superconductors in three
+  spatial dimensions.
+\newblock {\em Phys. Rev. B}, 78(19):195125, 2008,
+  \doi{10.1103/physrevb.78.195125}.
+\newblock \burlalt{arXiv:0803.2786}{https://arxiv.org/abs/0803.2786}.
+
+\bibitem[Swi14]{Swingle2014}
+B.~Swingle.
+\newblock Interplay between short- and long-range entanglement in
+  symmetry-protected phases.
+\newblock {\em Phys. Rev. B}, 90(3):035451, 2014,
+  \doi{10.1103/physrevb.90.035451}.
+\newblock \burlalt{arXiv:1209.0776}{https://arxiv.org/abs/1209.0776}.
+
+\bibitem[Ter15]{Ter15}
+B.~M. Terhal.
+\newblock {Quantum} error correction for quantum memories.
+\newblock {\em Rev. Mod. Phys.}, 87(2):307--346, 2015,
+  \doi{10.1103/RevModPhys.87.307}.
+\newblock \burlalt{arXiv:1302.3428}{https://arxiv.org/abs/1302.3428}.
+
+\bibitem[TPB11]{TPB11}
+A.~M. Turner, F.~Pollmann, and E.~Berg.
+\newblock Topological phases of one-dimensional fermions: {A}n entanglement
+  point of view.
+\newblock {\em Phys. Rev. B}, 83(7):075102, 2011,
+  \doi{10.1103/physrevb.83.075102}.
+\newblock \burlalt{arXiv:1008.4346}{https://arxiv.org/abs/1008.4346}.
+
+\bibitem[Tur00]{T00}
+V.~Turaev.
+\newblock Homotopy field theory in dimension 3 and crossed group-categories.
+\newblock 2000.
+\newblock \burlalt{arXiv:math/0005291}{https://arxiv.org/abs/math/0005291}.
+
+\bibitem[Tur10]{Turaev2010}
+V.~Turaev.
+\newblock {\em Homotopy {Quantum} {Field} {Theory}}, volume~10 of {\em EMS
+  Tracts in Mathematics}.
+\newblock Euro. Math. Soc., 2010.
+
+\bibitem[TY98]{TY}
+D.~Tambara and S.~Yamagami.
+\newblock Tensor {Categories} with {Fusion} {Rules} of {Self}-{Duality} for
+  {Finite} {Abelian} {Groups}.
+\newblock {\em J. Algebra}, 209(2):692--707, 1998,
+  \doi{10.1006/jabr.1998.7558}.
+
+\bibitem[WBV17]{WBV17}
+D.~J. Williamson, N.~Bultinck, and F.~Verstraete.
+\newblock Symmetry-enriched topological order in tensor networks: {Defects},
+  gauging and anyon condensation.
+\newblock 2017.
+\newblock \burlalt{arXiv:1711.07982}{https://arxiv.org/abs/1711.07982}.
+
+\bibitem[Wen90]{Wen90}
+X.-G. Wen.
+\newblock {Topological} {Orders} in {Rigid} {States}.
+\newblock {\em Int. J. Mod. Phys. B}, 04(02):239--271, 1990,
+  \doi{10.1142/s0217979290000139}.
+
+\bibitem[Wen02]{Wen2002}
+X.-G. Wen.
+\newblock Quantum orders and symmetric spin liquids.
+\newblock {\em Phys. Rev. B}, 65(16):165113, 2002,
+  \doi{10.1103/physrevb.65.165113}.
+\newblock
+  \burlalt{arXiv:cond-mat/0107071}{https://arxiv.org/abs/cond-mat/0107071}.
+
+\bibitem[Wen07]{Wen07}
+X.-G. Wen.
+\newblock {\em Quantum {Field} {Theory} of {Many}-{Body} {Systems}}.
+\newblock Oxford University Press, 2007.
+
+\bibitem[Whi92]{whiteDensityMatrixFormulation1992}
+S.~R. White.
+\newblock Density matrix formulation for quantum renormalization groups.
+\newblock {\em Phys. Rev. Lett.}, 69(10):2863--2866, 1992,
+  \doi{10.1103/PhysRevLett.69.2863}.
+
+\bibitem[Wil75]{wilsonRenormalizationGroupCritical1975}
+K.~G. Wilson.
+\newblock The renormalization group: {Critical} phenomena and the {Kondo}
+  problem.
+\newblock {\em Rev. Mod. Phys.}, 47(4):773--840, 1975,
+  \doi{10.1103/RevModPhys.47.773}.
+
+\bibitem[WN90]{WN90}
+X.-G. Wen and Q.~Niu.
+\newblock Ground-state degeneracy of the fractional quantum {H}all states in
+  the presence of a random potential and on high-genus {R}iemann surfaces.
+\newblock {\em Phys. Rev. B}, 41(13):9377--9396, 1990,
+  \doi{10.1103/physrevb.41.9377}.
+
+\bibitem[WPS14]{WPS14}
+C.~Wang, A.~C. Potter, and T.~Senthil.
+\newblock Classification of {Interacting} {Electronic} {Topological}
+  {Insulators} in {Three} {Dimensions}.
+\newblock {\em Science}, 343(6171):629--631, 2014,
+  \doi{10.1126/science.1243326}.
+\newblock \burlalt{arXiv:1306.3238}{https://arxiv.org/abs/1306.3238}.
+
+\bibitem[Yos15]{Yoshida2015}
+B.~Yoshida.
+\newblock Topological color code and symmetry-protected topological phases.
+\newblock {\em Phys. Rev. B}, 91(24):245131, 2015,
+  \doi{10.1103/physrevb.91.245131}.
+\newblock \burlalt{arXiv:1503.07208}{https://arxiv.org/abs/1503.07208}.
+
+\bibitem[Yos17]{Yoshida2017}
+B.~Yoshida.
+\newblock Gapped boundaries, group cohomology and fault-tolerant logical gates.
+\newblock {\em Ann. Phys.}, 377(2):387--413, 2017,
+  \doi{10.1016/j.aop.2016.12.014}.
+\newblock \burlalt{arXiv:1509.03626}{https://arxiv.org/abs/1509.03626}.
+
+\end{thebibliography}
