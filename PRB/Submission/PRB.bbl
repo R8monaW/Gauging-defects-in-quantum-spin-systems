@@ -878,6 +878,21 @@
   spherical {G}-extensions of fusion categories},\ }\href@noop {} {\  (\bibinfo
   {year} {2019})},\ \Eprint {https://arxiv.org/abs/1909.02816} {1909.02816}
   \BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Osborne}(2016)}]{OsborneVideoLectureAQT}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~J.}\ \bibnamefont
+  {Osborne}},\ }\href
+  {https://www.youtube.com/playlist?list=PLDfPUNusx1Eo60qx3Od2KLUL4b7VDPo9F}
+  {\bibinfo {title} {Lecture on {Advanced} {Quantum} {Theory}}} (\bibinfo
+  {year} {2016})\BibitemShut {NoStop}%
+\bibitem [{Note1()}]{Note1}%
+  \BibitemOpen
+  \bibinfo {note} {If you want a physical example for such a system: imagine a
+  $1D$ optical lattice in which either zero or one two-level atoms can be
+  present at each lattice site. Further, assume that the atoms line up in a
+  contiguous line, with no gaps, i.e., we impose some additional potential
+  gradient. Although we don't know how many particles we'll get, we can still
+  identify and address the particles via lattice location.}\BibitemShut {Stop}%
 \bibitem [{\citenamefont {Ocneanu}(1994)}]{ocneanu}%
   \BibitemOpen
   \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
@@ -916,21 +931,6 @@
   {volume} {98}},\ \bibinfo {pages} {160409} (\bibinfo {year} {2007})},\
   \Eprint {https://arxiv.org/abs/cond-mat/0612341} {cond-mat/0612341}
   \BibitemShut {NoStop}%
-\bibitem [{\citenamefont {Osborne}(2016)}]{OsborneVideoLectureAQT}%
-  \BibitemOpen
-  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.~J.}\ \bibnamefont
-  {Osborne}},\ }\href
-  {https://www.youtube.com/playlist?list=PLDfPUNusx1Eo60qx3Od2KLUL4b7VDPo9F}
-  {\bibinfo {title} {Lecture on {Advanced} {Quantum} {Theory}}} (\bibinfo
-  {year} {2016})\BibitemShut {NoStop}%
-\bibitem [{Note1()}]{Note1}%
-  \BibitemOpen
-  \bibinfo {note} {If you want a physical example for such a system: imagine a
-  $1D$ optical lattice in which either zero or one two-level atoms can be
-  present at each lattice site. Further, assume that the atoms line up in a
-  contiguous line, with no gaps, i.e., we impose some additional potential
-  gradient. Although we don't know how many particles we'll get, we can still
-  identify and address the particles via lattice location.}\BibitemShut {Stop}%
 \bibitem [{\citenamefont {Etingof}\ \emph {et~al.}(2015)\citenamefont
   {Etingof}, \citenamefont {Gelaki}, \citenamefont {Nikshych},\ and\
   \citenamefont {Ostrik}}]{Etingof2015}%
