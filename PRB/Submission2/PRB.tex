@@ -186,25 +186,25 @@ It is now easy to incorporate additional constraints on the numbers of particles
 \end{equation}
 We could call this the Hilbert space of a ``maybe'' quantum spin.
 
-Let's now consider the central situation for this work. How should we describe a quantum lattice of $N$ sites, where either a single quantum spin is present at a site, or not? (We call the case where a spin is absent a \emph{defect}.) According to the discussion above we should simply tensor up $N$ ``maybe'' quantum spins:
+Let's now consider the central situation for this work. How should we describe a quantum lattice of $n$ sites, where either a single quantum spin is present at a site, or not? (We call the case where a spin is absent a \emph{defect}.) According to the discussion above we should simply tensor up $n$ ``maybe'' quantum spins:
 \begin{equation}
-\mathfrak{F}_{\le N}(\mathbb{C}^d) \equiv \bigotimes_{j=0}^N \mathfrak{F}_{\le 1}(\mathbb{C}^d) \cong (\mathbb{C}\oplus \mathbb{C}^d)^{\otimes N}.
+\mathfrak{F}_{\le n}(\mathbb{C}^d) \equiv \bigotimes_{j=0}^n \mathfrak{F}_{\le 1}(\mathbb{C}^d) \cong (\mathbb{C}\oplus \mathbb{C}^d)^{\otimes n}.
 \end{equation}
 Expanding out the tensor factors leads to the equivalent definition
 \begin{equation}
-\mathfrak{F}_{\le N}(\mathbb{C}^d) \equiv \bigoplus_{j=0}^N \mathbb{C}^{\binom{N}{j}}\otimes \mathcal{H}_j.
+\mathfrak{F}_{\le n}(\mathbb{C}^d) \equiv \bigoplus_{j=0}^n \mathbb{C}^{\binom{n}{j}}\otimes \mathcal{H}_j.
 \end{equation}
-A quick way to convince yourself of the validity of this second representation just take the dimension of both definitions. In the first case we get $\dim(\mathfrak{F}_{\le N}(\mathbb{C}^d)) = (d+1)^N$ and in the second we find
+A quick way to convince yourself of the validity of this second representation just take the dimension of both definitions. In the first case we get $\dim(\mathfrak{F}_{\le n}(\mathbb{C}^d)) = (d+1)^n$ and in the second we find
 \begin{equation}
-\dim(\mathfrak{F}_{\le N}(\mathbb{C}^d)) = \sum_{j=0}^N \binom{N}{j} d^j,
+\dim(\mathfrak{F}_{\le n}(\mathbb{C}^d)) = \sum_{j=0}^n \binom{n}{j} d^j,
 \end{equation}
 which is identical due to the binomial theorem. We call the space arising in the second representation
 \begin{equation}
-\mathbb{C}^{\binom{N}{j}} \cong \mathcal{K}_{j};
+\mathbb{C}^{\binom{n}{j}} \cong \mathcal{K}_{j};
 \end{equation}
-it may be interpreted as the configuration space of $j$ hard-core identical scalar particles arranged on a system of $N$ possible locations. Our total space still corresponds to \emph{distinguishable} particles; the tensor factor $\mathcal{K}_j$ takes care of identifying which locations are occupied with spins and the second tensor factor represents the actual distinguishable spins at those locations.
+it may be interpreted as the configuration space of $j$ hard-core identical scalar particles arranged on a system of $n$ possible locations. Our total space still corresponds to \emph{distinguishable} particles; the tensor factor $\mathcal{K}_j$ takes care of identifying which locations are occupied with spins and the second tensor factor represents the actual distinguishable spins at those locations.
 
-The Hilbert space $\mathfrak{F}_{\le N}(\mathbb{C}^d)$ supplies us with just the kinematical data to describe a system of distinguishable particles. To incorporate additional dynamical information we must specify additional \emph{dynamical} data.
+The Hilbert space $\mathfrak{F}_{\le n}(\mathbb{C}^d)$ supplies us with just the kinematical data to describe a system of distinguishable particles. To incorporate additional dynamical information we must specify additional \emph{dynamical} data.
 
 \subsection{Modeling dynamically evolving defects}
 \label{Intro_dynamics}
@@ -213,9 +213,9 @@ We specify dynamics in quantum mechanics most directly via a one-parameter famil
 \begin{equation}
 U_t = e^{-it H}.
 \end{equation}
-To introduce dynamics for our defect system we hence just need a hermitian matrix acting on $\mathfrak{F}_{\le N}(\mathbb{C}^d)$. This is easy enough in the abstract, however, particularly for topologically ordered systems we introduce dynamical information more indirectly.
+To introduce dynamics for our defect system we hence just need a hermitian matrix acting on $\mathfrak{F}_{\le n}(\mathbb{C}^d)$. This is easy enough in the abstract, however, particularly for topologically ordered systems we introduce dynamical information more indirectly.
 
-In the context of topologically ordered models such as Kitaev's toric code \cite{Kit03} we typically introduce dynamical information indirectly by describing the system via the ground eigenspace $\mathcal{V}\subset \mathcal{H}$ of a specific Hamiltonian $H$. In the case of the toric code for $N\times N$ quantum spins arranged on the torus, the ground eigenspace $\mathcal{V}_{\mathbb{T}}$ of the toric code Hamiltonian is four dimensional.
+In the context of topologically ordered models such as Kitaev's toric code \cite{Kit03} we typically introduce dynamical information indirectly by describing the system via the ground eigenspace $\mathcal{V}\subset \mathcal{H}$ of a specific Hamiltonian $H$. In the case of the toric code for $n\times n$ quantum spins arranged on the torus, the ground eigenspace $\mathcal{V}_{\mathbb{T}}$ of the toric code Hamiltonian is four dimensional.
 
 Continuing in the context of the toric code, let's suppose we now have a lattice with a missing-qubit defect at some edge $e$ \cite{BLKW17}, see Fig. \ref{fig:1defect}. One can define a toric-code Hamiltonian for this new punctured torus; restricting to its ground eigenspace yields a \emph{four-dimensional subspace} $\mathcal{V}_{\mathbb{T}\setminus e}$. There is no obstruction to describing the ground eigenspace for two, three, etc.\ missing-qubit defects. What results is a rather intricate combinatorial problem, as, depending on where the defects are located relative to each other, one gets higher or lower dimensional ground eigenspace. To see an example of the intricacies that easily result, consider the case of two missing edges: these can either be adjacent to each other or distant. In the latter case, depicted in Fig. \ref{fig:2distdefects}, the ground space for this system is $(\mathbb{C}^2)^{\otimes 3}$ while in the case of adjacent defects we have a single larger puncture (with smooth boundary), see Fig. \ref{fig:2adjdefects}, and the ground eigenspace is only $(\mathbb{C}^2)^{\otimes 2}$.
 
@@ -336,27 +336,27 @@ Continuing in the context of the toric code, let's suppose we now have a lattice
 %	\caption{Depiction of different situations where missing qubit defects are inserted on a toric code lattice. In the case of more than one missing link the ground space for the system depends on whether the defects are adjacent to each other.}
 %\end{figure}
 
-We can incorporate such \emph{indirect} dynamical information into our kinematical space $\mathcal{F}_{\le N}(\mathbb{C}^d)$ as follows. We start by writing out 
+We can incorporate such \emph{indirect} dynamical information into our kinematical space $\mathcal{F}_{\le n}(\mathbb{C}^d)$ as follows. We start by writing out 
 \begin{equation}
-\mathcal{V}_{\le N}(\mathbb{C}^d) = \bigoplus_{e_1,e_2, \ldots, e_{N^2} =0}^1 \mathcal{V}_{e_1,e_2,\ldots, e_{N^2}},
+\mathcal{V}_{\le n}(\mathbb{C}^d) = \bigoplus_{e_1,e_2, \ldots, e_{n^2} =0}^1 \mathcal{V}_{e_1,e_2,\ldots, e_{n^2}},
 \end{equation}
-where $\mathcal{V}_{e_1,e_2,\ldots, e_{N^2}}$ is the ground eigenspace for the toric code with a missing-edge defect at every edge $e_j$ with $e_j=0$. Writing out the first terms of this big direct sum gives us
+where $\mathcal{V}_{e_1,e_2,\ldots, e_{n^2}}$ is the ground eigenspace for the toric code with a missing-edge defect at every edge $e_j$ with $e_j=0$. Writing out the first terms of this big direct sum gives us
 \begin{equation}
-\mathcal{V}_{\le N}(\mathbb{C}^d) = (\mathbb{C}^2\otimes \mathbb{C}^2)\oplus \mathbb{C}^{N^2}\otimes (\mathbb{C}^2\otimes \mathbb{C}^2\otimes \mathbb{C}^2)\oplus \cdots.
+\mathcal{V}_{\le n}(\mathbb{C}^d) = (\mathbb{C}^2\otimes \mathbb{C}^2)\oplus \mathbb{C}^{n^2}\otimes (\mathbb{C}^2\otimes \mathbb{C}^2\otimes \mathbb{C}^2)\oplus \cdots.
 \end{equation}
-The first direct summand corresponds to the ground eigenspace of the toric code without defects, the second summand corresponds to the $N^2$ possible single defects, etc.
+The first direct summand corresponds to the ground eigenspace of the toric code without defects, the second summand corresponds to the $n^2$ possible single defects, etc.
 
-The full direct-sum structure of $\mathcal{V}_{\le N}(\mathbb{C}^d)$ is not easy to describe. Indeed, this is why we use a category theoretic language to discuss these problems. 
+The full direct-sum structure of $\mathcal{V}_{\le n}(\mathbb{C}^d)$ is not easy to describe. Indeed, this is why we use a category theoretic language to discuss these problems. 
 
-So far, the space $\mathcal{V}_{\le N}(\mathbb{C}^d)$ is the low-energy configuration space for a topologically ordered system, the toric code, on a lattice with an indefinite number of missing-edge defects. In this case, we assume we somehow \emph{can know} where the defects are located. However, for a full dynamical theory, this assumption is potentially unjustified.
+So far, the space $\mathcal{V}_{\le n}(\mathbb{C}^d)$ is the low-energy configuration space for a topologically ordered system, the toric code, on a lattice with an indefinite number of missing-edge defects. In this case, we assume we somehow \emph{can know} where the defects are located. However, for a full dynamical theory, this assumption is potentially unjustified.
 
-To incorporate the effects of such limited detection ability we impose an \emph{equivalence relation} on $\mathcal{V}_{\le N}(\mathbb{C}^d)$ where we identify ``physically indistinguishable'' configurations of defects. There are many possible notions of indistinguishability: this is an \emph{operational} notion and must be justified on a case by case basis. 
+To incorporate the effects of such limited detection ability we impose an \emph{equivalence relation} on $\mathcal{V}_{\le n}(\mathbb{C}^d)$ where we identify ``physically indistinguishable'' configurations of defects. There are many possible notions of indistinguishability: this is an \emph{operational} notion and must be justified on a case by case basis. 
 
-One particular, rather coarse, notion of indistinguishability may be justified as follows. Suppose we have a state $|\phi\rangle$ of the system for a defect configuration $e_1,e_2, \ldots, e_{N^2}$ and another $|\psi\rangle$ for a defect configuration with the same number of defects at possible different locations $e_1',e_2',\ldots, e'_{N^2}$. We say that the two states $|\phi\rangle$ and $|\psi\rangle$ are \emph{equivalent} if there is a unitary circuit which can transform $|\phi\rangle$ to $|\psi\rangle$. This, in particular, requires that the subspaces $\mathcal{V}_{e_1,e_2,\ldots,e_{N^2}}$ and $\mathcal{V}_{e_1',e_2',\ldots,e_{N^2}'}$ which contain $|\phi\rangle$ and $|\psi\rangle$ have the same dimensions.
+One particular, rather coarse, notion of indistinguishability may be justified as follows. Suppose we have a state $|\phi\rangle$ of the system for a defect configuration $e_1,e_2, \ldots, e_{n^2}$ and another $|\psi\rangle$ for a defect configuration with the same number of defects at possible different locations $e_1',e_2',\ldots, e'_{n^2}$. We say that the two states $|\phi\rangle$ and $|\psi\rangle$ are \emph{equivalent} if there is a unitary circuit which can transform $|\phi\rangle$ to $|\psi\rangle$. This, in particular, requires that the subspaces $\mathcal{V}_{e_1,e_2,\ldots,e_{n^2}}$ and $\mathcal{V}_{e_1',e_2',\ldots,e_{n^2}'}$ which contain $|\phi\rangle$ and $|\psi\rangle$ have the same dimensions.
 
-This equivalence relation collapses many of the direct sums appearing in $\mathcal{V}_{e_1,e_2,\ldots,e_{N^2}}$, e.g., after applying the equivalence relation the first two summands above become
+This equivalence relation collapses many of the direct sums appearing in $\mathcal{V}_{e_1,e_2,\ldots,e_{n^2}}$, e.g., after applying the equivalence relation the first two summands above become
 \begin{equation}
-\left(\mathcal{V}_{\le N}(\mathbb{C}^d)/\sim\right) = (\mathbb{C}^2\otimes \mathbb{C}^2)\oplus (\mathbb{C}^2\otimes \mathbb{C}^2\otimes \mathbb{C}^2)\oplus \cdots.
+\left(\mathcal{V}_{\le n}(\mathbb{C}^d)/\sim\right) = (\mathbb{C}^2\otimes \mathbb{C}^2)\oplus (\mathbb{C}^2\otimes \mathbb{C}^2\otimes \mathbb{C}^2)\oplus \cdots.
 \end{equation}
 
 Of course, the above description is not only restricted to the toric code case. However, even in this simple example writing out the whole ground eigenspace and applying the equivalence relation to it results in a highly intricately combinatorial problem. That is why we exploit concepts from category theory to model defects in the system. By this approach we are able to handle more complex systems efficiently. In fact, it enables us to study defects in arbitrary quantum systems, whenever the underlying fusion algebra has the structure of a unitary fusion category. In this work, we will focus on the example of a one-dimensional quantum spin chain with $\Vec(\Z/2\Z)$ fusion rules. We explicitly show, how the above construction works and how ideas and techniques from category theory can be used to model dynamical defects in such a one-dimensional spin system. Here, defects are modeled by an invertible bimodule of the underlying category, see Subsec.~\ref{subsec:VecZ2}. Using generalized tube algebra techniques \cite{ocneanu}, we construct explicit trivalent vertices for the gauged theory. Consistent with the literature \cite{TY,ENO10,Bombin2010,BBCW14,WBV17}, we find that the $F$-symbols of the gauged theory for the $\Vec(\Z/2\Z)$ spin chain (computed using these explicit vertices) coincide exactly with those of the Ising category. To the best of our knowledge, this is the first time such a result has been computed directly using the tube algebra. Furthermore, defining a golden-chain-like Hamiltonian \cite{Feiguin2007} for this spin chain results in the transverse Ising model.

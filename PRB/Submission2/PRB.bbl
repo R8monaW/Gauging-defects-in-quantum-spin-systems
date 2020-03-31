@@ -1035,6 +1035,6 @@
   {https://arxiv.org/abs/0707.4206} {0707.4206} \BibitemShut {NoStop}%
 \bibitem [{Note3()}]{Note3}%
   \BibitemOpen
-  \bibinfo {note} {We can pick $\protect \hat {O}=0$ for
+  \bibinfo {note} {We can pick $\protect \mathaccentV {hat}05E{O}=0$ for
   simplicity.}\BibitemShut {Stop}%
 \end{thebibliography}%
