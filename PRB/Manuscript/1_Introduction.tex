@@ -45,23 +45,23 @@ It is now easy to incorporate additional constraints on the numbers of particles
 \end{equation}
 We could call this the Hilbert space of a ``maybe'' quantum spin.
 
-Let's now consider the central situation for this work. How should we describe a quantum lattice of $n$ sites, where either a single quantum spin is present at a site, or not? (We call the case where a spin is absent a \emph{defect}.) According to the discussion above we should simply tensor up $N$ ``maybe'' quantum spins:
+Let's now consider the central situation for this work. How should we describe a quantum lattice of $n$ sites, where either a single quantum spin is present at a site, or not? (We call the case where a spin is absent a \emph{defect}.) According to the discussion above we should simply tensor up $n$ ``maybe'' quantum spins:
 \begin{equation}
-\mathfrak{F}_{\le n}(\mathbb{C}^d) \equiv \bigotimes_{N=0}^n \mathfrak{F}_{\le 1}(\mathbb{C}^d) \cong (\mathbb{C}\oplus \mathbb{C}^d)^{\otimes N}.
+\mathfrak{F}_{\le n}(\mathbb{C}^d) \equiv \bigotimes_{j=0}^n \mathfrak{F}_{\le 1}(\mathbb{C}^d) \cong (\mathbb{C}\oplus \mathbb{C}^d)^{\otimes j}.
 \end{equation}
 Expanding out the tensor factors leads to the equivalent definition
 \begin{equation}
-\mathfrak{F}_{\le n}(\mathbb{C}^d) \equiv \bigoplus_{j=0}^N \mathbb{C}^{\binom{N}{j}}\otimes \mathcal{H}_j.
+\mathfrak{F}_{\le n}(\mathbb{C}^d) \equiv \bigoplus_{j=0}^n \mathbb{C}^{\binom{n}{j}}\otimes \mathcal{H}_j.
 \end{equation}
 A quick way to convince yourself of the validity of this second representation just take the dimension of both definitions. In the first case we get $\dim(\mathfrak{F}_{\le n}(\mathbb{C}^d)) = (d+1)^n$ and in the second we find
 \begin{equation}
-\dim(\mathfrak{F}_{\le n}(\mathbb{C}^d)) = \sum_{j=0}^N \binom{N}{j} d^j,
+\dim(\mathfrak{F}_{\le n}(\mathbb{C}^d)) = \sum_{j=0}^n \binom{n}{j} d^j,
 \end{equation}
 which is identical due to the binomial theorem. We call the space arising in the second representation
 \begin{equation}
-\mathbb{C}^{\binom{N}{j}} \cong \mathcal{K}_{j};
+\mathbb{C}^{\binom{n}{j}} \cong \mathcal{K}_{j};
 \end{equation}
-it may be interpreted as the configuration space of $j$ hard-core identical scalar particles arranged on a system of $N$ possible locations. Our total space still corresponds to \emph{distinguishable} particles; the tensor factor $\mathcal{K}_j$ takes care of identifying which locations are occupied with spins and the second tensor factor represents the actual distinguishable spins at those locations.
+it may be interpreted as the configuration space of $j$ hard-core identical scalar particles arranged on a system of $n$ possible locations. Our total space still corresponds to \emph{distinguishable} particles; the tensor factor $\mathcal{K}_j$ takes care of identifying which locations are occupied with spins and the second tensor factor represents the actual distinguishable spins at those locations.
 
 The Hilbert space $\mathfrak{F}_{\le n}(\mathbb{C}^d)$ supplies us with just the kinematical data to describe a system of distinguishable particles. To incorporate additional dynamical information we must specify additional \emph{dynamical} data.
 
@@ -199,7 +199,7 @@ We can incorporate such \emph{indirect} dynamical information into our kinematic
 \begin{equation}
 \mathcal{V}_{\le n}(\mathbb{C}^d) = \bigoplus_{e_1,e_2, \ldots, e_{N^2} =0}^1 \mathcal{V}_{e_1,e_2,\ldots, e_{N^2}},
 \end{equation}
-where $\mathcal{V}_{e_1,e_2,\ldots, e_N^2}$ is the ground eigenspace for the toric code with a missing-edge defect at every edge $e_j$ with $e_j=0$. Writing out the first terms of this big direct sum gives us
+where $\mathcal{V}_{e_1,e_2,\ldots, e_{N^2}}$ is the ground eigenspace for the toric code with a missing-edge defect at every edge $e_j$ with $e_j=0$. Writing out the first terms of this big direct sum gives us
 \begin{equation}
 \mathcal{V}_{\le n}(\mathbb{C}^d) = (\mathbb{C}^2\otimes \mathbb{C}^2)\oplus \mathbb{C}^{N^2}\otimes (\mathbb{C}^2\otimes \mathbb{C}^2\otimes \mathbb{C}^2)\oplus \cdots.
 \end{equation}
